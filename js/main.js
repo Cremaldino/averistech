@@ -37,41 +37,4 @@ document.addEventListener("DOMContentLoaded", () => {
         navToggleBtn.textContent = "☰";
       });
     });
-  }
-
-  // 3. CONTACT FORM SUBMISSION (MAILTO METHOD) & TOAST NOTIFICATION
-  const contactForm = document.getElementById("contact-form");
-  const toastNotification = document.getElementById("toast-notification");
-
-  if (contactForm && toastNotification) {
-    contactForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-
-      const name = document.getElementById("form-name")?.value.trim() || "Visitatore";
-      const email = document.getElementById("form-email")?.value.trim() || "";
-      const subject = document.getElementById("form-subject")?.value.trim() || "Contatto dal sito web";
-      const message = document.getElementById("form-message")?.value.trim() || "";
-
-      const targetEmail = "info@averistech.it";
-      const mailtoSubject = encodeURIComponent(`[AverisTech Contatto] ${subject}`);
-      const mailtoBody = encodeURIComponent(
-        `Nome / Azienda: ${name}\nEmail del mittente: ${email}\n\nMessaggio:\n${message}`
-      );
-      const mailtoUrl = `mailto:${targetEmail}?subject=${mailtoSubject}&body=${mailtoBody}`;
-
-      // Show Toast Notification
-      toastNotification.classList.add("show");
-
-      // Open email client with pre-filled message
-      window.location.href = mailtoUrl;
-
-      // Clear Form Fields
-      contactForm.reset();
-
-      // Automatically hide toast after 4.5 seconds
-      setTimeout(() => {
-        toastNotification.classList.remove("show");
-      }, 4500);
-    });
-  }
 });

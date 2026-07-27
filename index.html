@@ -400,87 +400,46 @@
         <!-- CONTACT SECTION -->
         <section class="contact" id="contact" aria-labelledby="contact-heading">
             <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <span class="section-tag" data-i18n="contact-tag">Parliamo del Futuro</span>
-                        <h2 id="contact-heading" class="section-title" data-i18n="contact-title"
-                            style="text-align: left;">
-                            Entra in contatto con noi
-                        </h2>
-                        <p data-i18n="contact-desc">
-                            Siamo sempre aperti a sinergie istituzionali, investitori, talenti tecnici e partner
-                            strategici. Scrivici per scoprire come possiamo collaborare.
-                        </p>
+                <div class="section-header" style="max-width: 760px; margin: 0 auto 60px; text-align: center;">
+                    <span class="section-tag" data-i18n="contact-tag">Parliamo del Futuro</span>
+                    <h2 id="contact-heading" class="section-title" data-i18n="contact-title" style="text-align: center;">
+                        Entra in contatto con noi
+                    </h2>
+                    <p class="section-subtitle" data-i18n="contact-desc" style="margin: 0 auto; color: var(--text-muted); font-size: 1.15rem; line-height: 1.7;">
+                        Siamo sempre aperti a sinergie istituzionali, investitori, talenti tecnici e partner
+                        strategici. Scrivici per scoprire come possiamo collaborare.
+                    </p>
+                </div>
 
-                        <div class="contact-details">
-                            <div class="contact-item" id="contact-item-location">
-                                <div class="contact-icon" aria-hidden="true">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                                </div>
-                                <div class="contact-item-text">
-                                    <h3 data-i18n="contact-location-label">Sede Operativa</h3>
-                                    <p data-i18n="contact-location-val">Italia — Incubatore d'Impresa</p>
-                                </div>
-                            </div>
-
-                            <div class="contact-item" id="contact-item-email">
-                                <div class="contact-icon" aria-hidden="true">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                                </div>
-                                <div class="contact-item-text">
-                                    <h3 data-i18n="contact-email-label">Email Istituzionale</h3>
-                                    <a href="mailto:info@averistech.it" id="link-email-info">info@averistech.it</a>
-                                </div>
-                            </div>
-
-                            <div class="contact-item" id="contact-item-pec">
-                                <div class="contact-icon" aria-hidden="true">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="m9 15 2 2 4-4"/></svg>
-                                </div>
-                                <div class="contact-item-text">
-                                    <h3 data-i18n="contact-pec-label">PEC Ufficiale</h3>
-                                    <a href="mailto:averistech@pec.it" id="link-email-pec">averistech@pec.it</a>
-                                </div>
-                            </div>
+                <div class="contact-references-grid">
+                    <div class="contact-item" id="contact-item-location">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="contact-item-text">
+                            <h3 data-i18n="contact-location-label">Sede Operativa</h3>
+                            <p data-i18n="contact-location-val">Italia — Incubatore d'Impresa</p>
                         </div>
                     </div>
 
-                    <div class="contact-form-wrapper">
-                        <form id="contact-form" aria-labelledby="contact-heading">
-                            <div class="form-group">
-                                <label for="form-name" class="form-label" data-i18n="form-name-label">Nome e
-                                    Cognome</label>
-                                <input type="text" id="form-name" name="name" class="form-input" required
-                                    data-i18n-placeholder="form-name-label" placeholder="Nome e Cognome" />
-                            </div>
+                    <div class="contact-item" id="contact-item-email">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </div>
+                        <div class="contact-item-text">
+                            <h3 data-i18n="contact-email-label">Email Istituzionale</h3>
+                            <a href="mailto:info@averistech.it" id="link-email-info">info@averistech.it</a>
+                        </div>
+                    </div>
 
-                            <div class="form-group">
-                                <label for="form-email" class="form-label" data-i18n="form-email-label">Indirizzo
-                                    Email</label>
-                                <input type="email" id="form-email" name="email" class="form-input" required
-                                    data-i18n-placeholder="form-email-label" placeholder="Indirizzo Email" />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="form-subject" class="form-label" data-i18n="form-subject-label">Oggetto del
-                                    Messaggio</label>
-                                <input type="text" id="form-subject" name="subject" class="form-input" required
-                                    data-i18n-placeholder="form-subject-label" placeholder="Oggetto del Messaggio" />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="form-message" class="form-label" data-i18n="form-message-label">Il tuo
-                                    Messaggio</label>
-                                <textarea id="form-message" name="message" class="form-textarea" required
-                                    data-i18n-placeholder="form-message-label"
-                                    placeholder="Il tuo Messaggio"></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary" id="form-submit-btn" style="width: 100%;">
-                                <span data-i18n="form-btn-submit">Invia Messaggio</span>
-                                <span>→</span>
-                            </button>
-                        </form>
+                    <div class="contact-item" id="contact-item-pec">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="m9 15 2 2 4-4"/></svg>
+                        </div>
+                        <div class="contact-item-text">
+                            <h3 data-i18n="contact-pec-label">PEC Ufficiale</h3>
+                            <a href="mailto:averistech@pec.it" id="link-email-pec">averistech@pec.it</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -550,7 +509,7 @@
 
             <div class="footer-bottom">
                 <p id="footer-copy-text" data-i18n="footer-copy">
-                    © 2026 AverisTech S.r.l. - Startup - Tutti i diritti riservati.
+                    © 2026 AverisTech - Startup - Tutti i diritti riservati.
                 </p>
                 <div style="display: flex; gap: 24px;">
                     <a href="privacy.html" id="link-privacy" data-i18n="footer-privacy"
