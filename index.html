@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AverisTech — Startup | Piattaforme Digitali & Tecnologie del Futuro</title>
+    <meta name="description"
+        content="AverisTech è una startup italiana specializzata nella progettazione e sviluppo di ecosistemi digitali ad alto impatto tecnologico, tra cui wroomy.it, petsgo.it e freelancerhost.com." />
+    <meta name="keywords"
+        content="AverisTech, Startup, wroomy, petsgo, freelancerhost, sviluppo software, cloud hosting, pet care, mobilità smart, Italia" />
+    <meta name="author" content="AverisTech S.r.l." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="media/logo-icon.jpeg" />
+
+    <!-- OpenGraph Metadata -->
+    <meta property="og:title" content="AverisTech — Startup Italiana" />
+    <meta property="og:description"
+        content="Plasmiamo il futuro delle piattaforme digitali: wroomy.it, petsgo.it, freelancerhost.com." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://averistech.it/" />
+    <meta property="og:image" content="media/logo-stacked.jpeg" />
+
+    <!-- JSON-LD Organization Schema (Startup) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AverisTech S.r.l.",
+    "url": "https://averistech.it",
+    "logo": "https://averistech.it/media/logo-stacked.jpeg",
+    "description": "Startup Italiana specializzata nello sviluppo e incubazione di ecosistemi digitali tra cui wroomy.it, petsgo.it e freelancerhost.com.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IT"
+    },
+    "sameAs": [
+      "https://wroomy.it",
+      "https://petsgo.it",
+      "https://freelancerhost.com"
+    ]
+  }
+  </script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Ambient Background Glow Blob -->
+    <div class="ambient-glow" aria-hidden="true"></div>
+
+    <!-- HEADER & NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo-link" id="nav-logo-link" aria-label="AverisTech Home">
+                <img src="media/logo-navbar.jpeg" alt="AverisTech Logo" class="logo-img" id="navbar-logo" />
+            </a>
+
+            <nav aria-label="Menu Principale">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about" class="nav-link" id="link-about" data-i18n="nav-about">Chi Siamo</a></li>
+                    <li><a href="#portfolio" class="nav-link" id="link-portfolio" data-i18n="nav-portfolio">Progetti</a>
+                    </li>
+                    <li><a href="#innovation" class="nav-link" id="link-innovation"
+                            data-i18n="nav-innovation">Innovazione</a></li>
+                    <li><a href="#contact" class="nav-link" id="link-contact" data-i18n="nav-contact">Contatti</a></li>
+                </ul>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 16px;">
+                <!-- Language Switcher (IT / EN) -->
+                <div class="lang-toggle" id="lang-switcher" role="group"
+                    aria-label="Selettore Lingua / Language Switcher">
+                    <button type="button" class="lang-btn active" id="btn-lang-it" aria-label="Italiano">IT</button>
+                    <button type="button" class="lang-btn" id="btn-lang-en" aria-label="English">EN</button>
+                </div>
+
+                <!-- Mobile Navigation Hamburger Button -->
+                <button type="button" class="nav-toggle-btn" id="nav-toggle" aria-label="Apri Menu Navigazione"
+                    aria-expanded="false" aria-controls="nav-links">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge" id="hero-badge-pill">
+                        <span class="badge-dot" aria-hidden="true"></span>
+                        <span class="hero-badge-text" data-i18n="hero-badge">Startup Italiana</span>
+                    </div>
+
+                    <h1 class="hero-title" id="hero-heading" data-i18n="hero-title">
+                        Plasmiamo il futuro delle piattaforme digitali.
+                    </h1>
+
+                    <p class="hero-subtitle" id="hero-subtext" data-i18n="hero-subtitle">
+                        AverisTech è la startup di riferimento per lo sviluppo e l'incubazione di ecosistemi
+                        tecnologici ad alto impatto. Coniugiamo ingegneria software moderna e design d'eccellenza per
+                        creare esperienze scalabili.
+                    </p>
+
+                    <div class="hero-actions" id="hero-cta-group">
+                        <a href="#portfolio" class="btn btn-primary" id="cta-explore" data-i18n="hero-btn-primary">
+                            Esplora i Progetti
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="cta-contact" data-i18n="hero-btn-secondary">
+                            Contattaci
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHI SIAMO / ABOUT US SECTION -->
+        <section class="about" id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <span class="section-tag" data-i18n="about-tag">La Nostra Identità</span>
+                        <h2 id="about-heading" class="section-title" data-i18n="about-title">
+                            Ingegneria d'eccellenza per la crescita digitale
+                        </h2>
+                        <p class="section-desc" data-i18n="about-desc">
+                            Nata con l'obiettivo di rivoluzionare interi settori di mercato, AverisTech progetta, lancia
+                            e scala piattaforme SaaS e applicazioni digitali native nel cloud.
+                        </p>
+                        <p data-i18n="about-text-p1">
+                            Siamo una startup che opera al crocevia tra tecnologia all'avanguardia e analisi
+                            strategica del mercato. Ogni nostro progetto nasce da una rigorosa ricerca di usabilità,
+                            affidabilità architetturale e scalabilità globale.
+                        </p>
+                        <p data-i18n="about-text-p2">
+                            Nel nostro portafoglio incubiamo iniziative proprietarie con il potenziale di ridefinire il
+                            modo in cui persone e imprese comunicano, operano e collaborano ogni giorno.
+                        </p>
+                    </div>
+
+                    <div class="about-visual">
+                        <div class="about-card-glow" id="about-card-emblem">
+                            <img src="media/logo-stacked.jpeg" alt="AverisTech Stacked Emblem" class="logo-stacked-img"
+                                id="about-logo-stacked" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Values Grid -->
+                <div class="values-grid">
+                    <article class="value-card" id="val-card-1">
+                        <div class="value-icon" aria-hidden="true">⚡</div>
+                        <h3 data-i18n="val-1-title">Innovazione Tecnologica</h3>
+                        <p data-i18n="val-1-desc">
+                            Adozione costante delle migliori stack e metodologie agili per garantire piattaforme
+                            ultra-veloci, moderne e sicure.
+                        </p>
+                    </article>
+
+                    <article class="value-card" id="val-card-2">
+                        <div class="value-icon" aria-hidden="true">🛡️</div>
+                        <h3 data-i18n="val-2-title">Affidabilità &amp; Sicurezza</h3>
+                        <p data-i18n="val-2-desc">
+                            Infrastrutture Zero-Trust, conformità alle normative europee sulla protezione dei dati e
+                            stabilità operativa garantita 99.9%.
+                        </p>
+                    </article>
+
+                    <article class="value-card" id="val-card-3">
+                        <div class="value-icon" aria-hidden="true">🌐</div>
+                        <h3 data-i18n="val-3-title">Scalabilità Globale</h3>
+                        <p data-i18n="val-3-desc">
+                            Architetture pensate per crescere senza limiti, supportando carichi elevati e mercati
+                            internazionali in rapida evoluzione.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO PROGETTI SECTION (WROOMY, PETSGO, FREELANCERHOST) -->
+        <section class="portfolio" id="portfolio" aria-labelledby="portfolio-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" data-i18n="portfolio-tag">Il Nostro Portafoglio</span>
+                    <h2 id="portfolio-heading" class="section-title" data-i18n="portfolio-title">
+                        Le nostre iniziative tecnologiche
+                    </h2>
+                    <p class="section-desc" data-i18n="portfolio-desc">
+                        Tre piattaforme verticali in rapida espansione, progettate e sviluppate per eccellere nei
+                        rispettivi settori di mercato.
+                    </p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- 1. WROOMY (wroomy.it) -->
+                    <article class="project-card" id="project-card-wroomy">
+                        <div>
+                            <div class="project-header">
+                                <a href="https://wroomy.it" target="_blank" rel="noopener noreferrer"
+                                    class="project-domain" id="domain-link-wroomy">
+                                    wroomy.it
+                                </a>
+                                <span class="project-status" id="status-wroomy">
+                                    <span class="status-dot" aria-hidden="true"></span>
+                                    <span data-i18n="status-active">Progetto Attivo</span>
+                                </span>
+                            </div>
+
+                            <h3 class="project-title">
+                                <span class="project-logo-badge">
+                                    <img src="media/wroomy-logo.png" alt="Wroomy Logo" class="project-badge-img" />
+                                </span>
+                                <span data-i18n="wroomy-title">Wroomy</span>
+                            </h3>
+
+                            <p class="project-desc" data-i18n="wroomy-desc">
+                                Piattaforma digitale avanzata per la mobilità intelligente e i servizi automotive ad
+                                alto valore aggiunto. Connette guidatori, flotte e servizi dedicati all'auto con
+                                un'esperienza digitale fluida e all'avanguardia.
+                            </p>
+
+                            <div class="project-tags" aria-label="Tecnologie wroomy">
+                                <span class="tag">Smart Mobility</span>
+                                <span class="tag">Automotive SaaS</span>
+                                <span class="tag">Real-time Telemetry</span>
+                                <span class="tag">Cloud Native</span>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://wroomy.it" target="_blank" rel="noopener noreferrer"
+                                class="project-link-btn" id="link-btn-wroomy" data-i18n="wroomy-link">
+                                Visita wroomy.it →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 2. PETSGO (petsgo.it) -->
+                    <article class="project-card" id="project-card-petsgo">
+                        <div>
+                            <div class="project-header">
+                                <a href="https://petsgo.it" target="_blank" rel="noopener noreferrer"
+                                    class="project-domain" id="domain-link-petsgo">
+                                    petsgo.it
+                                </a>
+                                <span class="project-status" id="status-petsgo">
+                                    <span class="status-dot" aria-hidden="true"></span>
+                                    <span data-i18n="status-active">Progetto Attivo</span>
+                                </span>
+                            </div>
+
+                            <h3 class="project-title">
+                                <span class="project-logo-badge">
+                                    <img src="media/logo_petsgo.png" alt="Petsgo Logo" class="project-badge-img" />
+                                </span>
+                                <span data-i18n="petsgo-title">Petsgo</span>
+                            </h3>
+
+                            <p class="project-desc" data-i18n="petsgo-desc">
+                                L'ecosistema tecnologico di riferimento per il benessere e la cura dei nostri animali
+                                domestici. Una piattaforma modulare che connette pet lover, veterinari e strutture di
+                                servizio con strumenti intuitivi e affidabili.
+                            </p>
+
+                            <div class="project-tags" aria-label="Tecnologie petsgo">
+                                <span class="tag">Pet Tech</span>
+                                <span class="tag">Digital Healthcare</span>
+                                <span class="tag">Ecosystem App</span>
+                                <span class="tag">Booking Engine</span>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://petsgo.it" target="_blank" rel="noopener noreferrer"
+                                class="project-link-btn" id="link-btn-petsgo" data-i18n="petsgo-link">
+                                Visita petsgo.it →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 3. FREELANCERHOST (freelancerhost.com) -->
+                    <article class="project-card" id="project-card-freelancerhost">
+                        <div>
+                            <div class="project-header">
+                                <a href="https://freelancerhost.com" target="_blank" rel="noopener noreferrer"
+                                    class="project-domain" id="domain-link-freelancerhost">
+                                    freelancerhost.com
+                                </a>
+                                <span class="project-status" id="status-freelancerhost">
+                                    <span class="status-dot" aria-hidden="true"></span>
+                                    <span data-i18n="status-active">Progetto Attivo</span>
+                                </span>
+                            </div>
+
+                            <h3 class="project-title">
+                                <span class="project-logo-badge">
+                                    <img src="media/logo-freelancerhost.jpg" alt="FreelancerHost Logo" class="project-badge-img" />
+                                </span>
+                                <span data-i18n="freelancerhost-title">FreelancerHost</span>
+                            </h3>
+
+                            <p class="project-desc" data-i18n="freelancerhost-desc">
+                                Infrastruttura cloud e servizi di hosting ad alte prestazioni progettati su misura per
+                                la nuova generazione di liberi professionisti, sviluppatori indipendenti e agenzie
+                                digitali.
+                            </p>
+
+                            <div class="project-tags" aria-label="Tecnologie freelancerhost">
+                                <span class="tag">Cloud Infrastructure</span>
+                                <span class="tag">Managed Hosting</span>
+                                <span class="tag">High Performance</span>
+                                <span class="tag">Developer Tools</span>
+                            </div>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://freelancerhost.com" target="_blank" rel="noopener noreferrer"
+                                class="project-link-btn" id="link-btn-freelancerhost" data-i18n="freelancerhost-link">
+                                Visita freelancerhost.com →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- INNOVATION & TECH SECTION -->
+        <section class="innovation" id="innovation" aria-labelledby="innov-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" data-i18n="innov-tag">Competenze &amp; R&amp;D</span>
+                    <h2 id="innov-heading" class="section-title" data-i18n="innov-title">
+                        Fondamenta tecnologiche solide
+                    </h2>
+                    <p class="section-desc" data-i18n="innov-desc">
+                        Costruiamo ogni piattaforma partendo dai principi più moderni dell'ingegneria del software.
+                    </p>
+                </div>
+
+                <div class="innovation-grid">
+                    <article class="tech-item" id="tech-card-1">
+                        <span class="tech-icon" aria-hidden="true">☁️</span>
+                        <h3 data-i18n="tech-1-title">Cloud-Native API</h3>
+                        <p data-i18n="tech-1-desc">Microservizi serverless, elasticità automatica e continuità
+                            operativa.</p>
+                    </article>
+
+                    <article class="tech-item" id="tech-card-2">
+                        <span class="tech-icon" aria-hidden="true">🧠</span>
+                        <h3 data-i18n="tech-2-title">AI &amp; Data Analytics</h3>
+                        <p data-i18n="tech-2-desc">Motori predittivi e telemetria in tempo reale per decisioni
+                            data-driven.</p>
+                    </article>
+
+                    <article class="tech-item" id="tech-card-3">
+                        <span class="tech-icon" aria-hidden="true">🎨</span>
+                        <h3 data-i18n="tech-3-title">Eccellenza UI/UX</h3>
+                        <p data-i18n="tech-3-desc">Design interattivo orientato all'utente ed estetica di livello
+                            superiore.</p>
+                    </article>
+
+                    <article class="tech-item" id="tech-card-4">
+                        <span class="tech-icon" aria-hidden="true">🔒</span>
+                        <h3 data-i18n="tech-4-title">Zero-Trust Security</h3>
+                        <p data-i18n="tech-4-desc">Crittografia end-to-end e protocolli di protezione enterprise.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact" id="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <span class="section-tag" data-i18n="contact-tag">Parliamo del Futuro</span>
+                        <h2 id="contact-heading" class="section-title" data-i18n="contact-title"
+                            style="text-align: left;">
+                            Entra in contatto con noi
+                        </h2>
+                        <p data-i18n="contact-desc">
+                            Siamo sempre aperti a sinergie istituzionali, investitori, talenti tecnici e partner
+                            strategici. Scrivici per scoprire come possiamo collaborare.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item" id="contact-item-location">
+                                <div class="contact-icon" aria-hidden="true">📍</div>
+                                <div class="contact-item-text">
+                                    <h3 data-i18n="contact-location-label">Sede Operativa</h3>
+                                    <p data-i18n="contact-location-val">Italia — Incubatore d'Impresa</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item" id="contact-item-email">
+                                <div class="contact-icon" aria-hidden="true">✉️</div>
+                                <div class="contact-item-text">
+                                    <h3 data-i18n="contact-email-label">Email Istituzionale</h3>
+                                    <a href="mailto:info@averistech.it" id="link-email-info">info@averistech.it</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item" id="contact-item-pec">
+                                <div class="contact-icon" aria-hidden="true">📑</div>
+                                <div class="contact-item-text">
+                                    <h3 data-i18n="contact-pec-label">PEC Ufficiale</h3>
+                                    <a href="mailto:averistech@pec.it" id="link-email-pec">averistech@pec.it</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" aria-labelledby="contact-heading">
+                            <div class="form-group">
+                                <label for="form-name" class="form-label" data-i18n="form-name-label">Nome e
+                                    Cognome</label>
+                                <input type="text" id="form-name" name="name" class="form-input" required
+                                    data-i18n-placeholder="form-name-label" placeholder="Nome e Cognome" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email" class="form-label" data-i18n="form-email-label">Indirizzo
+                                    Email</label>
+                                <input type="email" id="form-email" name="email" class="form-input" required
+                                    data-i18n-placeholder="form-email-label" placeholder="Indirizzo Email" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject" class="form-label" data-i18n="form-subject-label">Oggetto del
+                                    Messaggio</label>
+                                <input type="text" id="form-subject" name="subject" class="form-input" required
+                                    data-i18n-placeholder="form-subject-label" placeholder="Oggetto del Messaggio" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message" class="form-label" data-i18n="form-message-label">Il tuo
+                                    Messaggio</label>
+                                <textarea id="form-message" name="message" class="form-textarea" required
+                                    data-i18n-placeholder="form-message-label"
+                                    placeholder="Il tuo Messaggio"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="form-submit-btn" style="width: 100%;">
+                                <span data-i18n="form-btn-submit">Invia Messaggio</span>
+                                <span>→</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand / Short About -->
+                <div class="footer-brand" id="footer-col-brand">
+                    <img src="media/logo-navbar.jpeg" alt="AverisTech Logo"
+                        style="height: 34px; margin-bottom: 12px;" />
+                    <p data-i18n="footer-about-short">
+                        AverisTech — Startup ad alto contenuto tecnologico specializzata in ecosistemi di
+                        mobilità, pet care e infrastruttura cloud professionale.
+                    </p>
+                    <div style="display: flex; gap: 12px;">
+                        <a href="https://wroomy.it" target="_blank" rel="noopener noreferrer" class="tag"
+                            style="text-decoration: none; color: var(--accent-cyan);">wroomy.it</a>
+                        <a href="https://petsgo.it" target="_blank" rel="noopener noreferrer" class="tag"
+                            style="text-decoration: none; color: var(--accent-cyan);">petsgo.it</a>
+                        <a href="https://freelancerhost.com" target="_blank" rel="noopener noreferrer" class="tag"
+                            style="text-decoration: none; color: var(--accent-cyan);">freelancerhost.com</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div id="footer-col-links">
+                    <h2 class="footer-heading" data-i18n="footer-heading-links">Navigazione Rapida</h2>
+                    <ul class="footer-links">
+                        <li><a href="#about" data-i18n="nav-about">Chi Siamo</a></li>
+                        <li><a href="#portfolio" data-i18n="nav-portfolio">Progetti</a></li>
+                        <li><a href="#innovation" data-i18n="nav-innovation">Innovazione</a></li>
+                        <li><a href="#contact" data-i18n="nav-contact">Contatti</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Placeholders (Startup) - Commented out for now
+                <div id="footer-col-legal">
+                    <h2 class="footer-heading" data-i18n="footer-heading-legal">Pubblicità Legale (Startup)
+                    </h2>
+                    <div class="legal-box" id="legal-placeholders-box">
+                        <p>
+                            <span class="legal-highlight" data-i18n="footer-piva-label">P. IVA / C.F.: </span>
+                            <span data-i18n="footer-piva-placeholder">In Attesa di Costituzione </span>
+                        </p>
+                        <p>
+                            <span class="legal-highlight" data-i18n="footer-rea-label">REA / Sede Legale: </span>
+                            <span data-i18n="footer-rea-placeholder">In Attesa di Costituzione / Via
+                                del prato 27 - 00172 - Roma</span>
+                        </p>
+                        <p>
+                            <span class="legal-highlight" data-i18n="footer-capitale-label">Capitale Sociale: </span>
+                            <span data-i18n="footer-capitale-placeholder">4.500 € - Cap. Soc. interamente
+                                versato</span>
+                        </p>
+                        <p>
+                            <span class="legal-highlight" data-i18n="footer-pec-label">PEC Ufficiale: </span>
+                            <span data-i18n="footer-pec-placeholder">averistech@pec.it</span>
+                        </p>
+                    </div>
+                </div>
+                -->
+            </div>
+
+            <div class="footer-bottom">
+                <p id="footer-copy-text" data-i18n="footer-copy">
+                    © 2026 AverisTech S.r.l. - Startup - Tutti i diritti riservati.
+                </p>
+                <div style="display: flex; gap: 24px;">
+                    <a href="privacy.html" id="link-privacy" data-i18n="footer-privacy"
+                        style="color: var(--text-muted); text-decoration: none;">Informativa sulla Privacy</a>
+                    <a href="cookie.html" id="link-cookie" data-i18n="footer-cookie"
+                        style="color: var(--text-muted); text-decoration: none;">Informativa sui Cookie</a>
+                    <a href="legal.html" id="link-terms" data-i18n="footer-terms"
+                        style="color: var(--text-muted); text-decoration: none;">Note Legali</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+        <span class="toast-icon" aria-hidden="true">✓</span>
+        <span id="toast-message" data-i18n="form-success">Messaggio inviato con successo! Ti risponderemo a
+            breve.</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

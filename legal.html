@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Legali — AverisTech</title>
+    <meta name="description" content="Note Legali e Pubblicità Societaria per Startup - AverisTech S.r.l." />
+    <link rel="icon" href="media/logo-stacked.jpeg" type="image/jpeg" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Ambient Background Glow Blob -->
+    <div class="ambient-glow" aria-hidden="true"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="media/logo-navbar.jpeg" alt="AverisTech Logo" class="logo-img" />
+            </a>
+
+            <!-- Language Switcher -->
+            <div class="lang-toggle" role="group" aria-label="Selettore Lingua">
+                <button type="button" class="lang-btn active" id="btn-lang-it">IT</button>
+                <button type="button" class="lang-btn" id="btn-lang-en">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="policy-page">
+        <div class="container">
+            <div class="policy-header">
+                <a href="index.html" class="policy-back-link" data-i18n="policy-back-btn">← Torna alla Home</a>
+                <h1 class="policy-title" data-i18n="legal-page-title">Note Legali e Pubblicità Societaria</h1>
+                <p class="policy-subtitle" data-i18n="legal-page-sub">Dati societari ai sensi della legislazione vigente e art. 2250 c.c.</p>
+            </div>
+
+            <div class="policy-content">
+                <article class="policy-card">
+                    <h2 data-i18n="legal-s1-title">1. Denominazione e Sede Legale</h2>
+                    <p data-i18n="legal-s1-text">AverisTech S.r.l. — Startup (in attesa di costituzione). Sede Legale: Via del prato 27 - 00172 - Roma (RM), Italia. Capitale Sociale: € 4.500,00 interamente versato.</p>
+                </article>
+
+                <article class="policy-card">
+                    <h2 data-i18n="legal-s2-title">2. Oggetto Sociale e Progetti di Portafoglio</h2>
+                    <p data-i18n="legal-s2-text">AverisTech opera come Startup ad alto contenuto tecnologico ai sensi della legislazione italiana, detenendo la proprietà intellettuale e lo sviluppo dei progetti: wroomy.it (mobilità intelligente e SaaS automotive), petsgo.it (ecosistema digitale per pet care e benessere) e freelancerhost.com (infrastruttura cloud e hosting professionale).</p>
+                </article>
+
+                <article class="policy-card">
+                    <h2 data-i18n="legal-s3-title">3. Proprietà Intellettuale e Copyright</h2>
+                    <p data-i18n="legal-s3-text">Tutti i contenuti, loghi (inclusi i marchi e monogrammi AverisTech, Wroomy, Petsgo, FreelancerHost), testi, codice sorgente e layout presenti su questo sito sono tutelati dalle leggi sul diritto d'autore e proprietà industriale. È vietata la riproduzione non autorizzata.</p>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p id="footer-copy-text" data-i18n="footer-copy">
+                    © 2026 AverisTech S.r.l. - Startup - Tutti i diritti riservati.
+                </p>
+                <div style="display: flex; gap: 24px;">
+                    <a href="privacy.html" id="link-privacy" data-i18n="footer-privacy"
+                        style="color: var(--text-muted); text-decoration: none;">Informativa sulla Privacy</a>
+                    <a href="cookie.html" id="link-cookie" data-i18n="footer-cookie"
+                        style="color: var(--text-muted); text-decoration: none;">Informativa sui Cookie</a>
+                    <a href="legal.html" id="link-terms" data-i18n="footer-terms"
+                        style="color: var(--text-muted); text-decoration: none;">Note Legali</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

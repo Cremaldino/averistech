@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informativa sui Cookie — AverisTech</title>
+    <meta name="description" content="Informativa sulla gestione dei Cookie tecnici - AverisTech S.r.l." />
+    <link rel="icon" href="media/logo-stacked.jpeg" type="image/jpeg" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Ambient Background Glow Blob -->
+    <div class="ambient-glow" aria-hidden="true"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="media/logo-navbar.jpeg" alt="AverisTech Logo" class="logo-img" />
+            </a>
+
+            <!-- Language Switcher -->
+            <div class="lang-toggle" role="group" aria-label="Selettore Lingua">
+                <button type="button" class="lang-btn active" id="btn-lang-it">IT</button>
+                <button type="button" class="lang-btn" id="btn-lang-en">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="policy-page">
+        <div class="container">
+            <div class="policy-header">
+                <a href="index.html" class="policy-back-link" data-i18n="policy-back-btn">← Torna alla Home</a>
+                <h1 class="policy-title" data-i18n="cookie-page-title">Informativa sui Cookie (Cookie Policy)</h1>
+                <p class="policy-subtitle" data-i18n="cookie-page-sub">Trasparenza sulla gestione dei cookie tecnici e di preferenza</p>
+            </div>
+
+            <div class="policy-content">
+                <article class="policy-card">
+                    <h2 data-i18n="cookie-s1-title">1. Cookie Tecnici Strettamente Necessari</h2>
+                    <p data-i18n="cookie-s1-text">I siti di AverisTech utilizzano esclusivamente cookie tecnici e meccanismi di archiviazione locale (come localStorage per memorizzare la preferenza di lingua IT/EN). Questi strumenti non richiedono il consenso preventivo dell'utente ai sensi della Direttiva ePrivacy 2002/58/CE e dell'art. 122 del Codice Privacy.</p>
+                </article>
+
+                <article class="policy-card">
+                    <h2 data-i18n="cookie-s2-title">2. Cookie di Profilazione e Terze Parti</h2>
+                    <p data-i18n="cookie-s2-text">Non utilizziamo cookie di profilazione pubblicitaria o tracker di tracciamento invasivi di terze parti. Il nostro obiettivo è offrire una navigazione veloce, sicura e rispettosa della privacy su wroomy.it, petsgo.it e freelancerhost.com.</p>
+                </article>
+
+                <article class="policy-card">
+                    <h2 data-i18n="cookie-s3-title">3. Gestione dalle Impostazioni del Browser</h2>
+                    <p data-i18n="cookie-s3-text">L'utente può comunque limitare, bloccare o eliminare i cookie e il localStorage modificando le impostazioni sulla privacy del proprio browser (Chrome, Firefox, Safari, Edge).</p>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p id="footer-copy-text" data-i18n="footer-copy">
+                    © 2026 AverisTech S.r.l. - Startup - Tutti i diritti riservati.
+                </p>
+                <div style="display: flex; gap: 24px;">
+                    <a href="privacy.html" id="link-privacy" data-i18n="footer-privacy"
+                        style="color: var(--text-muted); text-decoration: none;">Informativa sulla Privacy</a>
+                    <a href="cookie.html" id="link-cookie" data-i18n="footer-cookie"
+                        style="color: var(--text-muted); text-decoration: none;">Informativa sui Cookie</a>
+                    <a href="legal.html" id="link-terms" data-i18n="footer-terms"
+                        style="color: var(--text-muted); text-decoration: none;">Note Legali</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
