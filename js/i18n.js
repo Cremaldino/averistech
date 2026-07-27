@@ -14,7 +14,7 @@ const translations = {
     // Hero Section
     "hero-badge": "Startup Italiana",
     "hero-title": "Plasmiamo il futuro delle piattaforme digitali.",
-    "hero-subtitle": "AverisTech è la startup di riferimento per lo sviluppo e l'incubazione di ecosistemi tecnologici ad alto impatto. Coniugiamo ingegneria software moderna e design d'eccellenza per creare esperienze scalabili.",
+    "hero-subtitle": "AverisTech è la startup per lo sviluppo e l'incubazione di ecosistemi tecnologici ad alto impatto. Coniughiamo ingegneria software moderna e design d'eccellenza per creare esperienze scalabili.",
     "hero-btn-primary": "Esplora i Progetti",
     "hero-btn-secondary": "Contattaci",
 
@@ -139,7 +139,7 @@ const translations = {
     // Hero Section
     "hero-badge": "Italian Startup",
     "hero-title": "Engineering the future of digital platforms.",
-    "hero-subtitle": "AverisTech is the leading startup for building and incubating high-impact technological ecosystems. We blend modern software engineering with premium design to create scalable experiences.",
+    "hero-subtitle": "AverisTech is the startup for building and incubating high-impact technological ecosystems. We blend modern software engineering with premium design to create scalable experiences.",
     "hero-btn-primary": "Explore Projects",
     "hero-btn-secondary": "Contact Us",
 
