@@ -39,15 +39,15 @@ const translations = {
     "portfolio-desc": "Tre piattaforme verticali in rapida espansione, progettate e sviluppate per eccellere nei rispettivi settori di mercato.",
     "status-active": "Progetto Attivo",
 
-    // Project 1: wroomy.it
-    "wroomy-title": "Wroomy",
-    "wroomy-desc": "Piattaforma digitale avanzata per la mobilità intelligente e i servizi automotive ad alto valore aggiunto. Connette guidatori, flotte e servizi dedicati all'auto con un'esperienza digitale fluida e all'avanguardia.",
-    "wroomy-link": "Visita wroomy.it →",
-
-    // Project 2: petsgo.it
+    // Project 1: petsgo.it
     "petsgo-title": "Petsgo",
     "petsgo-desc": "L'ecosistema tecnologico di riferimento per il benessere e la cura dei nostri animali domestici. Una piattaforma modulare che connette pet lover, veterinari e strutture di servizio con strumenti intuitivi e affidabili.",
     "petsgo-link": "Visita petsgo.it →",
+
+    // Project 2: wroomy.it
+    "wroomy-title": "Wroomy",
+    "wroomy-desc": "Piattaforma digitale avanzata per la mobilità intelligente e i servizi automotive ad alto valore aggiunto. Connette guidatori, flotte e servizi dedicati all'auto con un'esperienza digitale fluida e all'avanguardia.",
+    "wroomy-link": "Visita wroomy.it →",
 
     // Project 3: freelancerhost.com
     "freelancerhost-title": "FreelancerHost",
@@ -85,7 +85,7 @@ const translations = {
     "form-success": "Messaggio inviato con successo! Ti risponderemo a breve.",
 
     // Footer
-    "footer-about-short": "AverisTech — Startup ad alto contenuto tecnologico specializzata in ecosistemi di mobilità, pet care e piattaforme digitali per la community freelance.",
+    "footer-about-short": "AverisTech — Startup ad alto contenuto tecnologico specializzata in ecosistemi di pet care, mobilità e piattaforme digitali per la community freelance.",
     "footer-heading-links": "Navigazione Rapida",
     "footer-heading-legal": "Pubblicità Legale (Startup)",
     "footer-piva-label": "P. IVA / C.F.: ",
@@ -124,7 +124,7 @@ const translations = {
     "legal-s1-title": "1. Denominazione e Sede Legale",
     "legal-s1-text": "AverisTech S.r.l. — Startup (in attesa di costituzione). Sede Legale: Via del prato 27 - 00172 - Roma (RM), Italia. Capitale Sociale: € 4.500,00 interamente versato.",
     "legal-s2-title": "2. Oggetto Sociale e Progetti di Portafoglio",
-    "legal-s2-text": "AverisTech opera come Startup ad alto contenuto tecnologico ai sensi della legislazione italiana, detenendo la proprietà intellettuale e lo sviluppo dei progetti: wroomy.it (mobilità intelligente e SaaS automotive), petsgo.it (ecosistema digitale per pet care e benessere) e freelancerhost.com (blog e piattaforma di contatto per liberi professionisti e agenzie).",
+    "legal-s2-text": "AverisTech opera come Startup ad alto contenuto tecnologico ai sensi della legislazione italiana, detenendo la proprietà intellettuale e lo sviluppo dei progetti: petsgo.it (ecosistema digitale per pet care e benessere), wroomy.it (mobilità intelligente e SaaS automotive) e freelancerhost.com (blog e piattaforma di contatto per liberi professionisti e agenzie).",
     "legal-s3-title": "3. Proprietà Intellettuale e Copyright",
     "legal-s3-text": "Tutti i contenuti, loghi (inclusi i marchi e monogrammi AverisTech, Wroomy, Petsgo, FreelancerHost), testi, codice sorgente e layout presenti su questo sito sono tutelati dalle leggi sul diritto d'autore e proprietà industriale. È vietata la riproduzione non autorizzata."
   },
@@ -164,15 +164,15 @@ const translations = {
     "portfolio-desc": "Three fast-growing vertical platforms, designed and built to excel in their respective market sectors.",
     "status-active": "Active Project",
 
-    // Project 1: wroomy.it
-    "wroomy-title": "Wroomy",
-    "wroomy-desc": "Advanced digital platform for smart mobility and value-added automotive services. Connecting drivers, fleets, and vehicle services with an intuitive, cutting-edge digital experience.",
-    "wroomy-link": "Visit wroomy.it →",
-
-    // Project 2: petsgo.it
+    // Project 1: petsgo.it
     "petsgo-title": "Petsgo",
     "petsgo-desc": "The benchmark technological ecosystem for pet wellness and care. A modular platform connecting pet lovers, veterinarians, and service facilities with intuitive, reliable tools.",
     "petsgo-link": "Visit petsgo.it →",
+
+    // Project 2: wroomy.it
+    "wroomy-title": "Wroomy",
+    "wroomy-desc": "Advanced digital platform for smart mobility and value-added automotive services. Connecting drivers, fleets, and vehicle services with an intuitive, cutting-edge digital experience.",
+    "wroomy-link": "Visit wroomy.it →",
 
     // Project 3: freelancerhost.com
     "freelancerhost-title": "FreelancerHost",
@@ -210,7 +210,7 @@ const translations = {
     "form-success": "Message sent successfully! We will get back to you shortly.",
 
     // Footer
-    "footer-about-short": "AverisTech — Startup specializing in smart mobility ecosystems, pet care, and digital platforms for the freelance community.",
+    "footer-about-short": "AverisTech — Startup specializing in pet care ecosystems, smart mobility, and digital platforms for the freelance community.",
     "footer-heading-links": "Quick Navigation",
     "footer-heading-legal": "Legal Information (Startup)",
     "footer-piva-label": "VAT / Tax ID: ",
@@ -249,9 +249,9 @@ const translations = {
     "legal-s1-title": "1. Company Name and Registered Office",
     "legal-s1-text": "AverisTech S.r.l. — Startup (in process of incorporation). Registered Office: Via del prato 27 - 00172 - Rome (RM), Italy. Share Capital: € 4.500,00 fully paid-in.",
     "legal-s2-title": "2. Corporate Purpose and Portfolio Projects",
-    "legal-s2-text": "AverisTech operates as a Startup with high technological value under Italian law, holding intellectual property and development rights for: wroomy.it (smart mobility & automotive SaaS), petsgo.it (pet care digital ecosystem), and freelancerhost.com (blog and networking platform for freelancers and agencies).",
+    "legal-s2-text": "AverisTech operates as a Startup with high technological value under Italian law, holding intellectual property and development rights for: petsgo.it (pet care digital ecosystem), wroomy.it (smart mobility & automotive SaaS), and freelancerhost.com (blog and networking platform for freelancers and agencies).",
     "legal-s3-title": "3. Intellectual Property and Copyright",
-    "legal-s3-text": "All contents, logos (including AverisTech, Wroomy, Petsgo, FreelancerHost trademarks and emblems), text, source code, and layouts on this website are protected by copyright and intellectual property laws. Unauthorized reproduction is strictly prohibited."
+    "legal-s3-text": "All contents, logos (including AverisTech, Petsgo, Wroomy, FreelancerHost trademarks and emblems), text, source code, and layouts on this website are protected by copyright and intellectual property laws. Unauthorized reproduction is strictly prohibited."
   }
 };
 
