@@ -41,24 +41,24 @@
         </section>
 
         <section class="container project-content">
-            <h2>Il Problema</h2>
-            <p>Il settore automotive soffre di scarsa trasparenza nelle valutazioni dell'usato, processi manuali lenti per i dealer e un'esperienza frammentata per il consumatore finale. Ottenere quotazioni affidabili e in tempo reale richiede l'interrogazione di molteplici banche dati sconnesse.</p>
+            <h2>L'Inefficienza Sistemica e l'Opportunità di Mercato</h2>
+            <p>Il settore dell'automotive e della compravendita di veicoli usati è storicamente afflitto da un'opacità informativa strutturale. Concessionarie, dealer indipendenti e flotte aziendali perdono innumerevoli ore in processi di valutazione manuali, basandosi su listini statici, spesso obsoleti o non rappresentativi dei reali trend di mercato (micro-variazioni regionali, svalutazione in tempo reale). Dal lato consumer, l'utente finale si trova disorientato di fronte a quotazioni discordanti, alimentando un clima di sfiducia. In un mercato dinamico, l'assenza di un vero e proprio "oracolo dei dati" automobilistico rappresentava un collo di bottiglia critico per le transazioni B2B e B2C.</p>
 
-            <h2 style="margin-top: 2rem;">La Soluzione</h2>
-            <p>Wroomy è una piattaforma SaaS intelligente dotata di un <strong>motore di calcolo (Autoscore Engine)</strong> per la valutazione e la quotazione dei veicoli usati in tempo reale. Include strumenti di data scraping, analisi telemetrica e integrazioni API per fornire dati aggregati, storici e predittivi sui prezzi dei veicoli, migliorando la trasparenza e l'efficienza delle transazioni.</p>
+            <h2 style="margin-top: 2.5rem;">Wroomy: Il Motore Predittivo SaaS</h2>
+            <p>Wroomy nasce per risolvere questo deficit informativo introducendo un approccio rigorosamente quantitativo alla valutazione dei veicoli. Il cuore pulsante della piattaforma è l'<strong>Autoscore Engine</strong>, un algoritmo proprietario che aggrega, pulisce e normalizza migliaia di data-point provenienti dai principali marketplace europei. Invece di fornire una semplice stima, Wroomy offre un'analisi del valore dinamica e contestualizzata in tempo reale. La suite SaaS per i dealer include strumenti avanzati per la gestione dello stock, generazione di preventivi istantanei e analisi competitiva, trasformando la valutazione del veicolo da un'arte soggettiva a una scienza esatta guidata dai dati.</p>
 
-            <h2 style="margin-top: 2rem;">L'Impatto (Target)</h2>
-            <p>Destinata al mercato <strong>B2B (Concessionarie, Dealer, Flotte Aziendali)</strong> che necessitano di valutazioni rapide e precise, e al mercato <strong>B2C</strong> per guidatori privati alla ricerca di servizi automotive trasparenti e integrati.</p>
+            <h2 style="margin-top: 2.5rem;">Strategia di Posizionamento (Target B2B & B2C)</h2>
+            <p>La piattaforma è progettata con una logica a doppio binario. Il modulo enterprise è rivolto al segmento <strong>B2B (Concessionarie, Network Automotive, Flotte e Assicurazioni)</strong>, offrendo API integrabili e dashboard analitiche per abbattere i tempi di lead-generation e ottimizzare il pricing delle permute. Parallelamente, il portale <strong>B2C</strong> educa il consumatore finale, offrendo quotazioni trasparenti e servizi di mobilità integrata (assicurazioni, manutenzione), riducendo l'attrito informativo e facilitando il match tra domanda privata e offerta professionale.</p>
 
-            <div class="arch-box">
-                <h2 class="arch-title">Architettura di Altissimo Livello</h2>
-                <p>Wroomy utilizza un'infrastruttura <strong>Data-Driven a Microservizi Asincroni</strong> orientata all'elaborazione intensiva:</p>
-                <ul style="margin-top: 1rem; padding-left: 1.5rem; line-height: 1.8;">
-                    <li><strong>Backend Ibrido:</strong> L'infrastruttura combina <strong>Flask</strong> per l'interfaccia web e i moduli classici, con <strong>FastAPI</strong> per le rotte ad altissime prestazioni (motore Autoscore).</li>
-                    <li><strong>Data Engineering & Scraping:</strong> Utilizzo estensivo di <strong>Selenium</strong>, <code>undetected-chromedriver</code> e <code>BeautifulSoup4</code> per l'aggregazione di listini (es. Autosupermarket) e dati di mercato, processati tramite <strong>Pandas</strong>.</li>
-                    <li><strong>Elaborazione Asincrona:</strong> <strong>Celery</strong> abbinato a <strong>Redis</strong> funge da message broker per gestire le code di scraping, invio mail e task pesanti in background.</li>
-                    <li><strong>Database & Cloud:</strong> Storage e database distribuiti gestiti su <strong>Supabase</strong>.</li>
-                    <li><strong>AI & Predizione:</strong> Integrazione nativa con <strong>Google GenAI</strong> per analisi semantica e valutazioni avanzate dei trend di mercato.</li>
+            <div class="arch-box" style="margin-top: 3rem; padding: 2.5rem;">
+                <h2 class="arch-title">Architettura Dati e Pipeline di Ingegneria</h2>
+                <p>Wroomy gestisce moli di dati massicce e asincrone. L'infrastruttura è stata disegnata per l'ingestion continuo e l'elaborazione distribuita, garantendo tolleranza ai guasti e latenze minime:</p>
+                <ul style="margin-top: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+                    <li><strong>Backend Ibrido a Microservizi:</strong> L'infrastruttura adotta un pattern architetturale ibrido. <strong>Flask</strong> orchestra la business logic tradizionale e le interfacce B2B, mentre <strong>FastAPI</strong> è delegato esclusivamente all'Autoscore Engine per esporre endpoint ultra-veloci (sub-millisecond) per le query di quotazione in tempo reale.</li>
+                    <li><strong>Data Engineering & Web Scraping Avanzato:</strong> Abbiamo implementato spider resilienti utilizzando <strong>Selenium</strong>, <code>undetected-chromedriver</code> e <code>BeautifulSoup4</code>. Questi scraper aggirano le protezioni antibot per aggregare continuativamente i prezzi di mercato. I dati grezzi vengono poi processati, puliti e normalizzati tramite pipeline scritte in <strong>Pandas</strong>.</li>
+                    <li><strong>Message Brokering & Task Asincroni:</strong> L'architettura è pesantemente event-driven. <strong>Celery</strong>, appoggiato a <strong>Redis</strong>, gestisce code prioritarie per migliaia di job in background: dall'aggiornamento dei database veicoli, all'invio massivo di reportistica, fino al refresh delle cache.</li>
+                    <li><strong>Persistenza & Cloud Infrastructure:</strong> L'intero livello dati è affidato a <strong>Supabase</strong>, che garantisce un database relazionale robusto, storage per asset documentali e funzionalità real-time essenziali per aggiornare le dashboard dei dealer senza ricaricare la pagina.</li>
+                    <li><strong>Augmented Analytics tramite AI:</strong> I dati aggregati vengono arricchiti utilizzando i modelli LLM di <strong>Google GenAI</strong>, permettendo alla piattaforma di analizzare il sentiment delle descrizioni degli annunci e individuare anomalie di prezzo o condizioni occulte del mercato.</li>
                 </ul>
             </div>
         </section>

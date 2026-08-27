@@ -41,24 +41,24 @@
         </section>
 
         <section class="container project-content">
-            <h2>Il Problema</h2>
-            <p>I proprietari di animali domestici affrontano spesso la frammentazione dei servizi: dalla ricerca di un veterinario affidabile, alla prenotazione di servizi di grooming, fino alla gestione delle cartelle cliniche. Manca un hub centralizzato e intuitivo.</p>
+            <h2>Il Contesto e la Sfida di Mercato</h2>
+            <p>Il settore della cura degli animali domestici è in forte espansione, ma soffre di una cronica frammentazione tecnologica e di una digitalizzazione disomogenea. I proprietari di animali (pet lovers) si trovano costretti a navigare tra decine di piattaforme diverse per prenotare visite veterinarie, acquistare prodotti, organizzare sessioni di grooming o gestire le cartelle cliniche. Dal lato B2B, cliniche e professionisti spesso utilizzano software obsoleti, perdendo opportunità di fidelizzazione e limitando la propria efficienza operativa. La sfida era chiara: progettare un hub centralizzato che unificasse l'intera filiera del pet care sotto un'unica, potentissima infrastruttura digitale.</p>
 
-            <h2 style="margin-top: 2rem;">La Soluzione</h2>
-            <p>Petsgo funge da ecosistema centralizzato che connette "pet lovers" con professionisti del settore. Offre un booking engine integrato, profili dettagliati per gli animali e strumenti di messaggistica diretta, garantendo che ogni aspetto della cura dell'animale sia gestito con facilità.</p>
+            <h2 style="margin-top: 2.5rem;">La Soluzione Ecosistemica</h2>
+            <p>Petsgo non è una semplice applicazione, ma un ecosistema software completo progettato per connettere l'offerta professionale con la domanda consumer. Attraverso un booking engine proprietario ad alte prestazioni, Petsgo automatizza la gestione degli appuntamenti, le comunicazioni paziente-clinica e la conservazione sicura dei dati medici degli animali. L'interfaccia utente è stata studiata per abbattere l'attrito digitale, permettendo prenotazioni istantanee, reminder automatizzati e consulenze a distanza. Per i professionisti, la piattaforma offre una dashboard gestionale avanzata, strumenti di CRM e analytics predittivi per ottimizzare il carico di lavoro e massimizzare i ricavi.</p>
 
-            <h2 style="margin-top: 2rem;">L'Impatto (Target)</h2>
-            <p>Rivolto sia a <strong>utenti privati (B2C)</strong> che desiderano il meglio per i propri animali, sia a <strong>strutture e professionisti (B2B)</strong> come cliniche veterinarie, toelettatori e pet sitter che vogliono digitalizzare le loro prenotazioni ed espandere la clientela.</p>
+            <h2 style="margin-top: 2.5rem;">Target di Riferimento e Impatto Strategico</h2>
+            <p>La piattaforma adotta un modello di business <strong>B2B2C</strong> altamente scalabile. Da un lato (B2C), si rivolge a milioni di proprietari di animali che esigono uno standard di servizio premium, centralizzato e disponibile 24/7. Dall'altro (B2B), abilita la trasformazione digitale di cliniche veterinarie, reti in franchising di pet shop, toelettatori e pet sitter, fornendo loro un software gestionale SaaS che azzera i costi di acquisizione clienti e semplifica radicalmente l'amministrazione quotidiana.</p>
 
-            <div class="arch-box">
-                <h2 class="arch-title">Architettura di Altissimo Livello</h2>
-                <p>Petsgo è stato progettato con un'architettura <strong>Cloud-Native e Headless</strong> per garantire massima scalabilità e portabilità mobile:</p>
-                <ul style="margin-top: 1rem; padding-left: 1.5rem; line-height: 1.8;">
-                    <li><strong>Frontend (SPA & PWA):</strong> Sviluppata come Single Page Application disaccoppiata (Headless WordPress come CMS) e configurata come Progressive Web App (PWA). Ottimizzata al 100% per essere trasformata in un'app nativa via Capacitor.</li>
-                    <li><strong>Backend & API (FastAPI):</strong> Il motore core è sviluppato in Python utilizzando <strong>FastAPI</strong>, esponendo RESTful API asincrone ad alte prestazioni.</li>
-                    <li><strong>Autenticazione & Database:</strong> Gestione sicura tramite JWT, con database e engine serverless appoggiati su <strong>Supabase</strong> (PostgreSQL).</li>
-                    <li><strong>Integrazione AI:</strong> Utilizzo di <strong>Google GenAI</strong> per funzionalità avanzate.</li>
-                    <li><strong>Task Schedulati:</strong> Implementazione di <strong>APScheduler</strong> per notifiche e background jobs.</li>
+            <div class="arch-box" style="margin-top: 3rem; padding: 2.5rem;">
+                <h2 class="arch-title">Architettura Software e Scelte Ingegneristiche</h2>
+                <p>Per sostenere un traffico concorrente elevato e garantire un'integrazione fluida con i dispositivi mobili, Petsgo è stato ingegnerizzato seguendo i principi del <strong>Cloud-Native e dell'architettura Headless</strong>:</p>
+                <ul style="margin-top: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+                    <li><strong>Frontend (SPA & PWA):</strong> Sviluppata come Single Page Application (SPA) reattiva, l'interfaccia è disaccoppiata dal backend (approccio Headless) e configurata come Progressive Web App (PWA). Questo stack garantisce tempi di caricamento inferiori al secondo e predispone il codice per la compilazione nativa immediata (iOS e Android) tramite framework come Capacitor o toolchain come PWABuilder.</li>
+                    <li><strong>Backend & API Layer (FastAPI):</strong> Il cuore logico è scritto in Python utilizzando <strong>FastAPI</strong>. Questa scelta assicura un'esposizione di API RESTful totalmente asincrone, garantendo un throughput eccezionale per le transazioni e le richieste di prenotazione concorrenti.</li>
+                    <li><strong>Autenticazione, Database & Real-Time:</strong> L'architettura dati poggia su <strong>Supabase</strong> (PostgreSQL), sfruttando la sua natura serverless per scalare dinamicamente. La sicurezza delle sessioni è blindata tramite token JWT e policy di Row Level Security (RLS).</li>
+                    <li><strong>Integrazione AI:</strong> Abbiamo integrato nativamente i modelli di <strong>Google GenAI</strong> per fornire funzionalità di triage virtuale preliminare e supporto intelligente all'utente, riducendo il carico sui professionisti per le richieste generiche.</li>
+                    <li><strong>Motore di Schedulazione:</strong> La complessa logica di notifiche push, invio email, promemoria vaccinali e gestione delle code asincrone è demandata a <strong>APScheduler</strong>, operante in cluster isolati per non impattare le performance delle API pubbliche.</li>
                 </ul>
             </div>
         </section>

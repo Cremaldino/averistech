@@ -41,23 +41,23 @@
         </section>
 
         <section class="container project-content">
-            <h2>Il Problema</h2>
-            <p>Il mercato dei freelance è estremamente competitivo, e spesso i liberi professionisti faticano a trovare una vetrina autorevole o a intercettare clienti B2B in modo qualificato. Al contempo, le agenzie cercano talenti esterni ma si scontrano con piattaforme generiche che applicano alte commissioni di intermediazione.</p>
+            <h2>L'Asimmetria Informativa nel Mercato del Lavoro Indipendente</h2>
+            <p>Il mercato globale dei talenti digitali indipendenti è caratterizzato da una profonda inefficienza nel matching tra domanda (aziende, agenzie, startup) e offerta (freelance, consulenti). Le agenzie lottano per trovare talenti verificati su base progettuale senza incorrere negli esorbitanti mark-up delle piattaforme di gig-economy tradizionali. Dall'altro lato, i professionisti di alto livello faticano a costruire un'autorevolezza digitale duratura, spesso relegati a vetrine affollate dove la competizione si gioca esclusivamente al ribasso sui prezzi. Mancava un ecosistema che non fosse un semplice "marketplace", ma un vero e proprio hub di networking B2B orientato al valore.</p>
 
-            <h2 style="margin-top: 2rem;">La Soluzione</h2>
-            <p>FreelancerHost è nato come hub e blog autorevole che si sta evolvendo in una <strong>piattaforma ibrida (B2B Hybrid)</strong> di matchmaking. Permette la creazione di profili professionali verificati e l'incontro diretto tra domanda e offerta nel panorama digital (sviluppatori, designer, marketer) riducendo l'attrito e facilitando collaborazioni dirette.</p>
+            <h2 style="margin-top: 2.5rem;">La Soluzione: Ecosistema di Matchmaking Ibrido</h2>
+            <p>FreelancerHost nasce come ecosistema editoriale e si evolve in una sofisticata <strong>piattaforma Ibrida B2B</strong>. Non ci limitiamo a ospitare profili, ma certifichiamo le competenze attraverso logiche di reputation scoring e contenuti di approfondimento (guest blogging tecnico). La piattaforma agisce come un facilitatore trasparente: le agenzie digitali e i corporate client possono accedere a un database di profili altamente specializzati (Software Engineer, Cloud Architect, UX/UI Lead) bypassando le commissioni di intermediazione occulte. Per il freelance, FreelancerHost funge da CRM personale e vetrina SEO-ottimizzata, permettendo di intercettare lead qualificati in inbound, gestendo la propria reputazione e le collaborazioni dirette in totale autonomia.</p>
 
-            <h2 style="margin-top: 2rem;">L'Impatto (Target)</h2>
-            <p>Il target è prettamente <strong>B2B e Prosumer</strong>: liberi professionisti indipendenti (freelancer) che desiderano maggiore visibilità, e agenzie digitali o aziende in cerca di specifiche competenze in outsourcing per i propri progetti.</p>
+            <h2 style="margin-top: 2.5rem;">Modello di Business e Audience Target</h2>
+            <p>L'infrastruttura serve una dual-audience di altissimo profilo. Da un lato il <strong>Prosumer B2B</strong>: sviluppatori indipendenti, architetti cloud e creativi senior che necessitano di posizionamento organico e lead generation passiva. Dall'altro, <strong>Agenzie Tech, Venture Studio e PMI</strong> che necessitano di fare un-scaling rapido del proprio organico (team augmentation) su progetti critici, avendo la garanzia di interagire con professionisti validati da metriche oggettive e contributi alla community.</p>
 
-            <div class="arch-box">
-                <h2 class="arch-title">Architettura di Altissimo Livello</h2>
-                <p>FreelancerHost sfrutta un'architettura <strong>Ibrida B2B basata su moduli Core</strong> per garantire un'adozione rapida e SEO-friendly:</p>
-                <ul style="margin-top: 1rem; padding-left: 1.5rem; line-height: 1.8;">
-                    <li><strong>Architettura Ibrida (B2B Hybrid):</strong> Costruito su un'infrastruttura CMS altamente customizzata e ottimizzata (Core PHP/WordPress), che permette una gestione dinamica dei contenuti e profili senza dipendere da framework esterni complessi.</li>
-                    <li><strong>Modulo Core (freelancerhost-core):</strong> Plugin e temi sviluppati nativamente per gestire directory, matchmaking, e logiche di membership in modo sicuro ed efficiente.</li>
-                    <li><strong>Ottimizzazione SEO & Content:</strong> Struttura progettata specificamente per l'indicizzazione rapida, cruciale per l'acquisizione organica di clienti per conto dei freelance iscritti.</li>
-                    <li><strong>Scalabilità Modulare:</strong> L'infrastruttura ibrida permette di attivare nuovi moduli (es. pagamenti, chat, contratti) man mano che la community cresce, mantenendo un carico leggero sul database.</li>
+            <div class="arch-box" style="margin-top: 3rem; padding: 2.5rem;">
+                <h2 class="arch-title">Architettura Core & SEO-Driven Engineering</h2>
+                <p>La sfida architetturale di FreelancerHost risiedeva nella necessità di bilanciare un'estrema flessibilità contenutistica con performance di indicizzazione (SEO) aggressive. Abbiamo optato per un'architettura <strong>Ibrida B2B basata su moduli Core</strong>:</p>
+                <ul style="margin-top: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+                    <li><strong>Infrastruttura CMS Customizzata (B2B Hybrid):</strong> Per massimizzare l'autorità di dominio e i Core Web Vitals, abbiamo sviluppato l'ecosistema sopra un kernel PHP (WordPress-based) pesantemente ingegnerizzato. Questo ci permette di sfruttare nativamente le migliori pratiche di technical SEO senza le latenze di rendering client-side tipiche dei framework JS pesanti.</li>
+                    <li><strong>Modulo Core Proprietario (freelancerhost-core):</strong> L'intera logica di business — algoritmi di matchmaking, directory searching, logiche di membership, recensioni e validazione dei profili — è incapsulata in plugin e temi core proprietari. Questo design pattern garantisce aggiornamenti sicuri e previene la degradazione delle prestazioni tipica dei sistemi monolitici sovraccarichi di plugin di terze parti.</li>
+                    <li><strong>Ottimizzazione del Rendering e Caching:</strong> Implementazione di layer multipli di object caching (Redis) e page caching a livello server, garantendo tempi di risposta (TTFB) inferiori a 150ms globale, essenziale per scalare il posizionamento sui motori di ricerca.</li>
+                    <li><strong>Estensibilità Modulare (API-Ready):</strong> Sebbene l'engine primario sia ottimizzato per il content delivery, l'architettura ibrida espone webhook e REST API che permettono l'innesto futuro di microservizi esterni per pagamenti escrow, chat crittografate e gestione contrattualistica in blockchain, garantendo una scalabilità orizzontale illimitata.</li>
                 </ul>
             </div>
         </section>
