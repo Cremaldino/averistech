@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreelancerHost - AverisTech</title>
+    <meta name="description" content="Dettagli e architettura del progetto FreelancerHost." />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .project-detail-hero { padding: 8rem 0 4rem; text-align: center; }
+        .project-content { max-width: 800px; margin: 0 auto 4rem; }
+        .arch-box { background: var(--surface-light); padding: 2rem; border-radius: 1rem; margin-top: 2rem; border: 1px solid var(--border-color); }
+        .arch-title { color: var(--accent-cyan); margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="media/logo-navbar.jpeg" alt="AverisTech Logo" class="logo-img" />
+            </a>
+            <nav aria-label="Menu Principale">
+                <ul class="nav-links">
+                    <li><a href="index.html#about" class="nav-link">Chi Siamo</a></li>
+                    <li><a href="index.html#portfolio" class="nav-link">Progetti</a></li>
+                    <li><a href="index.html#innovation" class="nav-link">Innovazione</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-detail-hero">
+            <div class="container">
+                <span class="section-tag">Community Hub & B2B Matchmaking</span>
+                <h1 class="hero-title" style="font-size: 3rem;">FreelancerHost</h1>
+                <p class="hero-subtitle">La piattaforma di contatto per liberi professionisti e agenzie digitali.</p>
+                <a href="https://freelancerhost.com" target="_blank" class="btn btn-primary" style="margin-top: 2rem;">Visita il sito live</a>
+            </div>
+        </section>
+
+        <section class="container project-content">
+            <h2>Il Problema</h2>
+            <p>Il mercato dei freelance è estremamente competitivo, e spesso i liberi professionisti faticano a trovare una vetrina autorevole o a intercettare clienti B2B in modo qualificato. Al contempo, le agenzie cercano talenti esterni ma si scontrano con piattaforme generiche che applicano alte commissioni di intermediazione.</p>
+
+            <h2 style="margin-top: 2rem;">La Soluzione</h2>
+            <p>FreelancerHost è nato come hub e blog autorevole che si sta evolvendo in una <strong>piattaforma ibrida (B2B Hybrid)</strong> di matchmaking. Permette la creazione di profili professionali verificati e l'incontro diretto tra domanda e offerta nel panorama digital (sviluppatori, designer, marketer) riducendo l'attrito e facilitando collaborazioni dirette.</p>
+
+            <h2 style="margin-top: 2rem;">L'Impatto (Target)</h2>
+            <p>Il target è prettamente <strong>B2B e Prosumer</strong>: liberi professionisti indipendenti (freelancer) che desiderano maggiore visibilità, e agenzie digitali o aziende in cerca di specifiche competenze in outsourcing per i propri progetti.</p>
+
+            <div class="arch-box">
+                <h2 class="arch-title">Architettura di Altissimo Livello</h2>
+                <p>FreelancerHost sfrutta un'architettura <strong>Ibrida B2B basata su moduli Core</strong> per garantire un'adozione rapida e SEO-friendly:</p>
+                <ul style="margin-top: 1rem; padding-left: 1.5rem; line-height: 1.8;">
+                    <li><strong>Architettura Ibrida (B2B Hybrid):</strong> Costruito su un'infrastruttura CMS altamente customizzata e ottimizzata (Core PHP/WordPress), che permette una gestione dinamica dei contenuti e profili senza dipendere da framework esterni complessi.</li>
+                    <li><strong>Modulo Core (freelancerhost-core):</strong> Plugin e temi sviluppati nativamente per gestire directory, matchmaking, e logiche di membership in modo sicuro ed efficiente.</li>
+                    <li><strong>Ottimizzazione SEO & Content:</strong> Struttura progettata specificamente per l'indicizzazione rapida, cruciale per l'acquisizione organica di clienti per conto dei freelance iscritti.</li>
+                    <li><strong>Scalabilità Modulare:</strong> L'infrastruttura ibrida permette di attivare nuovi moduli (es. pagamenti, chat, contratti) man mano che la community cresce, mantenendo un carico leggero sul database.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="padding: 2rem 0; text-align: center; border-top: 1px solid var(--border-color);">
+        <p style="color: var(--text-muted);">© 2026 AverisTech - Startup - Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>

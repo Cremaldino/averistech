@@ -22,8 +22,10 @@ const translations = {
     "about-tag": "La Nostra Identità",
     "about-title": "Ingegneria d'eccellenza per la crescita digitale",
     "about-desc": "Nata con l'obiettivo di rivoluzionare interi settori di mercato, AverisTech progetta, lancia e scala piattaforme SaaS e applicazioni digitali native nel cloud.",
-    "about-text-p1": "Siamo una startup che opera al crocevia tra tecnologia all'avanguardia e analisi strategica del mercato. Ogni nostro progetto nasce da una rigorosa ricerca di usabilità, affidabilità architetturale e scalabilità globale.",
-    "about-text-p2": "Nel nostro portafoglio incubiamo iniziative proprietarie con il potenziale di ridefinire il modo in cui persone e imprese comunicano, operano e collaborano ogni giorno.",
+    "about-mission-title": "La Nostra Mission",
+    "about-mission-text": "Digitalizzare i settori tradizionali attraverso la creazione di ecosistemi tecnologici interconnessi, offrendo strumenti avanzati ma intuitivi per risolvere problemi reali.",
+    "about-vision-title": "La Nostra Vision",
+    "about-vision-text": "Diventare un punto di riferimento nell'innovazione SaaS europea, sviluppando prodotti che non si limitano a servire gli utenti, ma li abilitano a raggiungere nuovi traguardi.",
 
     // Core Values
     "val-1-title": "Innovazione Tecnologica",
@@ -42,17 +44,17 @@ const translations = {
     // Project 1: petsgo.it
     "petsgo-title": "Petsgo",
     "petsgo-desc": "L'ecosistema tecnologico di riferimento per il benessere e la cura dei nostri animali domestici. Una piattaforma modulare che connette pet lover, veterinari e strutture di servizio con strumenti intuitivi e affidabili.",
-    "petsgo-link": "Visita petsgo.it →",
+    "petsgo-link": "Scopri di più su Petsgo →",
 
     // Project 2: wroomy.it
     "wroomy-title": "Wroomy",
     "wroomy-desc": "Piattaforma digitale avanzata per la mobilità intelligente e i servizi automotive ad alto valore aggiunto. Connette guidatori, flotte e servizi dedicati all'auto con un'esperienza digitale fluida e all'avanguardia.",
-    "wroomy-link": "Visita wroomy.it →",
+    "wroomy-link": "Scopri di più su Wroomy →",
 
     // Project 3: freelancerhost.com
     "freelancerhost-title": "FreelancerHost",
     "freelancerhost-desc": "Blog e piattaforma in evoluzione progettata per mettere in contatto liberi professionisti, sviluppatori indipendenti e agenzie digitali con nuovi clienti e altri freelance.",
-    "freelancerhost-link": "Visita freelancerhost.com →",
+    "freelancerhost-link": "Scopri di più su FreelancerHost →",
 
     // Innovation & Tech Section
     "innov-tag": "Competenze & R&D",
@@ -65,7 +67,18 @@ const translations = {
     "tech-3-title": "Eccellenza UI/UX",
     "tech-3-desc": "Design interattivo orientato all'utente ed estetica di livello superiore.",
     "tech-4-title": "Zero-Trust Security",
-    "tech-4-desc": "Crittografia end-to-end e protocolli di protezione enterprise.",
+    "tech-4-desc": "Protocolli di protezione enterprise e accesso rigorosamente controllato.",
+
+    // Methodology Section
+    "method-tag": "Il Nostro Approccio",
+    "method-title": "Dall'idea all'impatto",
+    "method-desc": "Un metodo rigoroso per validare, costruire e scalare prodotti digitali di successo.",
+    "method-s1-title": "1. Ricerca & Strategia",
+    "method-s1-desc": "Analizziamo il mercato e progettiamo architetture solide prima di scrivere una singola riga di codice.",
+    "method-s2-title": "2. Sviluppo Agile & Cloud",
+    "method-s2-desc": "Utilizziamo tecnologie moderne (microservizi, container) per garantire velocità e affidabilità continua.",
+    "method-s3-title": "3. Lancio & Scaling",
+    "method-s3-desc": "Monitoraggio delle performance e telemetria per crescere senza limiti strutturali.",
 
     // Contact Section
     "contact-tag": "Parliamo del Futuro",
@@ -147,8 +160,10 @@ const translations = {
     "about-tag": "OUR IDENTITY",
     "about-title": "Engineering excellence for digital growth",
     "about-desc": "Founded with the mission to revolutionize key market sectors, AverisTech architects, deploys, and scales cloud-native SaaS platforms and digital applications.",
-    "about-text-p1": "We are a startup operating at the intersection of cutting-edge technology and strategic market intelligence. Every project we launch is born from rigorous research in usability, architectural reliability, and global scalability.",
-    "about-text-p2": "Within our portfolio, we incubate proprietary platforms with the power to redefine how people and businesses connect, operate, and collaborate every day.",
+    "about-mission-title": "Our Mission",
+    "about-mission-text": "To digitize traditional sectors by creating interconnected technological ecosystems, providing advanced yet intuitive tools to solve real-world problems.",
+    "about-vision-title": "Our Vision",
+    "about-vision-text": "To become a benchmark in European SaaS innovation, developing products that don't just serve users, but empower them to reach new heights.",
 
     // Core Values
     "val-1-title": "Technological Innovation",
@@ -167,17 +182,17 @@ const translations = {
     // Project 1: petsgo.it
     "petsgo-title": "Petsgo",
     "petsgo-desc": "The benchmark technological ecosystem for pet wellness and care. A modular platform connecting pet lovers, veterinarians, and service facilities with intuitive, reliable tools.",
-    "petsgo-link": "Visit petsgo.it →",
+    "petsgo-link": "Discover more about Petsgo →",
 
     // Project 2: wroomy.it
     "wroomy-title": "Wroomy",
     "wroomy-desc": "Advanced digital platform for smart mobility and value-added automotive services. Connecting drivers, fleets, and vehicle services with an intuitive, cutting-edge digital experience.",
-    "wroomy-link": "Visit wroomy.it →",
+    "wroomy-link": "Discover more about Wroomy →",
 
     // Project 3: freelancerhost.com
     "freelancerhost-title": "FreelancerHost",
     "freelancerhost-desc": "An evolving blog and platform designed to connect freelancers, independent developers, and digital agencies with clients and networking opportunities.",
-    "freelancerhost-link": "Visit freelancerhost.com →",
+    "freelancerhost-link": "Discover more about FreelancerHost →",
 
     // Innovation & Tech Section
     "innov-tag": "CORE COMPETENCIES & R&D",
@@ -190,7 +205,18 @@ const translations = {
     "tech-3-title": "UI/UX Excellence",
     "tech-3-desc": "User-centric interactive design and state-of-the-art visual aesthetics.",
     "tech-4-title": "Zero-Trust Security",
-    "tech-4-desc": "End-to-end encryption and enterprise-grade protection protocols.",
+    "tech-4-desc": "Enterprise-grade protection protocols and strictly controlled access.",
+
+    // Methodology Section
+    "method-tag": "Our Approach",
+    "method-title": "From idea to impact",
+    "method-desc": "A rigorous method to validate, build, and scale successful digital products.",
+    "method-s1-title": "1. Research & Strategy",
+    "method-s1-desc": "We analyze the market and design solid architectures before writing a single line of code.",
+    "method-s2-title": "2. Agile & Cloud Development",
+    "method-s2-desc": "We use modern technologies (microservices, containers) to ensure continuous speed and reliability.",
+    "method-s3-title": "3. Launch & Scaling",
+    "method-s3-desc": "Performance monitoring and telemetry to grow without structural limits.",
 
     // Contact Section
     "contact-tag": "LET'S TALK FUTURE",

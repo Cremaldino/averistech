@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petsgo - AverisTech</title>
+    <meta name="description" content="Dettagli e architettura del progetto Petsgo." />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .project-detail-hero { padding: 8rem 0 4rem; text-align: center; }
+        .project-content { max-width: 800px; margin: 0 auto 4rem; }
+        .arch-box { background: var(--surface-light); padding: 2rem; border-radius: 1rem; margin-top: 2rem; border: 1px solid var(--border-color); }
+        .arch-title { color: var(--accent-cyan); margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="media/logo-navbar.jpeg" alt="AverisTech Logo" class="logo-img" />
+            </a>
+            <nav aria-label="Menu Principale">
+                <ul class="nav-links">
+                    <li><a href="index.html#about" class="nav-link">Chi Siamo</a></li>
+                    <li><a href="index.html#portfolio" class="nav-link">Progetti</a></li>
+                    <li><a href="index.html#innovation" class="nav-link">Innovazione</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-detail-hero">
+            <div class="container">
+                <span class="section-tag">Pet Care Ecosystem</span>
+                <h1 class="hero-title" style="font-size: 3rem;">Petsgo</h1>
+                <p class="hero-subtitle">La piattaforma definitiva per il benessere degli animali domestici.</p>
+                <a href="https://petsgo.it" target="_blank" class="btn btn-primary" style="margin-top: 2rem;">Visita il sito live</a>
+            </div>
+        </section>
+
+        <section class="container project-content">
+            <h2>Il Problema</h2>
+            <p>I proprietari di animali domestici affrontano spesso la frammentazione dei servizi: dalla ricerca di un veterinario affidabile, alla prenotazione di servizi di grooming, fino alla gestione delle cartelle cliniche. Manca un hub centralizzato e intuitivo.</p>
+
+            <h2 style="margin-top: 2rem;">La Soluzione</h2>
+            <p>Petsgo funge da ecosistema centralizzato che connette "pet lovers" con professionisti del settore. Offre un booking engine integrato, profili dettagliati per gli animali e strumenti di messaggistica diretta, garantendo che ogni aspetto della cura dell'animale sia gestito con facilità.</p>
+
+            <h2 style="margin-top: 2rem;">L'Impatto (Target)</h2>
+            <p>Rivolto sia a <strong>utenti privati (B2C)</strong> che desiderano il meglio per i propri animali, sia a <strong>strutture e professionisti (B2B)</strong> come cliniche veterinarie, toelettatori e pet sitter che vogliono digitalizzare le loro prenotazioni ed espandere la clientela.</p>
+
+            <div class="arch-box">
+                <h2 class="arch-title">Architettura di Altissimo Livello</h2>
+                <p>Petsgo è stato progettato con un'architettura <strong>Cloud-Native e Headless</strong> per garantire massima scalabilità e portabilità mobile:</p>
+                <ul style="margin-top: 1rem; padding-left: 1.5rem; line-height: 1.8;">
+                    <li><strong>Frontend (SPA & PWA):</strong> Sviluppata come Single Page Application disaccoppiata (Headless WordPress come CMS) e configurata come Progressive Web App (PWA). Ottimizzata al 100% per essere trasformata in un'app nativa via Capacitor.</li>
+                    <li><strong>Backend & API (FastAPI):</strong> Il motore core è sviluppato in Python utilizzando <strong>FastAPI</strong>, esponendo RESTful API asincrone ad alte prestazioni.</li>
+                    <li><strong>Autenticazione & Database:</strong> Gestione sicura tramite JWT, con database e engine serverless appoggiati su <strong>Supabase</strong> (PostgreSQL).</li>
+                    <li><strong>Integrazione AI:</strong> Utilizzo di <strong>Google GenAI</strong> per funzionalità avanzate.</li>
+                    <li><strong>Task Schedulati:</strong> Implementazione di <strong>APScheduler</strong> per notifiche e background jobs.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="padding: 2rem 0; text-align: center; border-top: 1px solid var(--border-color);">
+        <p style="color: var(--text-muted);">© 2026 AverisTech - Startup - Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>

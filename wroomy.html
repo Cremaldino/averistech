@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wroomy - AverisTech</title>
+    <meta name="description" content="Dettagli e architettura del progetto Wroomy." />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .project-detail-hero { padding: 8rem 0 4rem; text-align: center; }
+        .project-content { max-width: 800px; margin: 0 auto 4rem; }
+        .arch-box { background: var(--surface-light); padding: 2rem; border-radius: 1rem; margin-top: 2rem; border: 1px solid var(--border-color); }
+        .arch-title { color: var(--accent-cyan); margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="media/logo-navbar.jpeg" alt="AverisTech Logo" class="logo-img" />
+            </a>
+            <nav aria-label="Menu Principale">
+                <ul class="nav-links">
+                    <li><a href="index.html#about" class="nav-link">Chi Siamo</a></li>
+                    <li><a href="index.html#portfolio" class="nav-link">Progetti</a></li>
+                    <li><a href="index.html#innovation" class="nav-link">Innovazione</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-detail-hero">
+            <div class="container">
+                <span class="section-tag">Automotive SaaS & Smart Mobility</span>
+                <h1 class="hero-title" style="font-size: 3rem;">Wroomy</h1>
+                <p class="hero-subtitle">La piattaforma digitale avanzata per i servizi automotive e la valutazione veicoli.</p>
+                <a href="https://wroomy.it" target="_blank" class="btn btn-primary" style="margin-top: 2rem;">Visita il sito live</a>
+            </div>
+        </section>
+
+        <section class="container project-content">
+            <h2>Il Problema</h2>
+            <p>Il settore automotive soffre di scarsa trasparenza nelle valutazioni dell'usato, processi manuali lenti per i dealer e un'esperienza frammentata per il consumatore finale. Ottenere quotazioni affidabili e in tempo reale richiede l'interrogazione di molteplici banche dati sconnesse.</p>
+
+            <h2 style="margin-top: 2rem;">La Soluzione</h2>
+            <p>Wroomy è una piattaforma SaaS intelligente dotata di un <strong>motore di calcolo (Autoscore Engine)</strong> per la valutazione e la quotazione dei veicoli usati in tempo reale. Include strumenti di data scraping, analisi telemetrica e integrazioni API per fornire dati aggregati, storici e predittivi sui prezzi dei veicoli, migliorando la trasparenza e l'efficienza delle transazioni.</p>
+
+            <h2 style="margin-top: 2rem;">L'Impatto (Target)</h2>
+            <p>Destinata al mercato <strong>B2B (Concessionarie, Dealer, Flotte Aziendali)</strong> che necessitano di valutazioni rapide e precise, e al mercato <strong>B2C</strong> per guidatori privati alla ricerca di servizi automotive trasparenti e integrati.</p>
+
+            <div class="arch-box">
+                <h2 class="arch-title">Architettura di Altissimo Livello</h2>
+                <p>Wroomy utilizza un'infrastruttura <strong>Data-Driven a Microservizi Asincroni</strong> orientata all'elaborazione intensiva:</p>
+                <ul style="margin-top: 1rem; padding-left: 1.5rem; line-height: 1.8;">
+                    <li><strong>Backend Ibrido:</strong> L'infrastruttura combina <strong>Flask</strong> per l'interfaccia web e i moduli classici, con <strong>FastAPI</strong> per le rotte ad altissime prestazioni (motore Autoscore).</li>
+                    <li><strong>Data Engineering & Scraping:</strong> Utilizzo estensivo di <strong>Selenium</strong>, <code>undetected-chromedriver</code> e <code>BeautifulSoup4</code> per l'aggregazione di listini (es. Autosupermarket) e dati di mercato, processati tramite <strong>Pandas</strong>.</li>
+                    <li><strong>Elaborazione Asincrona:</strong> <strong>Celery</strong> abbinato a <strong>Redis</strong> funge da message broker per gestire le code di scraping, invio mail e task pesanti in background.</li>
+                    <li><strong>Database & Cloud:</strong> Storage e database distribuiti gestiti su <strong>Supabase</strong>.</li>
+                    <li><strong>AI & Predizione:</strong> Integrazione nativa con <strong>Google GenAI</strong> per analisi semantica e valutazioni avanzate dei trend di mercato.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="padding: 2rem 0; text-align: center; border-top: 1px solid var(--border-color);">
+        <p style="color: var(--text-muted);">© 2026 AverisTech - Startup - Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
