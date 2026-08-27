@@ -50,16 +50,18 @@
             <h2 style="margin-top: 2.5rem;">Target di Riferimento e Impatto Strategico</h2>
             <p>La piattaforma adotta un modello di business <strong>B2B2C</strong> altamente scalabile. Da un lato (B2C), si rivolge a milioni di proprietari di animali che esigono uno standard di servizio premium, centralizzato e disponibile 24/7. Dall'altro (B2B), abilita la trasformazione digitale di cliniche veterinarie, reti in franchising di pet shop, toelettatori e pet sitter, fornendo loro un software gestionale SaaS che azzera i costi di acquisizione clienti e semplifica radicalmente l'amministrazione quotidiana.</p>
 
-            <div class="arch-box" style="margin-top: 3rem; padding: 2.5rem;">
-                <h2 class="arch-title">Architettura Software e Scelte Ingegneristiche</h2>
-                <p>Per sostenere un traffico concorrente elevato e garantire un'integrazione fluida con i dispositivi mobili, Petsgo è stato ingegnerizzato seguendo i principi del <strong>Cloud-Native e dell'architettura Headless</strong>:</p>
-                <ul style="margin-top: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-                    <li><strong>Frontend (SPA & PWA):</strong> Sviluppata come Single Page Application (SPA) reattiva, l'interfaccia è disaccoppiata dal backend (approccio Headless) e configurata come Progressive Web App (PWA). Questo stack garantisce tempi di caricamento inferiori al secondo e predispone il codice per la compilazione nativa immediata (iOS e Android) tramite framework come Capacitor o toolchain come PWABuilder.</li>
-                    <li><strong>Backend & API Layer (FastAPI):</strong> Il cuore logico è scritto in Python utilizzando <strong>FastAPI</strong>. Questa scelta assicura un'esposizione di API RESTful totalmente asincrone, garantendo un throughput eccezionale per le transazioni e le richieste di prenotazione concorrenti.</li>
-                    <li><strong>Autenticazione, Database & Real-Time:</strong> L'architettura dati poggia su <strong>Supabase</strong> (PostgreSQL), sfruttando la sua natura serverless per scalare dinamicamente. La sicurezza delle sessioni è blindata tramite token JWT e policy di Row Level Security (RLS).</li>
-                    <li><strong>Integrazione AI:</strong> Abbiamo integrato nativamente i modelli di <strong>Google GenAI</strong> per fornire funzionalità di triage virtuale preliminare e supporto intelligente all'utente, riducendo il carico sui professionisti per le richieste generiche.</li>
-                    <li><strong>Motore di Schedulazione:</strong> La complessa logica di notifiche push, invio email, promemoria vaccinali e gestione delle code asincrone è demandata a <strong>APScheduler</strong>, operante in cluster isolati per non impattare le performance delle API pubbliche.</li>
-                </ul>
+            <div class="screenshot-gallery" style="margin-top: 3rem;">
+                <h2 style="margin-bottom: 1.5rem; text-align: center;">Anteprima Piattaforma</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <!-- Placeholder Screenshot 1 -->
+                    <div style="background: var(--surface-light); border: 1px solid var(--border-color); border-radius: 1rem; overflow: hidden; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.9rem;">
+                        <span>[ Inserire Screenshot Mobile Qui ]</span>
+                    </div>
+                    <!-- Placeholder Screenshot 2 -->
+                    <div style="background: var(--surface-light); border: 1px solid var(--border-color); border-radius: 1rem; overflow: hidden; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.9rem;">
+                        <span>[ Inserire Screenshot Desktop Qui ]</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

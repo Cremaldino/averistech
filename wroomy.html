@@ -50,16 +50,18 @@
             <h2 style="margin-top: 2.5rem;">Strategia di Posizionamento (Target B2B & B2C)</h2>
             <p>La piattaforma è progettata con una logica a doppio binario. Il modulo enterprise è rivolto al segmento <strong>B2B (Concessionarie, Network Automotive, Flotte e Assicurazioni)</strong>, offrendo API integrabili e dashboard analitiche per abbattere i tempi di lead-generation e ottimizzare il pricing delle permute. Parallelamente, il portale <strong>B2C</strong> educa il consumatore finale, offrendo quotazioni trasparenti e servizi di mobilità integrata (assicurazioni, manutenzione), riducendo l'attrito informativo e facilitando il match tra domanda privata e offerta professionale.</p>
 
-            <div class="arch-box" style="margin-top: 3rem; padding: 2.5rem;">
-                <h2 class="arch-title">Architettura Dati e Pipeline di Ingegneria</h2>
-                <p>Wroomy gestisce moli di dati massicce e asincrone. L'infrastruttura è stata disegnata per l'ingestion continuo e l'elaborazione distribuita, garantendo tolleranza ai guasti e latenze minime:</p>
-                <ul style="margin-top: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-                    <li><strong>Backend Ibrido a Microservizi:</strong> L'infrastruttura adotta un pattern architetturale ibrido. <strong>Flask</strong> orchestra la business logic tradizionale e le interfacce B2B, mentre <strong>FastAPI</strong> è delegato esclusivamente all'Autoscore Engine per esporre endpoint ultra-veloci (sub-millisecond) per le query di quotazione in tempo reale.</li>
-                    <li><strong>Data Engineering & Web Scraping Avanzato:</strong> Abbiamo implementato spider resilienti utilizzando <strong>Selenium</strong>, <code>undetected-chromedriver</code> e <code>BeautifulSoup4</code>. Questi scraper aggirano le protezioni antibot per aggregare continuativamente i prezzi di mercato. I dati grezzi vengono poi processati, puliti e normalizzati tramite pipeline scritte in <strong>Pandas</strong>.</li>
-                    <li><strong>Message Brokering & Task Asincroni:</strong> L'architettura è pesantemente event-driven. <strong>Celery</strong>, appoggiato a <strong>Redis</strong>, gestisce code prioritarie per migliaia di job in background: dall'aggiornamento dei database veicoli, all'invio massivo di reportistica, fino al refresh delle cache.</li>
-                    <li><strong>Persistenza & Cloud Infrastructure:</strong> L'intero livello dati è affidato a <strong>Supabase</strong>, che garantisce un database relazionale robusto, storage per asset documentali e funzionalità real-time essenziali per aggiornare le dashboard dei dealer senza ricaricare la pagina.</li>
-                    <li><strong>Augmented Analytics tramite AI:</strong> I dati aggregati vengono arricchiti utilizzando i modelli LLM di <strong>Google GenAI</strong>, permettendo alla piattaforma di analizzare il sentiment delle descrizioni degli annunci e individuare anomalie di prezzo o condizioni occulte del mercato.</li>
-                </ul>
+            <div class="screenshot-gallery" style="margin-top: 3rem;">
+                <h2 style="margin-bottom: 1.5rem; text-align: center;">Anteprima Piattaforma</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <!-- Placeholder Screenshot 1 -->
+                    <div style="background: var(--surface-light); border: 1px solid var(--border-color); border-radius: 1rem; overflow: hidden; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.9rem;">
+                        <span>[ Inserire Screenshot Dashboard Dealer Qui ]</span>
+                    </div>
+                    <!-- Placeholder Screenshot 2 -->
+                    <div style="background: var(--surface-light); border: 1px solid var(--border-color); border-radius: 1rem; overflow: hidden; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.9rem;">
+                        <span>[ Inserire Screenshot Valutazione Utente Qui ]</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
