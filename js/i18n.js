@@ -53,7 +53,7 @@ const translations = {
 
     // Project 3: freelancerhost.com
     "freelancerhost-title": "FreelancerHost",
-    "freelancerhost-desc": "Blog e piattaforma in evoluzione progettata per mettere in contatto liberi professionisti, sviluppatori indipendenti e agenzie digitali con nuovi clienti e altri freelance.",
+    "freelancerhost-desc": "Blog e hub informativo in forte crescita, in evoluzione verso un software B2B dedicato alle PMI per la gestione semplificata dei fornitori esterni (Vendor Management).",
     "freelancerhost-link": "Scopri di più su FreelancerHost →",
 
     // Innovation & Tech Section
@@ -191,7 +191,7 @@ const translations = {
 
     // Project 3: freelancerhost.com
     "freelancerhost-title": "FreelancerHost",
-    "freelancerhost-desc": "An evolving blog and platform designed to connect freelancers, independent developers, and digital agencies with clients and networking opportunities.",
+    "freelancerhost-desc": "A fast-growing blog and informational hub, currently evolving into a B2B SaaS for SMEs designed to streamline the management of external suppliers and freelancers.",
     "freelancerhost-link": "Discover more about FreelancerHost →",
 
     // Innovation & Tech Section
