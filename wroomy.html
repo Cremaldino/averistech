@@ -20,13 +20,27 @@
                 <img src="media/logo-navbar.jpeg" alt="AverisTech Logo" class="logo-img" />
             </a>
             <nav aria-label="Menu Principale">
-                <ul class="nav-links">
-                    <li><a href="index.html#about" class="nav-link">Chi Siamo</a></li>
-                    <li><a href="index.html#portfolio" class="nav-link">Progetti</a></li>
-                    <li><a href="index.html#innovation" class="nav-link">Innovazione</a></li>
-                    <li><a href="index.html#contact" class="nav-link">Contatti</a></li>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html#about" class="nav-link" data-i18n="nav-about">Chi Siamo</a></li>
+                    <li><a href="index.html#portfolio" class="nav-link" data-i18n="nav-portfolio">Progetti</a></li>
+                    <li><a href="index.html#innovation" class="nav-link" data-i18n="nav-innovation">Innovazione</a></li>
+                    <li><a href="index.html#contact" class="nav-link" data-i18n="nav-contact">Contatti</a></li>
                 </ul>
             </nav>
+
+            <div style="display: flex; align-items: center; gap: 16px;">
+                <!-- Language Switcher -->
+                <div class="lang-toggle" role="group" aria-label="Selettore Lingua">
+                    <button type="button" class="lang-btn active" id="btn-lang-it" aria-label="Italiano">IT</button>
+                    <button type="button" class="lang-btn" id="btn-lang-en" aria-label="English">EN</button>
+                </div>
+
+                <!-- Mobile Navigation Hamburger Button -->
+                <button type="button" class="nav-toggle-btn" id="nav-toggle" aria-label="Apri Menu Navigazione"
+                    aria-expanded="false" aria-controls="nav-links">
+                    ☰
+                </button>
+            </div>
         </div>
     </header>
 
@@ -35,11 +49,11 @@
             <div class="ambient-glow"></div>
             <div class="container project-hero-grid">
                 <div class="project-hero-content">
-                    <span class="section-tag">Automotive SaaS</span>
+                    <span class="section-tag" data-i18n="wroomy-page-tag">Automotive SaaS</span>
                     <h1><span class="text-gradient">Wroomy</span></h1>
-                    <p>Il Motore Predittivo per la compravendita di veicoli usati. Valutazioni precise e in tempo reale guidate da un Autoscore Engine avanzato.</p>
+                    <p data-i18n="wroomy-hero-desc">Il Motore Predittivo per la compravendita di veicoli usati. Valutazioni precise e in tempo reale guidate da un Autoscore Engine avanzato.</p>
                     <div style="margin-top: 32px;">
-                        <a href="https://wroomy.it" target="_blank" class="btn btn-primary">Visita il sito live</a>
+                        <a href="https://wroomy.it" target="_blank" class="btn btn-primary" data-i18n="project-btn-visit">Visita il sito live</a>
                     </div>
                 </div>
                 <div class="project-hero-visual">
@@ -59,8 +73,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                         </svg>
                     </div>
-                    <h3>L'Inefficienza Sistemica</h3>
-                    <p>Il mercato automotive soffre di opacità. I dealer perdono ore in valutazioni manuali su listini obsoleti, mentre il consumatore finale diffida delle quotazioni discordanti.</p>
+                    <h3 data-i18n="wroomy-c1-title">L'Inefficienza Sistemica</h3>
+                    <p data-i18n="wroomy-c1-desc">Il mercato automotive soffre di opacità. I dealer perdono ore in valutazioni manuali su listini obsoleti, mentre il consumatore finale diffida delle quotazioni discordanti.</p>
                 </div>
                 <!-- Soluzione -->
                 <div class="glass-card">
@@ -69,8 +83,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                         </svg>
                     </div>
-                    <h3>L'Oracolo dei Dati</h3>
-                    <p>Wroomy introduce l'Autoscore Engine. Un algoritmo che aggrega, pulisce e normalizza migliaia di data-point in tempo reale tramite scraping asincrono e modelli AI predittivi.</p>
+                    <h3 data-i18n="wroomy-c2-title">L'Oracolo dei Dati</h3>
+                    <p data-i18n="wroomy-c2-desc">Wroomy introduce l'Autoscore Engine. Un algoritmo che aggrega, pulisce e normalizza migliaia di data-point in tempo reale tramite scraping asincrono e modelli AI predittivi.</p>
                 </div>
                 <!-- Target -->
                 <div class="glass-card">
@@ -79,14 +93,14 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                         </svg>
                     </div>
-                    <h3>Posizionamento Doppio</h3>
-                    <p>Un modulo enterprise B2B (API e dashboard) per dealer e flotte aziendali, unito a un portale B2C per fornire ai guidatori privati quotazioni trasparenti e sicure.</p>
+                    <h3 data-i18n="wroomy-c3-title">Posizionamento Doppio</h3>
+                    <p data-i18n="wroomy-c3-desc">Un modulo enterprise B2B (API e dashboard) per dealer e flotte aziendali, unito a un portale B2C per fornire ai guidatori privati quotazioni trasparenti e sicure.</p>
                 </div>
             </div>
 
             <div class="section-header" style="margin-bottom: 40px;">
-                <span class="section-tag">UI/UX Design</span>
-                <h2 class="section-title">Anteprima Piattaforma</h2>
+                <span class="section-tag" data-i18n="project-preview-tag">UI/UX Design</span>
+                <h2 class="section-title" data-i18n="project-preview-title">Anteprima Piattaforma</h2>
             </div>
             
             <div class="bento-gallery">
@@ -104,7 +118,11 @@
     </main>
 
     <footer class="footer" style="padding: 2rem 0; text-align: center; border-top: 1px solid var(--border-color);">
-        <p style="color: var(--text-muted);">© 2026 AverisTech S.r.l. - Startup Innovativa - Tutti i diritti riservati.</p>
+        <p style="color: var(--text-muted);" data-i18n="footer-copy">© 2026 AverisTech S.r.l. - Startup Innovativa - Tutti i diritti riservati.</p>
     </footer>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

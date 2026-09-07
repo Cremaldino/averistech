@@ -109,7 +109,7 @@ const translations = {
     "footer-rea-val": "Via del prato 27 - 00172 - Roma (RM)",
     "footer-capitale-label": "Capitale Sociale: ",
     "footer-capitale-val": "€ 4.500,00 interamente versato",
-    "footer-pec-label": "PEC Ufficiale: averistech@pec.it",
+    "footer-pec-label": "PEC Ufficiale: ",
     "footer-copy": "© 2026 AverisTech S.r.l. - Startup Innovativa - Tutti i diritti riservati.",
     "footer-privacy": "Informativa sulla Privacy",
     "footer-cookie": "Informativa sui Cookie",
@@ -140,11 +140,46 @@ const translations = {
     "legal-page-title": "Note Legali e Pubblicità Societaria",
     "legal-page-sub": "Dati societari ai sensi della legislazione vigente e art. 2250 c.c.",
     "legal-s1-title": "1. Denominazione e Sede Legale",
-    "legal-s1-text": "AverisTech S.r.l. — Startup Innovativa (in attesa di costituzione). Sede Legale: Via del prato 27 - 00172 - Roma (RM), Italia. Capitale Sociale: € 4.500,00 interamente versato. PEC: averistech@pec.it. Iscrizione al Registro delle Imprese di Roma - Sezione Speciale Startup Innovative.",
+    "legal-s1-text": "AverisTech S.r.l. — Startup Innovativa (in attesa di costituzione). Sede Legale: Via del prato 27 - 00172 - Roma (RM), Italia. Partita IVA / Codice Fiscale: 18664161009. Capitale Sociale: € 4.500,00 interamente versato. PEC: averistech@pec.it. Iscrizione al Registro delle Imprese di Roma - Sezione Speciale Startup Innovative.",
     "legal-s2-title": "2. Oggetto Sociale e Progetti di Portafoglio",
     "legal-s2-text": "AverisTech opera come Startup ad alto valore tecnologico ai sensi della legislazione italiana, con oggetto sociale dedicato allo sviluppo, produzione e commercializzazione di prodotti e servizi innovativi, detenendo la proprietà intellettuale e lo sviluppo dei progetti: petsgo.it (ecosistema digitale per pet care e benessere), wroomy.it (mobilità intelligente e SaaS automotive) e freelancerhost.com (piattaforma per liberi professionisti e agenzie).",
     "legal-s3-title": "3. Proprietà Intellettuale e Copyright",
-    "legal-s3-text": "Tutti i contenuti, marchi, loghi (inclusi i monogrammi AverisTech, Wroomy, Petsgo, FreelancerHost), testi, codice sorgente e layout presenti su questo sito sono tutelati dalle leggi sul diritto d'autore e proprietà industriale. È vietata la riproduzione non autorizzata."
+    "legal-s3-text": "Tutti i contenuti, marchi, loghi (inclusi i monogrammi AverisTech, Wroomy, Petsgo, FreelancerHost), testi, codice sorgente e layout presenti su questo sito sono tutelati dalle leggi sul diritto d'autore e proprietà industriale. È vietata la riproduzione non autorizzata.",
+
+    // Project Pages Common
+    "project-btn-visit": "Visita il sito live",
+    "project-preview-tag": "UI/UX Design",
+    "project-preview-title": "Anteprima Piattaforma",
+
+    // Petsgo Detail Page
+    "petsgo-page-tag": "Pet Care Ecosystem",
+    "petsgo-hero-desc": "La piattaforma definitiva per il benessere degli animali domestici. Un ecosistema centralizzato per pet lovers e professionisti, basato su un'architettura headless ultra-veloce.",
+    "petsgo-c1-title": "La Sfida di Mercato",
+    "petsgo-c1-desc": "Il settore pet care soffre di una cronica frammentazione. I pet lovers navigano tra decine di app diverse, mentre le cliniche utilizzano software B2B obsoleti, perdendo efficienza operativa.",
+    "petsgo-c2-title": "L'Ecosistema Elettronico",
+    "petsgo-c2-desc": "Un booking engine proprietario che automatizza appuntamenti e cartelle cliniche, integrando intelligenza artificiale per un triage virtuale preliminare e supporto utente 24/7.",
+    "petsgo-c3-title": "Modello B2B2C",
+    "petsgo-c3-desc": "Serve milioni di proprietari di animali con standard premium (B2C) e contemporaneamente fornisce a cliniche e toelettatori un SaaS (B2B) per azzerare i costi di acquisizione.",
+
+    // Wroomy Detail Page
+    "wroomy-page-tag": "Automotive SaaS",
+    "wroomy-hero-desc": "Il Motore Predittivo per la compravendita di veicoli usati. Valutazioni precise e in tempo reale guidate da un Autoscore Engine avanzato.",
+    "wroomy-c1-title": "L'Inefficienza Sistemica",
+    "wroomy-c1-desc": "Il mercato automotive soffre di opacità. I dealer perdono ore in valutazioni manuali su listini obsoleti, mentre il consumatore finale diffida delle quotazioni discordanti.",
+    "wroomy-c2-title": "L'Oracolo dei Dati",
+    "wroomy-c2-desc": "Wroomy introduce l'Autoscore Engine. Un algoritmo che aggrega, pulisce e normalizza migliaia di data-point in tempo reale tramite scraping asincrono e modelli AI predittivi.",
+    "wroomy-c3-title": "Posizionamento Doppio",
+    "wroomy-c3-desc": "Un modulo enterprise B2B (API e dashboard) per dealer e flotte aziendali, unito a un portale B2C per fornire ai guidatori privati quotazioni trasparenti e sicure.",
+
+    // FreelancerHost Detail Page
+    "flh-page-tag": "Community Hub & B2B Matchmaking",
+    "flh-hero-desc": "La piattaforma editoriale e gestionale in evoluzione verso un SaaS per il Vendor Management di talenti e fornitori esterni.",
+    "flh-c1-title": "La Gestione dei Fornitori",
+    "flh-c1-desc": "PMI e agenzie digitali si affidano spesso a talenti esterni per scalare. Tuttavia, gestire una rete frammentata di professionisti comporta enormi sfide amministrative e comunicative.",
+    "flh-c2-title": "Da Hub a B2B SaaS",
+    "flh-c2-desc": "Nato come polo editoriale ricco di insight per il mercato freelance, è oggi in transizione verso un vero software di Vendor Management e onboarding automatizzato per aziende.",
+    "flh-c3-title": "Ecosistema Ibrido",
+    "flh-c3-desc": "Un'audience dinamica composta da prosumer digitali (freelance in cerca di risorse) e PMI in rapida crescita che necessitano di soluzioni B2B per l'un-scaling e l'outsourcing."
   },
 
   en: {
@@ -252,7 +287,7 @@ const translations = {
     "footer-rea-val": "Via del prato 27 - 00172 - Rome (RM), Italy",
     "footer-capitale-label": "Share Capital: ",
     "footer-capitale-val": "€ 4,500.00 fully paid-in",
-    "footer-pec-label": "Official PEC: averitech@pec.it ",
+    "footer-pec-label": "Official PEC: ",
     "footer-copy": "© 2026 AverisTech S.r.l. - Innovative Startup - All rights reserved.",
     "footer-privacy": "Privacy Policy",
     "footer-cookie": "Cookie Policy",
@@ -283,11 +318,46 @@ const translations = {
     "legal-page-title": "Legal Notes and Corporate Disclosures",
     "legal-page-sub": "Corporate disclosures pursuant to applicable regulations and Art. 2250 Italian Civil Code",
     "legal-s1-title": "1. Company Name and Registered Office",
-    "legal-s1-text": "AverisTech S.r.l. — Innovative Startup (in process of incorporation). Registered Office: Via del prato 27 - 00172 - Rome (RM), Italy. Share Capital: € 4,500.00 fully paid-in. PEC: averistech@pec.it. Registration with the Rome Business Register - Special Section for Innovative Startups.",
+    "legal-s1-text": "AverisTech S.r.l. — Innovative Startup (in process of incorporation). Registered Office: Via del prato 27 - 00172 - Rome (RM), Italy. VAT / Tax ID: 18664161009. Share Capital: € 4,500.00 fully paid-in. PEC: averistech@pec.it. Registration with the Rome Business Register - Special Section for Innovative Startups.",
     "legal-s2-title": "2. Corporate Purpose and Portfolio Projects",
     "legal-s2-text": "AverisTech operates as an Innovative Startup with high technological value under Italian law, dedicated to the development, production, and commercialization of innovative products and services, holding intellectual property and development rights for: petsgo.it (pet care digital ecosystem), wroomy.it (smart mobility & automotive SaaS), and freelancerhost.com (platform for freelancers and agencies).",
     "legal-s3-title": "3. Intellectual Property and Copyright",
-    "legal-s3-text": "All contents, trademarks, logos (including AverisTech, Petsgo, Wroomy, FreelancerHost emblems), text, source code, and layouts on this website are protected by copyright and intellectual property laws. Unauthorized reproduction is strictly prohibited."
+    "legal-s3-text": "All contents, trademarks, logos (including AverisTech, Petsgo, Wroomy, FreelancerHost emblems), text, source code, and layouts on this website are protected by copyright and intellectual property laws. Unauthorized reproduction is strictly prohibited.",
+
+    // Project Pages Common
+    "project-btn-visit": "Visit Live Site →",
+    "project-preview-tag": "UI/UX Design",
+    "project-preview-title": "Platform Preview",
+
+    // Petsgo Detail Page
+    "petsgo-page-tag": "Pet Care Ecosystem",
+    "petsgo-hero-desc": "The ultimate platform for pet wellness. A centralized ecosystem for pet lovers and professionals, built on an ultra-fast headless architecture.",
+    "petsgo-c1-title": "Market Challenge",
+    "petsgo-c1-desc": "The pet care industry suffers from chronic fragmentation. Pet owners navigate across dozens of disparate apps, while clinics rely on obsolete B2B software, losing operational efficiency.",
+    "petsgo-c2-title": "Digital Ecosystem",
+    "petsgo-c2-desc": "A proprietary booking engine automating appointments and clinical records, integrating artificial intelligence for virtual triage and 24/7 user support.",
+    "petsgo-c3-title": "B2B2C Business Model",
+    "petsgo-c3-desc": "Serves millions of pet owners with premium consumer standards (B2C) while providing veterinary clinics and groomers with a SaaS (B2B) that eliminates customer acquisition costs.",
+
+    // Wroomy Detail Page
+    "wroomy-page-tag": "Automotive SaaS",
+    "wroomy-hero-desc": "The Predictive Engine for pre-owned vehicle transactions. Accurate, real-time vehicle valuations powered by an advanced Autoscore Engine.",
+    "wroomy-c1-title": "Systemic Inefficiency",
+    "wroomy-c1-desc": "The automotive secondary market lacks transparency. Dealerships waste hours on manual valuations with outdated price lists, while end consumers distrust conflicting appraisals.",
+    "wroomy-c2-title": "Data-Driven Engine",
+    "wroomy-c2-desc": "Wroomy introduces the Autoscore Engine: a proprietary algorithm aggregating, cleaning, and normalizing thousands of data points in real time via asynchronous ingestion and predictive AI models.",
+    "wroomy-c3-title": "Dual Market Positioning",
+    "wroomy-c3-desc": "An enterprise B2B module (API and analytics dashboard) for car dealers and fleet operators, combined with a high-conversion B2C portal giving private drivers clear, secure valuations.",
+
+    // FreelancerHost Detail Page
+    "flh-page-tag": "Community Hub & B2B Matchmaking",
+    "flh-hero-desc": "The editorial and management platform evolving into an enterprise SaaS for Vendor Management of external talent and suppliers.",
+    "flh-c1-title": "Vendor Management",
+    "flh-c1-desc": "SMBs and digital agencies frequently rely on external contractors to scale. However, managing a fragmented network of freelancers creates substantial administrative and operational overhead.",
+    "flh-c2-title": "From Hub to B2B SaaS",
+    "flh-c2-desc": "Born as an editorial powerhouse packed with freelance market insights, it is now transitioning into a full Vendor Management software with automated contractor onboarding for enterprises.",
+    "flh-c3-title": "Hybrid Ecosystem",
+    "flh-c3-desc": "A high-engagement audience of digital prosumers (freelancers seeking tools and opportunities) paired with fast-growing SMBs that need dedicated B2B solutions for agile outsourcing."
   }
 };
 
