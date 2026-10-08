@@ -42,16 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
         { max: 800, cost: 0.80, canone: 640.00 },
         { max: 900, cost: 0.80, canone: 720.00 },
         { max: 1000, cost: 0.80, canone: 800.00 },
-        { max: 1100, cost: 0.55, canone: 605.00 },
-        { max: 1200, cost: 0.55, canone: 660.00 },
-        { max: 1500, cost: 0.50, canone: 750.00 },
-        { max: 2000, cost: 0.70, canone: 1400.00 }, // From instructions
-        { max: 2500, cost: 0.40, canone: 1000.00 },
+        { max: 1100, cost: 0.80, canone: 880.00 },
+        { max: 1200, cost: 0.80, canone: 960.00 },
+        { max: 1500, cost: 0.80, canone: 1200.00 },
+        { max: 2000, cost: 0.70, canone: 1400.00 },
         { max: 3000, cost: 0.60, canone: 1800.00 },
-        { max: 3500, cost: 0.40, canone: 1400.00 },
-        { max: 4000, cost: 0.50, canone: 2000.00 },
-        { max: 4500, cost: 0.40, canone: 1800.00 },
-        { max: 5000, cost: 0.45, canone: 2250.00 },
+        { max: 4000, cost: 0.55, canone: 2200.00 },
+        { max: 5000, cost: 0.50, canone: 2500.00 },
         { max: 7000, cost: 0.40, canone: 2800.00 }
     ];
 
