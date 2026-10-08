@@ -95,12 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const pricing = getPricing(docs);
         const costoUnitarioDoc = pricing.cost;
         
-        // As requested: Canone Mensile = num_documenti_mese * costo_unitario_documento
-        // Minimum 180
-        let canoneMensile = docs * costoUnitarioDoc;
-        if (canoneMensile < 180) {
-            canoneMensile = 180;
-        }
+        // Usa direttamente il canone della fascia individuata, senza interpolare
+        let canoneMensile = pricing.canone;
         
         const canoneAnno = canoneMensile * 12;
 
