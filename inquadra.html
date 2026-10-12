@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inQuadra | Automazione Ciclo Passivo e Riconciliazione Fatture AI per PMI</title>
+    <meta name="description"
+        content="inQuadra è il copilota AI per l'automazione del ciclo passivo: triangolazione a 3 vie automatica tra Ordine, DDT e Fattura per Zucchetti, TeamSystem, SAP e Mexal. Calcola il tuo ROI." />
+    <meta name="keywords"
+        content="automazione ciclo passivo, riconciliazione fatture, inquadra, software AI, data entry automatico, gestione ddt, three-way matching, integrazione erp, pmi" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://averistech.it/inquadra.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://averistech.it/inquadra.html" />
+    <meta property="og:title" content="inQuadra | Automazione Ciclo Passivo e Riconciliazione Fatture AI" />
+    <meta property="og:description"
+        content="Azzera il tempo di registrazione di DDT e Fatture. Riconciliazione automatica a 3 vie integrata al tuo gestionale. Calcola subito il risparmio." />
+    <meta property="og:image" content="https://averistech.it/media/og-image-roi.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://averistech.it/inquadra.html" />
+    <meta property="twitter:title" content="inQuadra | Automazione Ciclo Passivo e Riconciliazione Fatture AI" />
+    <meta property="twitter:description"
+        content="Azzera il tempo di registrazione di DDT e Fatture. Riconciliazione automatica a 3 vie integrata al tuo gestionale. Calcola subito il risparmio." />
+    <meta property="twitter:image" content="https://averistech.it/media/og-image-roi.jpg" />
+
+    <!-- Schema.org SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "inQuadra Ciclo Passivo AI",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Piattaforma basata su Intelligenza Artificiale per l'automazione del ciclo passivo e la riconciliazione a 3 vie (Ordine, DDT, Fattura) per PMI.",
+      "offers": {
+        "@type": "Offer",
+        "price": "200.00",
+        "priceCurrency": "EUR",
+        "description": "Canone mensile a partire da 200€ con Assessment e Setup dedicato"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "AverisTech S.r.l.",
+        "url": "https://averistech.it"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="media/logo-icon.jpeg" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/roi-landing.css" />
+</head>
+
+<body>
+    <!-- HEADER & NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link" id="nav-logo-link" aria-label="InQuadra Home">
+                <img src="media/inquadra-logo-transparent.png" alt="inQuadra Logo" class="logo-img" id="navbar-logo" style="height: 48px;" />
+            </a>
+
+            <nav aria-label="Menu Principale">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero" class="nav-link active">Piattaforma</a></li>
+                    <li><a href="#divario" class="nav-link">Come Funziona</a></li>
+                    <li><a href="#pilastri" class="nav-link">Benefici</a></li>
+                    <li><a href="#calculator" class="nav-link">Calcolatore ROI</a></li>
+                    <li><a href="#assessment" class="nav-link">Assessment 5 Giorni</a></li>
+                    <li><a href="#prezzi" class="nav-link">Piani</a></li>
+                </ul>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 14px;">
+                <span class="nav-badge-pill" style="display: none; @media (min-width: 992px){ display: inline-flex; }">
+                    <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--iq-teal-primary);"></span>
+                    AI v2.4 Active
+                </span>
+                <a href="#form-section" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.88rem;">
+                    Richiedi Assessment
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION: ASYMMETRICAL SPLIT WITH LIVE CONSOLE PREVIEW -->
+        <section class="hero-wrapper" id="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <!-- Left: Strategic Narrative -->
+                    <div class="hero-content">
+                        <div class="hero-eyebrow">
+                            <span class="live-pulse" aria-hidden="true"></span>
+                            <span>Copilota AI per il Ciclo Passivo • Transizione 5.0 (-27,9% Deduzione)</span>
+                        </div>
+
+                        <h1 class="iq-hero-title">
+                            Azzera le ore spese su DDT e Fatture.<br />
+                            <span class="text-gradient">Il ciclo passivo autonomo per il tuo gestionale.</span>
+                        </h1>
+
+                        <p class="hero-desc">
+                            inQuadra intercetta i documenti in ingresso, estrae ogni riga con <strong>accuratezza visiva al 100%</strong>, esegue la <strong>riconciliazione a 3 vie</strong> (Ordine ↔ DDT ↔ Fattura) e invia i dati già verificati al tuo ERP. Senza cambiare software.
+                        </p>
+
+                        <div class="hero-actions-row">
+                            <a href="#calculator" class="btn btn-primary">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 6h10"></path><path d="M6 10h10"></path><path d="M6 14h6"></path></svg>
+                                Calcola il Risparmio della tua Azienda
+                            </a>
+                            <a href="#assessment" class="btn btn-secondary">
+                                Scopri l'Audit in 5 Giorni
+                            </a>
+                        </div>
+
+                        <div class="hero-metrics-strip">
+                            <div class="hero-metric-item">
+                                <span class="metric-val">-90%</span>
+                                <span class="metric-label">Tempo Data Entry</span>
+                            </div>
+                            <div class="hero-metric-divider"></div>
+                            <div class="hero-metric-item">
+                                <span class="metric-val">&lt; 1 sec</span>
+                                <span class="metric-label">Matching 3-Vie</span>
+                            </div>
+                            <div class="hero-metric-divider"></div>
+                            <div class="hero-metric-item">
+                                <span class="metric-val">100%</span>
+                                <span class="metric-label">Precisione Vision AI</span>
+                            </div>
+                            <div class="hero-metric-divider"></div>
+                            <div class="hero-metric-item">
+                                <span class="metric-val">0 Attrito</span>
+                                <span class="metric-label">Integrazione ERP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Bespoke inQuadra Live Triangulation Terminal -->
+                    <div class="product-showcase">
+                        <div class="console-topbar">
+                            <div class="console-dots">
+                                <span class="console-dot red"></span>
+                                <span class="console-dot yellow"></span>
+                                <span class="console-dot green"></span>
+                            </div>
+                            <div class="console-title">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                                INQUADRA ENGINE // TRIANGOLAZIONE LIVE
+                            </div>
+                            <span class="console-status-live">● RECONCILING</span>
+                        </div>
+
+                        <div class="console-body">
+                            <div class="matcher-pipeline">
+                                <!-- Step 1: Ordine -->
+                                <div class="pipeline-step">
+                                    <div class="step-info">
+                                        <div class="step-icon-badge po">📋</div>
+                                        <div class="step-details">
+                                            <h5>Ordine d'Acquisto #ODA-8842</h5>
+                                            <p>ERP Zucchetti • Fornitore: Metallurgica Veneta Srl</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-status ok">€ 3.450,00 (50 pz)</div>
+                                </div>
+
+                                <!-- Step 2: DDT -->
+                                <div class="pipeline-step">
+                                    <div class="step-info">
+                                        <div class="step-icon-badge ddt">📦</div>
+                                        <div class="step-details">
+                                            <h5>DDT Ricevuto #DDT-4192/B</h5>
+                                            <p>Scansione Vision OCR • Magazzino Centrale</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-status ok">50 pz Accettati ✓</div>
+                                </div>
+
+                                <!-- Step 3: Fattura -->
+                                <div class="pipeline-step">
+                                    <div class="step-info">
+                                        <div class="step-icon-badge fe">📑</div>
+                                        <div class="step-details">
+                                            <h5>Fattura Elettronica #FPR-109</h5>
+                                            <p>SDI XML Inbound • Importo: € 3.620,00</p>
+                                        </div>
+                                    </div>
+                                    <div class="step-status warning">⚠ Discrepanza +€ 170</div>
+                                </div>
+                            </div>
+
+                            <!-- Resolution Logic Box -->
+                            <div class="matcher-resolution">
+                                <div class="resolution-header">
+                                    <span class="resolution-tag">
+                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Discrepanza Intercettata & Risolta
+                                    </span>
+                                    <span class="resolution-speed">Elaborato in 0.74s</span>
+                                </div>
+                                <p class="resolution-body">
+                                    <strong>Anomalia rilevata:</strong> Rincaro non pattuito di € 3,40/pz su riga 2 ("Flangia Inox"). Bozza di contestazione e richiesta Nota di Credito generate in automatico. Pagamento bloccato a tutela dei margini.
+                                </p>
+                                <div class="resolution-footer">
+                                    <span class="erp-sync-pill">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        Pronto per invio all'ERP
+                                    </span>
+                                    <span style="color: #94a3b8;">Zero Data Entry Umano</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENTERPRISE INTEGRATIONS LOGO STRIP -->
+        <section class="erp-strip-section" aria-label="Integrazioni ERP Supportate">
+            <div class="container">
+                <div class="erp-strip-card">
+                    <span class="erp-strip-label">Nativamente compatibile con il tuo gestionale:</span>
+                    <div class="erp-strip-logos">
+                        <span class="erp-logo-pill"><strong>Zucchetti</strong> (Ad-Hoc / Infinity)</span>
+                        <span class="erp-logo-pill"><strong>TeamSystem</strong> (Alyante / Enterprise)</span>
+                        <span class="erp-logo-pill"><strong>SAP</strong> (Business One / ECC)</span>
+                        <span class="erp-logo-pill"><strong>Passepartout</strong> (Mexal)</span>
+                        <span class="erp-logo-pill"><strong>SDI XML</strong> (Fatturazione Elettronica)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: IL DIVARIO OPERATIVO (BEFORE VS WITH INQUADRA) -->
+        <section class="comparison-section" id="divario">
+            <div class="container">
+                <div class="section-header-clean">
+                    <span class="section-tag-clean">L'Obiettivo Strategico</span>
+                    <h2 class="section-title-clean">Da Centro di Costo a Leva di Controllo dei Margini</h2>
+                    <p class="section-desc-clean">
+                        Secondo Anitec-Assinform, mentre l'83% delle grandi aziende ha già digitalizzato i processi contabili, <strong>solo il 26% delle PMI</strong> ha processi avanzati. Ecco come inQuadra colma questo divario.
+                    </p>
+                </div>
+
+                <div class="comparison-grid">
+                    <!-- Column 1: Senza inQuadra -->
+                    <div class="comparison-card card-chaos">
+                        <div class="card-header-badge">
+                            <span>❌ Il Ciclo Passivo Tradizionale</span>
+                        </div>
+                        <h3>Il Collo di Bottiglia Manuale</h3>
+                        <p class="subtext">
+                            Nelle aziende che gestiscono tra 300 e 5.000 documenti al mese, il personale passa fino al <strong>40% del tempo</strong> a svolgere compiti alienanti ad alto rischio errore.
+                        </p>
+
+                        <ul class="pain-list">
+                            <li class="pain-item">
+                                <span class="pain-icon">✕</span>
+                                <div class="pain-text">
+                                    <strong>Ricopiatura manuale riga per riga</strong>
+                                    <span>Digitazione manuale di codici articolo, quantità e aliquote da PDF e fogli stampati all'interno del gestionale.</span>
+                                </div>
+                            </li>
+                            <li class="pain-item">
+                                <span class="pain-icon">✕</span>
+                                <div class="pain-text">
+                                    <strong>Spunta a penna e su fogli Excel</strong>
+                                    <span>Controllo visivo estenuante tra bolle di magazzino cartacee e fatture riepilogative differite a fine mese.</span>
+                                </div>
+                            </li>
+                            <li class="pain-item">
+                                <span class="pain-icon">✕</span>
+                                <div class="pain-text">
+                                    <strong>Erosione invisibile dei margini</strong>
+                                    <span>Rincari silenziosi del 2-5%, voci di spesa accessorie non pattuite e colli mancanti pagati senza accorgersene.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2: Con inQuadra -->
+                    <div class="comparison-card card-autonomous">
+                        <div class="card-header-badge">
+                            <span>✓ Con inQuadra Agentic AI</span>
+                        </div>
+                        <h3>Il Flusso Autonomo & Rigoroso</h3>
+                        <p class="subtext">
+                            inQuadra <strong>non sostituisce il tuo gestionale</strong>, ma agisce come un copilota instancabile che esegue l'intero ciclo passivo in background.
+                        </p>
+
+                        <ul class="gain-list">
+                            <li class="gain-item">
+                                <span class="gain-icon">✓</span>
+                                <div class="gain-text">
+                                    <strong>Vision Ingestion Multicanale Istantanea</strong>
+                                    <span>Acquisizione da email, portale fornitore o foto via smartphone: estrazione senza dover configurare rigidi template.</span>
+                                </div>
+                            </li>
+                            <li class="gain-item">
+                                <span class="gain-icon">✓</span>
+                                <div class="gain-text">
+                                    <strong>Three-Way Matching Matematico Automatico</strong>
+                                    <span>Incrocio al centesimo tra Ordine, DDT e Fattura: segnalazione immediata delle anomalie prima del pagamento.</span>
+                                </div>
+                            </li>
+                            <li class="gain-item">
+                                <span class="gain-icon">✓</span>
+                                <div class="gain-text">
+                                    <strong>Flusso Certificato Diretto verso l'ERP</strong>
+                                    <span>I dati arrivano al tuo gestionale già quadrati, pronti per la registrazione contabile con un solo click di approvazione.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: I 4 PILASTRI DEI BENEFICI (BENTO ARCHITECTURE) -->
+        <section class="pillars-section" id="pilastri">
+            <div class="container">
+                <div class="section-header-clean">
+                    <span class="section-tag-clean">I Benefici Chiave</span>
+                    <h2 class="section-title-clean">Impatto Misurabile su 4 Aree Strategiche</h2>
+                    <p class="section-desc-clean">
+                        Ogni funzionalità di inQuadra è progettata per produrre un ritorno sull'investimento tangibile fin dal primo mese di attivazione.
+                    </p>
+                </div>
+
+                <div class="pillars-bento">
+                    <!-- Pillar 1: Efficienza Operativa -->
+                    <div class="bento-card-clean col-7">
+                        <div>
+                            <span class="pillar-tag">⚡ Operatività & Produttività</span>
+                            <h3>Efficienza Operativa: -90% del tempo speso in Data Entry</h3>
+                            <p>
+                                Il modulo Vision converte qualsiasi PDF o immagine in dati contabili strutturati in pochi secondi. Il personale amministrativo viene finalmente sollevato da compiti ripetitivi per dedicarsi al controllo di gestione, alla negoziazione con i fornitori e all'ottimizzazione del cash flow aziendale.
+                            </p>
+                        </div>
+                        <div class="pillar-stat-pill">
+                            <span class="num">-90%</span>
+                            <span class="label">Tempo medio di registrazione per documento</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 2: Margin Guard -->
+                    <div class="bento-card-clean col-5">
+                        <div>
+                            <span class="pillar-tag">🛡️ Controllo Finanziario</span>
+                            <h3>Margin Guard: Tolleranze e Protezione Cassa al Centesimo</h3>
+                            <p>
+                                La Riconciliazione automatica triangola Ordine, DDT e Fattura riga per riga. Se un fornitore applica un rincaro del 3% o omette uno sconto pattuito, il sistema blocca il pagamento e prepara la bozza di contestazione.
+                            </p>
+                        </div>
+                        <div class="pillar-stat-pill">
+                            <span class="num">100%</span>
+                            <span class="label">Copertura scostamenti prezzi e quantità</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 3: Vantaggio Fiscale -->
+                    <div class="bento-card-clean col-6">
+                        <div>
+                            <span class="pillar-tag">🏛️ Fiscalità & Finanza Agevolata</span>
+                            <h3>Vantaggio Fiscale: -27,9% di Costo Netto e Piano Transizione 5.0</h3>
+                            <p>
+                                Il canone software SaaS è deducibile al 100% (risparmio IRES 24% + IRAP 3,9%). Inoltre inQuadra è conforme ai requisiti di digitalizzazione avanzata dei piani Transizione 5.0, 4.0 e Nuova Sabatini, permettendo sgravi e crediti d'imposta aggiuntivi.
+                            </p>
+                        </div>
+                        <div class="pillar-stat-pill">
+                            <span class="num">-27,9%</span>
+                            <span class="label">Sgravio netto su IRES ed IRAP</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 4: Zero Attrito ERP -->
+                    <div class="bento-card-clean col-6">
+                        <div>
+                            <span class="pillar-tag">🔌 Sicurezza & Sovranità Dati</span>
+                            <h3>Zero Attrito ERP & Politica Zero Data Retention</h3>
+                            <p>
+                                Nessun bisogno di migrare dati o cambiare abitudini di lavoro: inQuadra si collega ai gestionali Zucchetti, TeamSystem, SAP, Mexal e Passepartout. L'infrastruttura è ospitata su data center europei con crittografia bancaria e politica rigorosa di non ritenzione dati per i modelli AI.
+                            </p>
+                        </div>
+                        <div class="pillar-stat-pill">
+                            <span class="num">Zero Risk</span>
+                            <span class="label">Server EU • Privacy GDPR • No AI Retention</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: SIMULATORE FINANZIARIO & ROI CONSOLE -->
+        <section class="calculator-section-clean" id="calculator">
+            <div class="container">
+                <div class="section-header-clean">
+                    <span class="section-tag-clean">Simulatore Finanziario Interattivo</span>
+                    <h2 class="section-title-clean">Calcola in Tempo Reale il tuo Risparmio e ROI</h2>
+                    <p class="section-desc-clean">
+                        Modella i parametri del tuo ufficio acquisti per stimare ore uomo recuperate, riduzione dei costi e payback period.
+                    </p>
+                </div>
+
+                <div class="calc-console-grid">
+                    <!-- Left: Control Sliders -->
+                    <div class="calc-controls-card">
+                        <div>
+                            <span style="font-size: 0.85rem; font-weight: 700; color: var(--iq-text-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 12px;">Seleziona un Profilo Rapido:</span>
+                            <div class="calc-presets-row">
+                                <button type="button" class="calc-preset-btn active" data-docs="500">PMI Base (500 doc)</button>
+                                <button type="button" class="calc-preset-btn" data-docs="1000">Media Impresa (1.000 doc)</button>
+                                <button type="button" class="calc-preset-btn" data-docs="2500">Azienda Strutturata (2.500 doc)</button>
+                                <button type="button" class="calc-preset-btn" data-docs="4500">Grande Volume (4.500 doc)</button>
+                            </div>
+                        </div>
+
+                        <!-- Slider 1: Docs/Month -->
+                        <div class="calc-group">
+                            <div class="calc-label-row">
+                                <label for="calc-docs">Volume Documenti / Mese (DDT, Fatture, Ordini)</label>
+                                <span class="calc-current-badge" id="val-docs">500 doc/mese</span>
+                            </div>
+                            <input type="range" class="calc-slider-clean" id="calc-docs" min="100" max="6000" step="100" value="500">
+                            <div class="calc-minmax-row">
+                                <span>100 doc</span>
+                                <span>6.000+ doc</span>
+                            </div>
+                        </div>
+
+                        <!-- Slider 2: Data Entry Min -->
+                        <div class="calc-group">
+                            <div class="calc-label-row">
+                                <label for="calc-data-entry">Minuti medi per Data Entry (per singolo documento)</label>
+                                <span class="calc-current-badge" id="val-data-entry">3 min</span>
+                            </div>
+                            <input type="range" class="calc-slider-clean" id="calc-data-entry" min="1" max="15" step="1" value="3">
+                            <div class="calc-minmax-row">
+                                <span>1 min</span>
+                                <span>15 min</span>
+                            </div>
+                        </div>
+
+                        <!-- Slider 3: Reconciliation Min -->
+                        <div class="calc-group">
+                            <div class="calc-label-row">
+                                <label for="calc-riconciliazione">Minuti medi per Spunta e Riconciliazione</label>
+                                <span class="calc-current-badge" id="val-riconciliazione">6 min</span>
+                            </div>
+                            <input type="range" class="calc-slider-clean" id="calc-riconciliazione" min="1" max="30" step="1" value="6">
+                            <div class="calc-minmax-row">
+                                <span>1 min</span>
+                                <span>30 min</span>
+                            </div>
+                        </div>
+
+                        <!-- Input 4: RAL Operatore -->
+                        <div class="calc-group">
+                            <div class="calc-label-row">
+                                <label for="calc-ral">RAL Lorda Addetto Amministrativo (€)</label>
+                                <span class="calc-current-badge" id="val-ral">20.000,00 €</span>
+                            </div>
+                            <input type="number" class="calc-number-input" id="calc-ral" value="20000" min="15000" max="60000" step="1000">
+                            <span style="font-size: 0.8rem; color: var(--iq-text-muted);">Include coefficiente di costo aziendale reale (1,37x per INPS/INAIL).</span>
+                        </div>
+                    </div>
+
+                    <!-- Right: Results Dashboard -->
+                    <div class="calc-results-card">
+                        <div>
+                            <div class="calc-hero-saving">
+                                <div class="saving-label">Risparmio Netto Annuo Stimato</div>
+                                <div class="saving-amount" id="out-risparmio-netto">-- €/anno</div>
+                                <div class="saving-sub">
+                                    Corrispondente a <strong id="out-risparmio-netto-mensile" style="color: var(--iq-teal-primary);">-- €/mese</strong> • ROI: <strong id="out-risparmio-perc" style="color: var(--iq-teal-primary);">-- %</strong>
+                                </div>
+                            </div>
+
+                            <div class="calc-breakdown-list">
+                                <div class="calc-breakdown-item">
+                                    <span class="label">Costo Attuale Gestione Manuale:</span>
+                                    <span class="val" id="out-costo-attuale">-- €/mese</span>
+                                </div>
+                                <div class="calc-breakdown-item">
+                                    <span class="label">Tempo Lavoro Perso Oggi:</span>
+                                    <span class="val danger" id="out-giorni-persi">-- giorni/mese</span>
+                                </div>
+                                <div class="calc-breakdown-item">
+                                    <span class="label">Fascia di Volume Assegnata:</span>
+                                    <span class="val teal" id="out-tier-info">--</span>
+                                </div>
+                                <div class="calc-breakdown-item">
+                                    <span class="label">Canone Software inQuadra:</span>
+                                    <span class="val" id="out-canone-mensile">-- €/mese</span>
+                                </div>
+                                <div class="calc-breakdown-item">
+                                    <span class="label">Spesa Reale (Netto Deduzione Fiscale 27,9%):</span>
+                                    <span class="val" id="out-spesa-reale">-- €/mese</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#form-section" class="btn btn-primary" style="width: 100%; text-align: center; justify-content: center; padding: 14px 20px;">
+                            Richiedi Certificazione del ROI con l'Audit ↓
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: PROCESS ASSESSMENT & FAST-TRACK AUDIT (5-DAY ROADMAP) -->
+        <section class="assessment-section" id="assessment">
+            <div class="container">
+                <div class="section-header-clean">
+                    <span class="section-tag-clean">Setup & Onboarding Veloce</span>
+                    <h2 class="section-title-clean">Process Assessment & Audit in 5 Giornate</h2>
+                    <p class="section-desc-clean">
+                        Prima di attivare inQuadra, un team di specialisti effettua un audit operativo completo per mappare i tuoi flussi e garantire un'integrazione senza alcun intoppo con il tuo ERP.
+                    </p>
+                </div>
+
+                <div class="assessment-roadmap-grid">
+                    <!-- Day 1 -->
+                    <div class="roadmap-day-card">
+                        <span class="day-badge">Giorno 1</span>
+                        <h4>Kick-off & Interviste</h4>
+                        <p>Incontro con CFO, Responsabile Amministrativo e Logistica per mappare il flusso effettivo dei documenti (email, portali e cartaceo).</p>
+                    </div>
+
+                    <!-- Day 2 -->
+                    <div class="roadmap-day-card">
+                        <span class="day-badge">Giorno 2</span>
+                        <h4>Audit Documentale</h4>
+                        <p>Analisi campionaria della variabilità di DDT, Fatture e Ordini dei fornitori storici, identificando le anomalie più frequenti.</p>
+                    </div>
+
+                    <!-- Day 3 -->
+                    <div class="roadmap-day-card">
+                        <span class="day-badge">Giorno 3</span>
+                        <h4>Mappatura Connettori ERP</h4>
+                        <p>Studio dell'architettura del tuo gestionale e definizione delle regole e soglie di tolleranza custom (prezzi, quantità, sconti).</p>
+                    </div>
+
+                    <!-- Day 4 -->
+                    <div class="roadmap-day-card">
+                        <span class="day-badge">Giorno 4</span>
+                        <h4>Proof of Concept Live</h4>
+                        <p>Configurazione dell'engine inQuadra ed esecuzione del test di riconciliazione automatica su oltre 100 documenti aziendali reali.</p>
+                    </div>
+
+                    <!-- Day 5 -->
+                    <div class="roadmap-day-card">
+                        <span class="day-badge">Giorno 5</span>
+                        <h4>Executive Report & Go-Live</h4>
+                        <p>Consegna del Report di Processo, quantificazione certificata del risparmio economico e sistema pronto per la messa in produzione.</p>
+                    </div>
+                </div>
+
+                <!-- Risk Reversal Guarantee Banner -->
+                <div class="guarantee-banner">
+                    <div class="guarantee-left">
+                        <h3>Garanzia & Incentivo Early Access</h3>
+                        <p>
+                            La quota del Process Assessment è di <strong>2.500,00 € una tantum</strong>. Sottoscrivendo il canone entro 15 giorni dalla consegna del Report, il <strong>50% della quota (€ 1.250,00)</strong> viene riaccreditato a scalare sui canoni del primo anno.
+                        </p>
+                    </div>
+                    <div class="guarantee-seal">
+                        <div class="price-original">Setup 2.500 €</div>
+                        <div class="price-discounted">1.250 €</div>
+                        <div class="tag">Con Sconto Early Access 50%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: PIANI & LICENZE (TRANSPARENT PRICING GRID) -->
+        <section class="pricing-section-clean" id="prezzi">
+            <div class="container">
+                <div class="section-header-clean">
+                    <span class="section-tag-clean">Piani e Licenze</span>
+                    <h2 class="section-title-clean">Tariffe Chiare che Scalano con i Tuoi Volumi</h2>
+                    <p class="section-desc-clean">
+                        Scegli il livello più adatto alle esigenze della tua azienda. Tutti i piani includono l'intero motore core di estrazione e riconciliazione.
+                    </p>
+                </div>
+
+                <div class="pricing-cards-grid">
+                    <!-- Tier 1: SMALL -->
+                    <div class="pricing-card-clean">
+                        <div class="pricing-tier-name">SMALL</div>
+                        <div class="pricing-tier-volume">fino a 500 documenti/mese</div>
+                        <div class="pricing-rate">200 € <span>/mese</span></div>
+                        <ul class="pricing-feature-list">
+                            <li><span class="check">✓</span> <strong>5 Utenti</strong> inclusi</li>
+                            <li><span class="check">✓</span> Vision AI Multicanale</li>
+                            <li><span class="check">✓</span> 3-Way Matching completo</li>
+                            <li><span class="check">✓</span> Connettore File CSV/XML</li>
+                        </ul>
+                        <a href="#form-section" class="btn btn-secondary" style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Seleziona</a>
+                    </div>
+
+                    <!-- Tier 2: MEDIUM (POPULAR) -->
+                    <div class="pricing-card-clean popular-card">
+                        <span class="popular-ribbon">PIÙ SCELTO DALLE PMI</span>
+                        <div class="pricing-tier-name">MEDIUM</div>
+                        <div class="pricing-tier-volume">da 501 a 1.000 doc/mese</div>
+                        <div class="pricing-rate">350 € <span>/mese</span></div>
+                        <ul class="pricing-feature-list">
+                            <li><span class="check">✓</span> <strong>10 Utenti</strong> inclusi</li>
+                            <li><span class="check">✓</span> Vision AI Multicanale</li>
+                            <li><span class="check">✓</span> 3-Way Matching completo</li>
+                            <li><span class="check">✓</span> Connettori ERP Standard</li>
+                            <li><span class="check">✓</span> Supporto Prioritario</li>
+                        </ul>
+                        <a href="#form-section" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Inizia l'Assessment</a>
+                    </div>
+
+                    <!-- Tier 3: LARGE -->
+                    <div class="pricing-card-clean">
+                        <div class="pricing-tier-name">LARGE</div>
+                        <div class="pricing-tier-volume">da 1.001 a 3.000 doc/mese</div>
+                        <div class="pricing-rate">900 € <span>/mese</span></div>
+                        <ul class="pricing-feature-list">
+                            <li><span class="check">✓</span> <strong>20 Utenti</strong> inclusi</li>
+                            <li><span class="check">✓</span> Connettori Diretti Zucchetti / TS</li>
+                            <li><span class="check">✓</span> WhatsApp / Slack Alert</li>
+                            <li><span class="check">✓</span> Tolleranze Custom Multi-sede</li>
+                        </ul>
+                        <a href="#form-section" class="btn btn-secondary" style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Seleziona</a>
+                    </div>
+
+                    <!-- Tier 4: EXTRA -->
+                    <div class="pricing-card-clean">
+                        <div class="pricing-tier-name">EXTRA</div>
+                        <div class="pricing-tier-volume">da 3.001 a 5.000 doc/mese</div>
+                        <div class="pricing-rate">1.250 € <span>/mese</span></div>
+                        <ul class="pricing-feature-list">
+                            <li><span class="check">✓</span> <strong>30 Utenti</strong> inclusi</li>
+                            <li><span class="check">✓</span> Connettori Premium SAP B1</li>
+                            <li><span class="check">✓</span> Account Manager Dedicato</li>
+                            <li><span class="check">✓</span> SLA Garantito 99.9%</li>
+                        </ul>
+                        <a href="#form-section" class="btn btn-secondary" style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Seleziona</a>
+                    </div>
+
+                    <!-- Tier 5: ENTERPRISE -->
+                    <div class="pricing-card-clean">
+                        <div class="pricing-tier-name">ENTERPRISE</div>
+                        <div class="pricing-tier-volume">Volumi superiori a 5.000 doc</div>
+                        <div class="pricing-rate">Su Misura</div>
+                        <ul class="pricing-feature-list">
+                            <li><span class="check">✓</span> <strong>Utenti Illimitati</strong></li>
+                            <li><span class="check">✓</span> Flussi & Sviluppi ad hoc</li>
+                            <li><span class="check">✓</span> Integrazioni ERP Complesse</li>
+                            <li><span class="check">✓</span> Consulenza On-site</li>
+                        </ul>
+                        <a href="#form-section" class="btn btn-secondary" style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Richiedi Offerta</a>
+                    </div>
+                </div>
+
+                <!-- Moduli Add-on Opzionali -->
+                <div style="margin-top: 50px;">
+                    <div style="text-align: center; margin-bottom: 24px;">
+                        <h3 style="font-size: 1.8rem;">Moduli Add-on per Esigenze Specifiche</h3>
+                        <p style="color: var(--iq-text-secondary);">Attivabili o disattivabili in qualsiasi momento a completamento del tuo piano.</p>
+                    </div>
+
+                    <div class="addons-grid">
+                        <div class="addon-card">
+                            <div>
+                                <h4>📊 Andamento Listini Fornitori</h4>
+                                <p>Monitora e traccia gli scostamenti storici tra i listini prezzi concordati e quelli effettivamente applicati in fattura nel tempo.</p>
+                            </div>
+                            <div class="addon-pricing-pill">
+                                <span>Da +30 €/mese</span>
+                                <span>in base al tier</span>
+                            </div>
+                        </div>
+
+                        <div class="addon-card">
+                            <div>
+                                <h4>⏰ Gestione Scadenze & Avvisi</h4>
+                                <p>Generazione automatica di notifiche di pagamento, avvisi di scadenza e solleciti proattivi per evitare ritardi e contenziosi.</p>
+                            </div>
+                            <div class="addon-pricing-pill">
+                                <span>Da +30 €/mese</span>
+                                <span>in base al tier</span>
+                            </div>
+                        </div>
+
+                        <div class="addon-card">
+                            <div>
+                                <h4>🗄️ Storage Documentale a Norma</h4>
+                                <p>Archiviazione digitale e conservazione sostitutiva a norma di legge decennale con fascicolazione automatica dei collegamenti Ordine-DDT-Fattura.</p>
+                            </div>
+                            <div class="addon-pricing-pill">
+                                <span>Da +30 €/mese</span>
+                                <span>in base al tier</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: EXECUTIVE EARLY ACCESS & ASSESSMENT FORM -->
+        <section class="form-section-clean" id="form-section">
+            <div class="container">
+                <div class="section-header-clean">
+                    <span class="section-tag-clean">Inizia Subito</span>
+                    <h2 class="section-title-clean">Prenota il Tuo Process Assessment</h2>
+                    <p class="section-desc-clean">
+                        Compila il modulo per bloccare la disponibilità degli specialisti e riservare il 50% di sconto sul setup iniziale (da 2.500 € a 1.250 €).
+                    </p>
+                </div>
+
+                <div class="form-layout-grid">
+                    <!-- Left: Trust & Value Proposition -->
+                    <div class="form-trust-card">
+                        <h3>Cosa Include il tuo Assessment:</h3>
+                        <p>
+                            Un'analisi rigorosa e personalizzata del tuo ciclo passivo, condotta da ingegneri dei processi gestionali senza alcun vincolo di acquisto.
+                        </p>
+
+                        <ul class="trust-check-list">
+                            <li class="trust-check-item">
+                                <div class="trust-check-icon">✓</div>
+                                <div class="trust-check-text">
+                                    <strong>Audit Documentale Campionario</strong>
+                                    <span>Mappatura dell'eterogeneità dei documenti dei tuoi primi 10 fornitori per volume.</span>
+                                </div>
+                            </li>
+                            <li class="trust-check-item">
+                                <div class="trust-check-icon">✓</div>
+                                <div class="trust-check-text">
+                                    <strong>Calcolo Esatto del ROI Aziendale</strong>
+                                    <span>Misurazione delle ore uomo effettivamente recuperabili e quantificazione dell'impatto economico.</span>
+                                </div>
+                            </li>
+                            <li class="trust-check-item">
+                                <div class="trust-check-icon">✓</div>
+                                <div class="trust-check-text">
+                                    <strong>Accordo di Riservatezza (NDA) Garantito</strong>
+                                    <span>Tutti i dati e i campioni documentali sono protetti secondo i più stringenti standard di riservatezza industriale.</span>
+                                </div>
+                            </li>
+                            <li class="trust-check-item">
+                                <div class="trust-check-icon">✓</div>
+                                <div class="trust-check-text">
+                                    <strong>Bonus Fiscale del 27,9%</strong>
+                                    <span>Attestazione per l'ammissibilità alle agevolazioni fiscali del Piano Transizione 5.0.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Right: Frictionless Booking Form -->
+                    <div class="lead-form-card">
+                        <form id="roi-lead-form"
+                            onsubmit="event.preventDefault(); document.getElementById('toast-notification').classList.add('show'); setTimeout(() => document.getElementById('toast-notification').classList.remove('show'), 4500);">
+                            <div class="form-row-2">
+                                <div class="form-field-group">
+                                    <label for="form-nome">Nome e Cognome *</label>
+                                    <input type="text" class="form-input-clean" id="form-nome" placeholder="es. Mario Rossi" required>
+                                </div>
+                                <div class="form-field-group">
+                                    <label for="form-email">Email Aziendale *</label>
+                                    <input type="email" class="form-input-clean" id="form-email" placeholder="m.rossi@azienda.it" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row-2">
+                                <div class="form-field-group">
+                                    <label for="form-tel">Telefono Diretto *</label>
+                                    <input type="tel" class="form-input-clean" id="form-tel" placeholder="+39 02 1234567" required>
+                                </div>
+                                <div class="form-field-group">
+                                    <label for="form-azienda">Ragione Sociale Azienda *</label>
+                                    <input type="text" class="form-input-clean" id="form-azienda" placeholder="es. Meccanica Veneta S.r.l." required>
+                                </div>
+                            </div>
+
+                            <div class="form-row-2">
+                                <div class="form-field-group">
+                                    <label for="form-erp">Gestionale / ERP in uso *</label>
+                                    <select class="form-input-clean" id="form-erp" required>
+                                        <option value="" disabled selected>Seleziona il gestionale...</option>
+                                        <option value="Zucchetti">Zucchetti (Ad-Hoc / Infinity)</option>
+                                        <option value="TeamSystem">TeamSystem (Alyante / Enterprise)</option>
+                                        <option value="Passepartout">Passepartout (Mexal)</option>
+                                        <option value="SAP">SAP (Business One / R3)</option>
+                                        <option value="Altro">Altro Gestionale</option>
+                                    </select>
+                                </div>
+                                <div class="form-field-group">
+                                    <label for="form-docs">Volume Documenti Stimato</label>
+                                    <input type="number" class="form-input-clean" id="form-docs" readonly
+                                        style="background: #f1f5f9; color: var(--iq-teal-primary); font-weight: 700;">
+                                </div>
+                            </div>
+
+                            <div class="privacy-checkbox-row">
+                                <input type="checkbox" id="form-privacy" required>
+                                <label for="form-privacy">
+                                    Acconsento al trattamento dei dati personali ai sensi della Privacy Policy per la valutazione della richiesta di Assessment.*
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px; font-size: 1.05rem;">
+                                Richiedi Assessment + Blocca lo Sconto 50% (2.500 € ➔ 1.250 €)
+                            </button>
+                            <div style="text-align: center; margin-top: 12px; font-size: 0.8rem; color: var(--iq-text-muted);">
+                                🔒 Dati protetti con crittografia SSL 256-bit • Nessun addebito anticipato
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER (Official AverisTech Corporate Footer) -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand / Short About -->
+                <div class="footer-brand" id="footer-col-brand">
+                    <img src="media/logo-navbar.jpeg" alt="AverisTech Logo"
+                        style="height: 34px; margin-bottom: 12px;" />
+                    <p data-i18n="footer-about-short">
+                        AverisTech — Startup ad alto contenuto tecnologico specializzata in ecosistemi di
+                        mobilità, pet care e piattaforme digitali per la community freelance.
+                    </p>
+                    <div style="display: flex; gap: 12px;">
+                        <a href="https://wroomy.it" target="_blank" rel="noopener noreferrer" class="tag">wroomy.it</a>
+                        <a href="https://petsgo.it" target="_blank" rel="noopener noreferrer" class="tag">petsgo.it</a>
+                        <a href="https://freelancerhost.com" target="_blank" rel="noopener noreferrer" class="tag">freelancerhost.com</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div id="footer-col-links">
+                    <h2 class="footer-heading" data-i18n="footer-heading-links">Navigazione Rapida</h2>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about" data-i18n="nav-about">Chi Siamo</a></li>
+                        <li><a href="index.html#portfolio" data-i18n="nav-portfolio">Progetti</a></li>
+                        <li><a href="index.html#innovation" data-i18n="nav-innovation">Innovazione</a></li>
+                        <li><a href="index.html#contact" data-i18n="nav-contact">Contatti</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Disclosures (Startup Innovativa) -->
+                <div id="footer-col-legal">
+                    <h2 class="footer-heading" data-i18n="footer-heading-legal">Pubblicità Legale (Startup)</h2>
+                    <div class="legal-box" id="legal-placeholders-box">
+                        <p>
+                            <span class="legal-highlight" data-i18n="footer-company-label">Ragione Sociale: </span>
+                            <span data-i18n="footer-company-val">AverisTech S.r.l. (Startup Innovativa)</span>
+                        </p>
+                        <p>
+                            <span class="legal-highlight" data-i18n="footer-piva-label">P. IVA / C.F.: </span>
+                            <span data-i18n="footer-piva-val">18664161009</span>
+                        </p>
+                        <p>
+                            <span class="legal-highlight" data-i18n="footer-rea-label">Sede Legale: </span>
+                            <span data-i18n="footer-rea-val">Via del prato 27 - 00172 - Roma (RM)</span>
+                        </p>
+                        <p>
+                            <span class="legal-highlight" data-i18n="footer-capitale-label">Capitale Sociale: </span>
+                            <span data-i18n="footer-capitale-val">€ 4.500,00 interamente versato</span>
+                        </p>
+                        <p>
+                            <span class="legal-highlight" data-i18n="footer-pec-label">PEC Ufficiale: </span>
+                            <a href="mailto:averistech@pec.it" id="link-email-pec">averistech@pec.it</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p id="footer-copy-text" data-i18n="footer-copy">
+                    © 2026 AverisTech S.r.l. - Startup Innovativa - Tutti i diritti riservati.
+                </p>
+                <div style="display: flex; gap: 24px;">
+                    <a href="privacy.html" id="link-privacy" data-i18n="footer-privacy">Informativa sulla Privacy</a>
+                    <a href="cookie.html" id="link-cookie" data-i18n="footer-cookie">Informativa sui Cookie</a>
+                    <a href="legal.html" id="link-terms" data-i18n="footer-terms">Note Legali</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+        <span class="toast-icon" aria-hidden="true">✓</span>
+        <span id="toast-message">Richiesta inviata con successo! Un nostro analista ti contatterà entro 24h per concordare l'Assessment.</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/roi-calculator.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

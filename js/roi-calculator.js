@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const formNumDocs = document.getElementById('form-docs');
 
     // 2. Outputs
-    const outCostoUnitario = document.getElementById('out-costo-unitario');
     const outCanoneMensile = document.getElementById('out-canone-mensile');
     const outSpesaReale = document.getElementById('out-spesa-reale');
     const outCostoAttuale = document.getElementById('out-costo-attuale');
     const outGiorniPersi = document.getElementById('out-giorni-persi');
+    const outTierInfo = document.getElementById('out-tier-info');
     const outRisparmioNetto = document.getElementById('out-risparmio-netto');
     const outRisparmioNettoMensile = document.getElementById('out-risparmio-netto-mensile');
     const outRisparmioPerc = document.getElementById('out-risparmio-perc');
@@ -32,24 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Lookup Table
     const pricingTable = [
-        { max: 100, cost: 0.90, canone: 180.00 },
-        { max: 200, cost: 0.90, canone: 180.00 },
-        { max: 300, cost: 0.90, canone: 320.00 },
-        { max: 400, cost: 0.90, canone: 360.00 },
-        { max: 500, cost: 0.90, canone: 450.00 },
-        { max: 600, cost: 0.80, canone: 480.00 },
-        { max: 700, cost: 0.80, canone: 560.00 },
-        { max: 800, cost: 0.80, canone: 640.00 },
-        { max: 900, cost: 0.80, canone: 720.00 },
-        { max: 1000, cost: 0.80, canone: 800.00 },
-        { max: 1100, cost: 0.80, canone: 880.00 },
-        { max: 1200, cost: 0.80, canone: 960.00 },
-        { max: 1500, cost: 0.80, canone: 1200.00 },
-        { max: 2000, cost: 0.70, canone: 1400.00 },
-        { max: 3000, cost: 0.60, canone: 1800.00 },
-        { max: 4000, cost: 0.55, canone: 2200.00 },
-        { max: 5000, cost: 0.50, canone: 2500.00 },
-        { max: 7000, cost: 0.40, canone: 2800.00 }
+        { max: 500, cost: 0.40, canone: 200.00, nome: 'SMALL' },
+        { max: 1000, cost: 0.35, canone: 350.00, nome: 'MEDIUM' },
+        { max: 3000, cost: 0.30, canone: 900.00, nome: 'LARGE' },
+        { max: 5000, cost: 0.25, canone: 1250.00, nome: 'EXTRA' },
+        { max: Infinity, cost: 0, canone: 0, nome: 'ENTERPRISE' }
     ];
 
     function getPricing(docs) {
@@ -107,33 +94,47 @@ document.addEventListener('DOMContentLoaded', () => {
         const risparmioPercentuale = (risparmioAnno / costoAnnoPersona) * 100;
 
         // Display results
-        outCostoUnitario.textContent = formatCurrency(costoUnitarioDoc) + " /doc";
-        outCanoneMensile.textContent = formatCurrency(canoneMensile) + " /mese";
-        outSpesaReale.textContent = formatCurrency(spesaRealeMese) + " /mese";
+        if (outTierInfo) outTierInfo.textContent = pricing.nome === 'ENTERPRISE' ? 'ENTERPRISE (Contattaci per dettagli)' : pricing.nome;
+        
         outCostoAttuale.textContent = formatCurrency(costoMesePersona) + " /mese";
         outGiorniPersi.textContent = giorniLavoroMesePersona.toFixed(1) + " giorni/mese";
-        
-        const risparmioMensile = risparmioAnno / 12;
 
-        outRisparmioNetto.textContent = formatCurrency(risparmioAnno) + " /anno";
-        outRisparmioNettoMensile.textContent = formatCurrency(risparmioMensile) + " /mese";
-        outRisparmioPerc.textContent = risparmioPercentuale.toFixed(1) + "%";
-
-        // Toggle negative class
-        if (risparmioAnno < 0) {
-            outRisparmioNetto.classList.remove('saving');
-            outRisparmioNetto.classList.add('negative');
-            outRisparmioNettoMensile.classList.remove('saving');
-            outRisparmioNettoMensile.classList.add('negative');
-            outRisparmioPerc.classList.remove('saving');
-            outRisparmioPerc.classList.add('negative');
+        if (pricing.nome === 'ENTERPRISE') {
+            outCanoneMensile.textContent = "Preventivo ad hoc";
+            outSpesaReale.textContent = "Preventivo ad hoc";
+            outRisparmioNetto.textContent = "Su misura";
+            outRisparmioNettoMensile.textContent = "Su misura";
+            outRisparmioPerc.textContent = "Custom";
+            
+            // Remove colored classes for Enterprise
+            outRisparmioNetto.classList.remove('saving', 'negative');
+            outRisparmioNettoMensile.classList.remove('saving', 'negative');
+            outRisparmioPerc.classList.remove('saving', 'negative');
         } else {
-            outRisparmioNetto.classList.remove('negative');
-            outRisparmioNetto.classList.add('saving');
-            outRisparmioNettoMensile.classList.remove('negative');
-            outRisparmioNettoMensile.classList.add('saving');
-            outRisparmioPerc.classList.remove('negative');
-            outRisparmioPerc.classList.add('saving');
+            outCanoneMensile.textContent = formatCurrency(canoneMensile) + " /mese";
+            outSpesaReale.textContent = formatCurrency(spesaRealeMese) + " /mese";
+            
+            const risparmioMensile = risparmioAnno / 12;
+            outRisparmioNetto.textContent = formatCurrency(risparmioAnno) + " /anno";
+            outRisparmioNettoMensile.textContent = formatCurrency(risparmioMensile) + " /mese";
+            outRisparmioPerc.textContent = risparmioPercentuale.toFixed(1) + "%";
+
+            // Toggle negative class
+            if (risparmioAnno < 0) {
+                outRisparmioNetto.classList.remove('saving');
+                outRisparmioNetto.classList.add('negative');
+                outRisparmioNettoMensile.classList.remove('saving');
+                outRisparmioNettoMensile.classList.add('negative');
+                outRisparmioPerc.classList.remove('saving');
+                outRisparmioPerc.classList.add('negative');
+            } else {
+                outRisparmioNetto.classList.remove('negative');
+                outRisparmioNetto.classList.add('saving');
+                outRisparmioNettoMensile.classList.remove('negative');
+                outRisparmioNettoMensile.classList.add('saving');
+                outRisparmioPerc.classList.remove('negative');
+                outRisparmioPerc.classList.add('saving');
+            }
         }
     }
 
@@ -144,6 +145,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Preset Buttons
+    const presetButtons = document.querySelectorAll('.calc-preset-btn');
+    presetButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            presetButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const docsVal = btn.getAttribute('data-docs');
+            if (docsVal && inputNumDocumenti) {
+                inputNumDocumenti.value = docsVal;
+                calculate();
+            }
+        });
+    });
+
     // Initial calc
     calculate();
 });
+
