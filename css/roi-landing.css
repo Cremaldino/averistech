@@ -1138,6 +1138,93 @@ p {
   margin: 0;
 }
 
+/* Calibrated Assessment Tier Cards */
+.assessment-tiers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.assessment-tier-card {
+  background: var(--iq-surface);
+  border: 1px solid var(--iq-border-hairline);
+  border-radius: var(--iq-radius-lg);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--iq-shadow-xs);
+  transition: var(--iq-transition);
+  position: relative;
+}
+
+.assessment-tier-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--iq-teal-primary);
+  box-shadow: var(--iq-shadow-sm);
+}
+
+.assessment-tier-card.featured {
+  border: 2px solid var(--iq-teal-primary);
+  background: linear-gradient(180deg, #f0fdf9 0%, #ffffff 100%);
+  box-shadow: var(--iq-shadow-sm), 0 0 20px rgba(0, 133, 115, 0.08);
+}
+
+.assessment-tier-card .tier-tag {
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: var(--iq-teal-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.assessment-tier-card h4 {
+  font-size: 1.15rem !important;
+  color: var(--iq-text-display) !important;
+  margin-bottom: 4px !important;
+  font-weight: 700 !important;
+}
+
+.assessment-tier-card .tier-docs {
+  font-size: 0.82rem;
+  color: var(--iq-text-muted);
+  margin-bottom: 14px;
+}
+
+.assessment-tier-card .tier-price {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: var(--iq-text-display);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.assessment-tier-card .tier-price span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--iq-text-muted);
+}
+
+.assessment-tier-card .tier-discount {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--iq-teal-primary);
+  margin-bottom: 14px;
+}
+
+.assessment-tier-card p.tier-desc {
+  font-size: 0.82rem;
+  color: var(--iq-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+  border-top: 1px dashed var(--iq-border-subtle);
+  padding-top: 14px;
+}
+
 /* Risk-Reversal Guarantee Banner */
 .guarantee-banner {
   background: linear-gradient(135deg, #090e1a 0%, #172554 100%);
@@ -1509,6 +1596,7 @@ p {
   .pricing-card-clean.popular-card { transform: none; }
   .pricing-card-clean.popular-card:hover { transform: translateY(-4px); }
   .assessment-roadmap-grid { grid-template-columns: repeat(2, 1fr); }
+  .assessment-tiers-grid { grid-template-columns: repeat(2, 1fr); }
   .calc-console-grid { grid-template-columns: 1fr; }
 }
 
@@ -1519,6 +1607,7 @@ p {
   .pricing-cards-grid { grid-template-columns: 1fr; }
   .addons-grid { grid-template-columns: 1fr; }
   .assessment-roadmap-grid { grid-template-columns: 1fr; }
+  .assessment-tiers-grid { grid-template-columns: 1fr; }
   .guarantee-banner { flex-direction: column; text-align: center; }
   .form-layout-grid { grid-template-columns: 1fr; }
   .form-row-2 { grid-template-columns: 1fr; }

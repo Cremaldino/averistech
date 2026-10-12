@@ -24,19 +24,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const outRisparmioNetto = document.getElementById('out-risparmio-netto');
     const outRisparmioNettoMensile = document.getElementById('out-risparmio-netto-mensile');
     const outRisparmioPerc = document.getElementById('out-risparmio-perc');
+    const outAssessmentInfo = document.getElementById('out-assessment-info');
 
     // Constants
     const moltiplicatoreCostoAzienda = 1.37;
     const oreLavorativeAnnue = 1920;
     const aliquotaDetrazioneFiscale = 0.279; // 27.9%
 
-    // Lookup Table
+    // Lookup Table con Assessment Setup Calibrato per Dimensione
     const pricingTable = [
-        { max: 500, cost: 0.40, canone: 200.00, nome: 'SMALL' },
-        { max: 1000, cost: 0.35, canone: 350.00, nome: 'MEDIUM' },
-        { max: 3000, cost: 0.30, canone: 900.00, nome: 'LARGE' },
-        { max: 5000, cost: 0.25, canone: 1250.00, nome: 'EXTRA' },
-        { max: Infinity, cost: 0, canone: 0, nome: 'ENTERPRISE' }
+        { max: 500, cost: 0.40, canone: 200.00, nome: 'SMALL', setup: 2500 },
+        { max: 1000, cost: 0.35, canone: 350.00, nome: 'MEDIUM', setup: 2500 },
+        { max: 3000, cost: 0.30, canone: 900.00, nome: 'LARGE', setup: 3500 },
+        { max: 5000, cost: 0.25, canone: 1250.00, nome: 'EXTRA', setup: 4500 },
+        { max: Infinity, cost: 0, canone: 0, nome: 'ENTERPRISE', setup: null }
     ];
 
     function getPricing(docs) {
@@ -105,6 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
             outRisparmioNetto.textContent = "Su misura";
             outRisparmioNettoMensile.textContent = "Su misura";
             outRisparmioPerc.textContent = "Custom";
+            if (outAssessmentInfo) {
+                outAssessmentInfo.textContent = "Quotato insieme al canone";
+            }
             
             // Remove colored classes for Enterprise
             outRisparmioNetto.classList.remove('saving', 'negative');
@@ -114,6 +118,12 @@ document.addEventListener('DOMContentLoaded', () => {
             outCanoneMensile.textContent = formatCurrency(canoneMensile) + " /mese";
             outSpesaReale.textContent = formatCurrency(spesaRealeMese) + " /mese";
             
+            if (outAssessmentInfo) {
+                const setupQuota = pricing.setup || 2500;
+                const setupNetto = setupQuota / 2;
+                outAssessmentInfo.textContent = `${formatCurrency(setupQuota)} (Netto 50%: ${formatCurrency(setupNetto)})`;
+            }
+
             const risparmioMensile = risparmioAnno / 12;
             outRisparmioNetto.textContent = formatCurrency(risparmioAnno) + " /anno";
             outRisparmioNettoMensile.textContent = formatCurrency(risparmioMensile) + " /mese";
