@@ -176,7 +176,7 @@
                                     stroke-width="2">
                                     <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                                 </svg>
-                                INQUADRA ENGINE // RICONCILIAZIONE ATTIVO & PASSIVO
+                                INQUADRA ENGINE
                             </div>
                             <span class="console-status-live">● RECONCILING</span>
                         </div>
@@ -278,6 +278,8 @@
                         <span class="erp-logo-pill"><strong>SAP</strong></span>
                         <span class="erp-logo-pill"><strong>Passepartout</strong></span>
                         <span class="erp-logo-pill"><strong>SDI XML</strong></span>
+                        <span class="erp-logo-pill"><strong>Danea</strong></span>
+                        <span class="erp-logo-pill"><strong>Odoo</strong></span>
                     </div>
                 </div>
             </div>
@@ -500,7 +502,7 @@
                         <!-- Slider 1: Docs/Month -->
                         <div class="calc-group">
                             <div class="calc-label-row">
-                                <label for="calc-docs">Volume Documenti / Mese (Ciclo Attivo + Passivo: Ordini, DDT,
+                                <label for="calc-docs">Volume Documenti (Ciclo Attivo + Passivo: Ordini, DDT,
                                     Fatture)</label>
                                 <span class="calc-current-badge" id="val-docs">500 doc/mese</span>
                             </div>
@@ -529,7 +531,7 @@
                         <!-- Slider 3: Reconciliation Min -->
                         <div class="calc-group">
                             <div class="calc-label-row">
-                                <label for="calc-riconciliazione">Minuti medi per Spunta e Riconciliazione</label>
+                                <label for="calc-riconciliazione">Minuti per Verifica su Riconciliazione</label>
                                 <span class="calc-current-badge" id="val-riconciliazione">6 min</span>
                             </div>
                             <input type="range" class="calc-slider-clean" id="calc-riconciliazione" min="1" max="30"
@@ -558,7 +560,7 @@
                         <div>
                             <div class="calc-hero-saving">
                                 <div class="saving-label">Risparmio Netto Annuo Stimato</div>
-                                <div class="saving-amount" id="out-risparmio-netto">-- €/anno</div>
+                                <div class="saving-amount" id="out-risparmio-netto">-- €</div>
                                 <div class="saving-sub">
                                     Corrispondente a <strong id="out-risparmio-netto-mensile"
                                         style="color: var(--iq-teal-primary);">-- €/mese</strong> • ROI: <strong
@@ -572,16 +574,16 @@
                                     <div class="calc-block-header">
                                         <span class="calc-block-tag">
                                             <span class="block-indicator"></span>
-                                            Costi Gestione Attuale (As-Is)
+                                            Costi Attuale
                                         </span>
                                     </div>
                                     <div class="calc-breakdown-item">
-                                        <span class="label">Costo Attuale Gestione Manuale:</span>
-                                        <span class="val" id="out-costo-attuale">-- €/mese</span>
+                                        <span class="label">Tempo Lavoro:</span>
+                                        <span class="val danger" id="out-giorni-persi">-- giorni/mese</span>
                                     </div>
                                     <div class="calc-breakdown-item">
-                                        <span class="label">Tempo Lavoro Perso Oggi:</span>
-                                        <span class="val danger" id="out-giorni-persi">-- giorni/mese</span>
+                                        <span class="label">Costo Personale:</span>
+                                        <span class="val" id="out-costo-attuale">-- €/mese</span>
                                     </div>
                                 </div>
 
@@ -590,19 +592,19 @@
                                     <div class="calc-block-header">
                                         <span class="calc-block-tag">
                                             <span class="block-indicator"></span>
-                                            Canone Software inQuadra
+                                            Canone inQuadra
                                         </span>
                                     </div>
                                     <div class="calc-breakdown-item">
-                                        <span class="label">Fascia di Volume Assegnata:</span>
+                                        <span class="label">Piano Consigliato:</span>
                                         <span class="val teal" id="out-tier-info">--</span>
                                     </div>
                                     <div class="calc-breakdown-item">
-                                        <span class="label">Canone Software inQuadra:</span>
+                                        <span class="label">Canone Mensile:</span>
                                         <span class="val" id="out-canone-mensile">-- €/mese</span>
                                     </div>
                                     <div class="calc-breakdown-item">
-                                        <span class="label">Spesa Reale (Netto Deduzione 27,9%):</span>
+                                        <span class="label">Spesa al Netto Deduzione:</span>
                                         <span class="val" id="out-spesa-reale">-- €/mese</span>
                                     </div>
                                 </div>
@@ -611,7 +613,7 @@
 
                         <a href="#form-section" class="btn btn-primary"
                             style="width: 100%; text-align: center; justify-content: center; padding: 14px 20px;">
-                            Richiedi Certificazione del ROI con l'Audit ↓
+                            Compila il form di contatto
                         </a>
                     </div>
                 </div>
@@ -638,6 +640,7 @@
                         <div class="pricing-rate">200 € <span>/mese</span></div>
                         <ul class="pricing-feature-list">
                             <li><span class="check">✓</span> <strong>5 Utenti</strong> inclusi</li>
+                            <li><span class="check">✓</span> Portale</li>
                             <li><span class="check">✓</span> Vision AI Multicanale</li>
                             <li><span class="check">✓</span> 3-Way Matching Attivo & Passivo</li>
                             <li><span class="check">✓</span> Connettore File CSV/XML</li>
@@ -654,9 +657,10 @@
                         <div class="pricing-rate">350 € <span>/mese</span></div>
                         <ul class="pricing-feature-list">
                             <li><span class="check">✓</span> <strong>10 Utenti</strong> inclusi</li>
-                            <li><span class="check">✓</span> Vision AI Multicanale (Ordini, DDT, Fatture)</li>
+                            <li><span class="check">✓</span> Portale</li>
+                            <li><span class="check">✓</span> Vision AI Multicanale</li>
                             <li><span class="check">✓</span> 3-Way Matching Attivo & Passivo</li>
-                            <li><span class="check">✓</span> Connettori ERP Standard</li>
+                            <li><span class="check">✓</span> Connettore File CSV/XML, ERP Standard</li>
                             <li><span class="check">✓</span> Supporto Prioritario</li>
                         </ul>
                         <a href="#form-section" class="btn btn-primary"
@@ -670,10 +674,13 @@
                         <div class="pricing-rate">900 € <span>/mese</span></div>
                         <ul class="pricing-feature-list">
                             <li><span class="check">✓</span> <strong>20 Utenti</strong> inclusi</li>
-                            <li><span class="check">✓</span> Ciclo Attivo & Passivo Integrato</li>
+                            <li><span class="check">✓</span> Portale</li>
+                            <li><span class="check">✓</span> Vision AI Multicanale</li>
+                            <li><span class="check">✓</span> 3-Way Matching Attivo & Passivo</li>
+                            <li><span class="check">✓</span> Connettore File CSV/XML, ERP Standard</li>
                             <li><span class="check">✓</span> Connettori Diretti Zucchetti / TS</li>
                             <li><span class="check">✓</span> WhatsApp / Slack Alert</li>
-                            <li><span class="check">✓</span> Tolleranze Custom Multi-sede</li>
+                            <li><span class="check">✓</span> Supporto Prioritario</li>
                         </ul>
                         <a href="#form-section" class="btn btn-secondary"
                             style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Seleziona</a>
@@ -686,8 +693,12 @@
                         <div class="pricing-rate">1.250 € <span>/mese</span></div>
                         <ul class="pricing-feature-list">
                             <li><span class="check">✓</span> <strong>30 Utenti</strong> inclusi</li>
-                            <li><span class="check">✓</span> Ciclo Attivo & Passivo Integrato</li>
-                            <li><span class="check">✓</span> Connettori Premium SAP</li>
+                            <li><span class="check">✓</span> Portale</li>
+                            <li><span class="check">✓</span> Vision AI Multicanale</li>
+                            <li><span class="check">✓</span> 3-Way Matching Attivo & Passivo</li>
+                            <li><span class="check">✓</span> CConnettore File CSV/XML, ERP Standard</li>
+                            <li><span class="check">✓</span> Connettori Diretti Zucchetti / TS / SAP</li>
+                            <li><span class="check">✓</span> WhatsApp / Slack Alert</li>
                             <li><span class="check">✓</span> Account Manager Dedicato</li>
                         </ul>
                         <a href="#form-section" class="btn btn-secondary"
@@ -701,9 +712,18 @@
                         <div class="pricing-rate">Custom</div>
                         <ul class="pricing-feature-list">
                             <li><span class="check">✓</span> <strong>Utenti Illimitati</strong></li>
-                            <li><span class="check">✓</span> Flussi & Sviluppi ad hoc Attivo/Passivo</li>
+                            <li><span class="check">✓</span> Portale</li>
+                            <li><span class="check">✓</span> Vision AI Multicanale</li>
+                            <li><span class="check">✓</span> 3-Way Matching Attivo & Passivo</li>
+                            <li><span class="check">✓</span> Connettore File CSV/XML, ERP Standard</li>
+                            <li><span class="check">✓</span> Connettori Diretti Zucchetti / TS / SAP</li>
                             <li><span class="check">✓</span> Connettori Multi-ERP</li>
+                            <li><span class="check">✓</span> WhatsApp / Slack Alert</li>
+                            <li><span class="check">✓</span> Flussi & Sviluppi ad hoc</li>
+                            <li><span class="check">✓</span> Estensioni Portale</li>
+                            <li><span class="check">✓</span> Account Manager Dedicato</li>
                             <li><span class="check">✓</span> Consulenza On-site</li>
+
                         </ul>
                         <a href="#form-section" class="btn btn-secondary"
                             style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Richiedi Offerta</a>
@@ -952,8 +972,7 @@
 
                     <!-- Right: Frictionless Booking Form -->
                     <div class="lead-form-card">
-                        <form id="roi-lead-form"
-                            onsubmit="event.preventDefault(); document.getElementById('toast-notification').classList.add('show'); setTimeout(() => document.getElementById('toast-notification').classList.remove('show'), 4500);">
+                        <form id="roi-lead-form">
                             <div class="form-row-2">
                                 <div class="form-field-group">
                                     <label for="form-nome">Nome e Cognome *</label>
@@ -985,15 +1004,15 @@
                                     <label for="form-erp">Gestionale / ERP in uso *</label>
                                     <select class="form-input-clean" id="form-erp" required>
                                         <option value="" disabled selected>Seleziona il gestionale...</option>
-                                        <option value="Zucchetti">Zucchetti (Ad-Hoc / Infinity)</option>
-                                        <option value="TeamSystem">TeamSystem (Alyante / Enterprise)</option>
-                                        <option value="Passepartout">Passepartout (Mexal)</option>
-                                        <option value="SAP">SAP (Business One / R3)</option>
+                                        <option value="Zucchetti">Zucchetti </option>
+                                        <option value="TeamSystem">TeamSystem </option>
+                                        <option value="Passepartout">Passepartout </option>
+                                        <option value="SAP">SAP </option>
                                         <option value="Altro">Altro Gestionale</option>
                                     </select>
                                 </div>
                                 <div class="form-field-group">
-                                    <label for="form-docs">Volume Documenti Stimato (Attivo + Passivo)</label>
+                                    <label for="form-docs">Volume Documenti Stimato </label>
                                     <input type="number" class="form-input-clean" id="form-docs" readonly
                                         style="background: #f1f5f9; color: var(--iq-teal-primary); font-weight: 700;">
                                 </div>
@@ -1093,8 +1112,8 @@
     <!-- Toast Notification -->
     <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
         <span class="toast-icon" aria-hidden="true">✓</span>
-        <span id="toast-message">Richiesta inviata con successo! Un nostro analista ti contatterà entro 24h per
-            concordare l'Assessment.</span>
+        <span id="toast-message">Richiesta preparata con successo! Si sta aprendo il tuo client di posta per inviare la
+            mail a info@averistech.it.</span>
     </div>
 
     <!-- Scripts -->

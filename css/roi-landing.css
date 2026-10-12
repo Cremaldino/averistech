@@ -1689,6 +1689,11 @@ p {
   100% { box-shadow: 0 0 0 0 rgba(0, 133, 115, 0); }
 }
 
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 /* ==========================================================================
    RESPONSIVE MEDIA QUERIES (Mobile & Tablet Fidelity)
    ========================================================================== */

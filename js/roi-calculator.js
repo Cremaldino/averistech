@@ -2,16 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Inputs
     const inputMinutiDataEntry = document.getElementById('calc-data-entry');
     const valMinutiDataEntry = document.getElementById('val-data-entry');
-    
+
     const inputMinutiRiconciliazione = document.getElementById('calc-riconciliazione');
     const valMinutiRiconciliazione = document.getElementById('val-riconciliazione');
-    
+
     const inputRalOperatore = document.getElementById('calc-ral');
     const valRalOperatore = document.getElementById('val-ral');
-    
+
     const inputNumDocumenti = document.getElementById('calc-docs');
     const valNumDocumenti = document.getElementById('val-docs');
-    
+
     // Form pre-fill
     const formNumDocs = document.getElementById('form-docs');
 
@@ -81,10 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const pricing = getPricing(docs);
         const costoUnitarioDoc = pricing.cost;
-        
+
         // Usa direttamente il canone della fascia individuata, senza interpolare
         let canoneMensile = pricing.canone;
-        
+
         const canoneAnno = canoneMensile * 12;
 
         const spesaRealeMese = canoneMensile * (1 - aliquotaDetrazioneFiscale);
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Display results
         if (outTierInfo) outTierInfo.textContent = pricing.nome === 'ENTERPRISE' ? 'ENTERPRISE (Contattaci per dettagli)' : pricing.nome;
-        
+
         outCostoAttuale.textContent = formatCurrency(costoMesePersona) + " /mese";
         outGiorniPersi.textContent = giorniLavoroMesePersona.toFixed(1) + " giorni/mese";
 
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             outRisparmioNetto.textContent = "Su misura";
             outRisparmioNettoMensile.textContent = "Su misura";
             outRisparmioPerc.textContent = "Custom";
-            
+
             // Remove colored classes for Enterprise
             outRisparmioNetto.classList.remove('saving', 'negative');
             outRisparmioNettoMensile.classList.remove('saving', 'negative');
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
             outSpesaReale.textContent = formatCurrency(spesaRealeMese) + " /mese";
 
             const risparmioMensile = risparmioAnno / 12;
-            outRisparmioNetto.textContent = formatCurrency(risparmioAnno) + " /anno";
+            outRisparmioNetto.textContent = formatCurrency(risparmioAnno) + " ";
             outRisparmioNettoMensile.textContent = formatCurrency(risparmioMensile) + " /mese";
             outRisparmioPerc.textContent = risparmioPercentuale.toFixed(1) + "%";
 
