@@ -961,6 +961,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  gap: 12px;
 }
 
 .calc-label-row label {
@@ -974,6 +975,8 @@ p {
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--iq-teal-primary);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .calc-slider-clean {
@@ -1081,13 +1084,79 @@ p {
   margin-bottom: 24px;
 }
 
+.calc-breakdown-block {
+  border-radius: var(--iq-radius-md);
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: var(--iq-transition);
+}
+
+.calc-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2px;
+}
+
+.calc-block-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.calc-block-tag .block-indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* As-Is Block (Current manual costs) */
+.calc-block-asis {
+  background: var(--iq-surface-muted);
+  border: 1px dashed rgba(148, 163, 184, 0.6);
+}
+
+.calc-block-asis .calc-block-tag {
+  color: var(--iq-text-muted);
+}
+
+.calc-block-asis .block-indicator {
+  background: var(--iq-text-muted);
+}
+
+/* To-Be inQuadra Block (Software fee & tax deduction) */
+.calc-block-tobe {
+  background: rgba(0, 133, 115, 0.04);
+  border: 1.5px dashed rgba(0, 133, 115, 0.35);
+}
+
+.calc-block-tobe .calc-block-tag {
+  color: var(--iq-teal-primary);
+}
+
+.calc-block-tobe .block-indicator {
+  background: var(--iq-teal-primary);
+  box-shadow: 0 0 6px rgba(0, 133, 115, 0.4);
+}
+
 .calc-breakdown-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 12px;
+  padding-bottom: 8px;
   border-bottom: 1px dashed var(--iq-border-subtle);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
+}
+
+.calc-block-tobe .calc-breakdown-item {
+  border-bottom-color: rgba(0, 133, 115, 0.15);
 }
 
 .calc-breakdown-item:last-child {
@@ -1097,11 +1166,15 @@ p {
 
 .calc-breakdown-item .label {
   color: var(--iq-text-secondary);
+  line-height: 1.35;
 }
 
 .calc-breakdown-item .val {
   font-weight: 700;
   color: var(--iq-text-display);
+  white-space: nowrap;
+  margin-left: 12px;
+  text-align: right;
 }
 
 .calc-breakdown-item .val.danger {
