@@ -83,18 +83,26 @@
                     <li><a href="#calculator" class="nav-link">Calcolatore ROI</a></li>
                     <li><a href="#prezzi" class="nav-link">Piani</a></li>
                     <li><a href="#assessment" class="nav-link">Assessment 5 Giorni</a></li>
+                    <li class="mobile-nav-cta">
+                        <a href="#form-section" class="btn btn-primary"
+                            style="width: 100%; text-align: center; justify-content: center; padding: 12px 20px;">
+                            Richiedi Informazioni
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
-            <div style="display: flex; align-items: center; gap: 14px;">
-                <span class="nav-badge-pill" style="display: none; @media (min-width: 992px){ display: inline-flex; }">
-                    <span
-                        style="width: 6px; height: 6px; border-radius: 50%; background: var(--iq-teal-primary);"></span>
-                    AI v2.4 Active
-                </span>
-                <a href="#form-section" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.88rem;">
-                    Richiedi Informazioni
+            <div class="nav-actions" style="display: flex; align-items: center; gap: 10px;">
+                <a href="#form-section" class="btn btn-primary nav-cta-btn" id="navbar-cta-btn"
+                    style="padding: 9px 18px; font-size: 0.85rem;">
+                    Richiedi Info
                 </a>
+                <button type="button" class="nav-toggle-btn" id="nav-toggle" aria-label="Apri Menu Navigazione"
+                    aria-expanded="false" aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
@@ -166,17 +174,19 @@
                     <!-- Right: Bespoke inQuadra Live Triangulation Terminal -->
                     <div class="product-showcase">
                         <div class="console-topbar">
-                            <div class="console-dots">
-                                <span class="console-dot red"></span>
-                                <span class="console-dot yellow"></span>
-                                <span class="console-dot green"></span>
-                            </div>
-                            <div class="console-title">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                                </svg>
-                                INQUADRA ENGINE
+                            <div class="console-topbar-left">
+                                <div class="console-dots">
+                                    <span class="console-dot red"></span>
+                                    <span class="console-dot yellow"></span>
+                                    <span class="console-dot green"></span>
+                                </div>
+                                <div class="console-title">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                    </svg>
+                                    INQUADRA ENGINE
+                                </div>
                             </div>
                             <span class="console-status-live">● RECONCILING</span>
                         </div>
@@ -502,8 +512,7 @@
                         <!-- Slider 1: Docs/Month -->
                         <div class="calc-group">
                             <div class="calc-label-row">
-                                <label for="calc-docs">Volume Documenti (Ciclo Attivo + Passivo: Ordini, DDT,
-                                    Fatture)</label>
+                                <label for="calc-docs">Volume Documenti (Ciclo Attivo + Passivo) </label>
                                 <span class="calc-current-badge" id="val-docs">500 doc/mese</span>
                             </div>
                             <input type="range" class="calc-slider-clean" id="calc-docs" min="100" max="6000" step="100"
@@ -640,10 +649,10 @@
                         <div class="pricing-rate">200 € <span>/mese</span></div>
                         <ul class="pricing-feature-list">
                             <li><span class="check">✓</span> <strong>5 Utenti</strong> inclusi</li>
-                            <li><span class="check">✓</span> Portale</li>
+                            <li><span class="check">✓</span> Portale Applicativo </li>
                             <li><span class="check">✓</span> Vision AI Multicanale</li>
                             <li><span class="check">✓</span> 3-Way Matching Attivo & Passivo</li>
-                            <li><span class="check">✓</span> Connettore File CSV/XML</li>
+                            <li><span class="check">✓</span> Connettore CSV/XML/Mail</li>
                         </ul>
                         <a href="#form-section" class="btn btn-secondary"
                             style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Seleziona</a>
@@ -657,11 +666,10 @@
                         <div class="pricing-rate">350 € <span>/mese</span></div>
                         <ul class="pricing-feature-list">
                             <li><span class="check">✓</span> <strong>10 Utenti</strong> inclusi</li>
-                            <li><span class="check">✓</span> Portale</li>
+                            <li><span class="check">✓</span> Portale Applicativo </li>
                             <li><span class="check">✓</span> Vision AI Multicanale</li>
                             <li><span class="check">✓</span> 3-Way Matching Attivo & Passivo</li>
-                            <li><span class="check">✓</span> Connettore File CSV/XML, ERP Standard</li>
-                            <li><span class="check">✓</span> Supporto Prioritario</li>
+                            <li><span class="check">✓</span> Connettore CSV/XML/Mail</li>
                         </ul>
                         <a href="#form-section" class="btn btn-primary"
                             style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Inizia l'Assessment</a>
@@ -674,11 +682,11 @@
                         <div class="pricing-rate">900 € <span>/mese</span></div>
                         <ul class="pricing-feature-list">
                             <li><span class="check">✓</span> <strong>20 Utenti</strong> inclusi</li>
-                            <li><span class="check">✓</span> Portale</li>
+                            <li><span class="check">✓</span> Portale Applicativo </li>
                             <li><span class="check">✓</span> Vision AI Multicanale</li>
                             <li><span class="check">✓</span> 3-Way Matching Attivo & Passivo</li>
-                            <li><span class="check">✓</span> Connettore File CSV/XML, ERP Standard</li>
-                            <li><span class="check">✓</span> Connettori Diretti Zucchetti / TS</li>
+                            <li><span class="check">✓</span> Connettore CSV/XML/Mail</li>
+                            <li><span class="check">✓</span> Connettori Gestionali</li>
                             <li><span class="check">✓</span> WhatsApp / Slack Alert</li>
                             <li><span class="check">✓</span> Supporto Prioritario</li>
                         </ul>
@@ -693,13 +701,14 @@
                         <div class="pricing-rate">1.250 € <span>/mese</span></div>
                         <ul class="pricing-feature-list">
                             <li><span class="check">✓</span> <strong>30 Utenti</strong> inclusi</li>
-                            <li><span class="check">✓</span> Portale</li>
+                            <li><span class="check">✓</span> Portale Applicativo </li>
                             <li><span class="check">✓</span> Vision AI Multicanale</li>
                             <li><span class="check">✓</span> 3-Way Matching Attivo & Passivo</li>
-                            <li><span class="check">✓</span> CConnettore File CSV/XML, ERP Standard</li>
-                            <li><span class="check">✓</span> Connettori Diretti Zucchetti / TS / SAP</li>
+                            <li><span class="check">✓</span> Connettore CSV/XML/Mail</li>
+                            <li><span class="check">✓</span> Connettori Gestionali</li>
                             <li><span class="check">✓</span> WhatsApp / Slack Alert</li>
                             <li><span class="check">✓</span> Account Manager Dedicato</li>
+                            <li><span class="check">✓</span> Connettori SAP / Salesforce / Dynamics</li>
                         </ul>
                         <a href="#form-section" class="btn btn-secondary"
                             style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Seleziona</a>
@@ -712,16 +721,17 @@
                         <div class="pricing-rate">Custom</div>
                         <ul class="pricing-feature-list">
                             <li><span class="check">✓</span> <strong>Utenti Illimitati</strong></li>
-                            <li><span class="check">✓</span> Portale</li>
+                            <li><span class="check">✓</span> Portale Applicativo </li>
                             <li><span class="check">✓</span> Vision AI Multicanale</li>
                             <li><span class="check">✓</span> 3-Way Matching Attivo & Passivo</li>
-                            <li><span class="check">✓</span> Connettore File CSV/XML, ERP Standard</li>
-                            <li><span class="check">✓</span> Connettori Diretti Zucchetti / TS / SAP</li>
-                            <li><span class="check">✓</span> Connettori Multi-ERP</li>
+                            <li><span class="check">✓</span> Connettore CSV/XML/Mail</li>
+                            <li><span class="check">✓</span> Connettori Gestionali</li>
                             <li><span class="check">✓</span> WhatsApp / Slack Alert</li>
-                            <li><span class="check">✓</span> Flussi & Sviluppi ad hoc</li>
-                            <li><span class="check">✓</span> Estensioni Portale</li>
                             <li><span class="check">✓</span> Account Manager Dedicato</li>
+                            <li><span class="check">✓</span> Connettori SAP / Salesforce / Dynamics</li>
+                            <li><span class="check">✓</span> Connettori Multi-ERP</li>
+                            <li><span class="check">✓</span> Personalizzazione Processi e Integrazioni </li>
+                            <li><span class="check">✓</span> Estensioni Portale</li>
                             <li><span class="check">✓</span> Consulenza On-site</li>
 
                         </ul>
@@ -849,20 +859,20 @@
                             <h4>PMI Standard</h4>
                             <div class="tier-docs">Fino a 1.000 documenti/mese (Attivo + Passivo)</div>
                             <div class="tier-price">2.500 € <span>una tantum</span></div>
-                            <div class="tier-discount">➔ 1.250 € con Sconto Early Access 50%</div>
+                            <div class="tier-discount">➔ 1.250 € con Incentivo Early Access 50%</div>
                         </div>
                         <p class="tier-desc">Audit flussi singola sede, mappatura fornitori e clienti principali,
                             connettori standard gestione file/ERP.</p>
                     </div>
 
                     <!-- Tier 2 -->
-                    <div class="assessment-tier-card featured">
+                    <div class="assessment-tier-card">
                         <div>
                             <div class="tier-tag">Piano Large</div>
                             <h4>Aziende Strutturate</h4>
                             <div class="tier-docs">Da 1.001 a 3.000 doc/mese (Attivo + Passivo)</div>
                             <div class="tier-price">3.500 € <span>una tantum</span></div>
-                            <div class="tier-discount">➔ 1.750 € con Sconto Early Access 50%</div>
+                            <div class="tier-discount">➔ 1.750 € con Incentivo Early Access 50%</div>
                         </div>
                         <p class="tier-desc">Audit multi-sede, campionamento esteso fornitori e clienti eterogenei,
                             tolleranze custom e connettori diretti Zucchetti/TS.</p>
@@ -875,7 +885,7 @@
                             <h4>Alta Volumetria</h4>
                             <div class="tier-docs">Da 3.001 a 5.000 doc/mese (Attivo + Passivo)</div>
                             <div class="tier-price">4.500 € <span>una tantum</span></div>
-                            <div class="tier-discount">➔ 2.250 € con Sconto Early Access 50%</div>
+                            <div class="tier-discount">➔ 2.250 € con Incentivo Early Access 50%</div>
                         </div>
                         <p class="tier-desc">Audit approfondito ad alto flusso, stress-test PoC documentale, connettori
                             premium SAP B1 e account dedicato.</p>
@@ -886,7 +896,7 @@
                         <div>
                             <div class="tier-tag">Licenza Enterprise</div>
                             <h4>Complessità & Custom</h4>
-                            <div class="tier-docs">Oltre 5.000 doc/mese & Multi-ERP</div>
+                            <div class="tier-docs">Oltre 5.000 doc/mese (Attivo + Passivo)</div>
                             <div class="tier-price">Su Misura <span>(Incluso)</span></div>
                             <div class="tier-discount">➔ Quotato insieme al canone di licenza</div>
                         </div>
@@ -906,8 +916,8 @@
                         </p>
                     </div>
                     <div class="guarantee-seal">
-                        <div class="price-discounted">Sconto 50%</div>
-                        <div class="tag">Riaccreditato sul 1° Anno</div>
+                        <div class="price-discounted" style="font-size: 1.35rem; line-height: 1.2; margin-bottom: 6px;">Incentivo Early Access</div>
+                        <div class="tag">50% Riaccreditato sul 1° Anno</div>
                     </div>
                 </div>
             </div>
@@ -918,10 +928,10 @@
             <div class="container">
                 <div class="section-header-clean">
                     <span class="section-tag-clean">Inizia Subito</span>
-                    <h2 class="section-title-clean">Prenota il Tuo Process Assessment</h2>
+                    <h2 class="section-title-clean">Richiedi Informazioni</h2>
                     <p class="section-desc-clean">
-                        Compila il modulo per bloccare la disponibilità degli specialisti e riservare il 50% di sconto
-                        sul setup iniziale.
+                        Compila il modulo per ricevere maggiori informazioni sulla piattaforma, parlare con i nostri specialisti
+                        e scoprire come accedere all'Incentivo Early Access del 50% sul setup iniziale.
                     </p>
                 </div>
 
@@ -976,12 +986,12 @@
                             <div class="form-row-2">
                                 <div class="form-field-group">
                                     <label for="form-nome">Nome e Cognome *</label>
-                                    <input type="text" class="form-input-clean" id="form-nome"
+                                    <input type="text" class="form-input-clean" id="form-nome" name="name"
                                         placeholder="es. Mario Rossi" required>
                                 </div>
                                 <div class="form-field-group">
                                     <label for="form-email">Email Aziendale *</label>
-                                    <input type="email" class="form-input-clean" id="form-email"
+                                    <input type="email" class="form-input-clean" id="form-email" name="email"
                                         placeholder="m.rossi@azienda.it" required>
                                 </div>
                             </div>
@@ -989,12 +999,12 @@
                             <div class="form-row-2">
                                 <div class="form-field-group">
                                     <label for="form-tel">Telefono Diretto *</label>
-                                    <input type="tel" class="form-input-clean" id="form-tel"
+                                    <input type="tel" class="form-input-clean" id="form-tel" name="phone"
                                         placeholder="+39 02 1234567" required>
                                 </div>
                                 <div class="form-field-group">
                                     <label for="form-azienda">Ragione Sociale Azienda *</label>
-                                    <input type="text" class="form-input-clean" id="form-azienda"
+                                    <input type="text" class="form-input-clean" id="form-azienda" name="company"
                                         placeholder="es. Meccanica Veneta S.r.l." required>
                                 </div>
                             </div>
@@ -1002,7 +1012,7 @@
                             <div class="form-row-2">
                                 <div class="form-field-group">
                                     <label for="form-erp">Gestionale / ERP in uso *</label>
-                                    <select class="form-input-clean" id="form-erp" required>
+                                    <select class="form-input-clean" id="form-erp" name="erp" required>
                                         <option value="" disabled selected>Seleziona il gestionale...</option>
                                         <option value="Zucchetti">Zucchetti </option>
                                         <option value="TeamSystem">TeamSystem </option>
@@ -1013,16 +1023,21 @@
                                 </div>
                                 <div class="form-field-group">
                                     <label for="form-docs">Volume Documenti Stimato </label>
-                                    <input type="number" class="form-input-clean" id="form-docs" readonly
+                                    <input type="number" class="form-input-clean" id="form-docs" name="volume_documenti"
+                                        readonly
                                         style="background: #f1f5f9; color: var(--iq-teal-primary); font-weight: 700;">
                                 </div>
                             </div>
+
+                            <!-- Honeypot antispam per Cloudflare Worker (invisibile agli utenti) -->
+                            <input type="text" name="_honeypot" id="form-honeypot" style="display:none !important;"
+                                tabindex="-1" autocomplete="off">
 
                             <div class="privacy-checkbox-row">
                                 <input type="checkbox" id="form-privacy" required>
                                 <label for="form-privacy">
                                     Acconsento al trattamento dei dati personali ai sensi della Privacy Policy per la
-                                    valutazione della richiesta di Assessment.*
+                                    gestione della richiesta di informazioni.*
                                 </label>
                             </div>
 

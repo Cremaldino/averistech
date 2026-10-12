@@ -297,36 +297,43 @@ p {
 .hero-metrics-strip {
   display: flex;
   align-items: center;
-  gap: 24px;
+  justify-content: space-between;
+  gap: 12px;
   padding-top: 24px;
   border-top: 1px solid var(--iq-border-hairline);
+  width: 100%;
 }
 
 .hero-metric-item {
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .hero-metric-item .metric-val {
   font-family: 'Outfit', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 800;
   color: var(--iq-text-display);
-  line-height: 1.1;
+  line-height: 1.15;
+  white-space: nowrap;
 }
 
 .hero-metric-item .metric-label {
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-size: 0.72rem;
+  font-weight: 700;
   color: var(--iq-text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
 }
 
 .hero-metric-divider {
   width: 1px;
-  height: 32px;
+  height: 28px;
   background: var(--iq-border-subtle);
+  flex-shrink: 0;
 }
 
 /* ==========================================================================
@@ -349,6 +356,12 @@ p {
   padding: 14px 20px;
   background: rgba(255, 255, 255, 0.03);
   border-bottom: 1px solid var(--iq-console-border);
+}
+
+.console-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .console-dots {
@@ -551,41 +564,44 @@ p {
   background: var(--iq-surface);
   border: 1px solid var(--iq-border-hairline);
   border-radius: var(--iq-radius-lg);
-  padding: 24px 36px;
+  padding: 24px 32px;
   box-shadow: var(--iq-shadow-xs);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 18px;
+  width: 100%;
 }
 
 .erp-strip-label {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--iq-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
 .erp-strip-logos {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  width: 100%;
 }
 
 .erp-logo-pill {
   background: var(--iq-surface-muted);
   border: 1px solid var(--iq-border-subtle);
   border-radius: var(--iq-radius-pill);
-  padding: 8px 18px;
-  font-size: 0.85rem;
+  padding: 10px 14px;
+  font-size: 0.88rem;
   font-weight: 700;
   color: var(--iq-text-primary);
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
   transition: var(--iq-transition);
 }
 
@@ -594,6 +610,7 @@ p {
   border-color: var(--iq-teal-primary);
   color: var(--iq-teal-primary);
   box-shadow: var(--iq-shadow-xs);
+  transform: translateY(-2px);
 }
 
 /* ==========================================================================
@@ -1697,6 +1714,23 @@ p {
 /* ==========================================================================
    RESPONSIVE MEDIA QUERIES (Mobile & Tablet Fidelity)
    ========================================================================== */
+
+/* Keyframe menu mobile animation */
+@keyframes iqMobileMenuIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-nav-cta {
+  display: none;
+}
+
 @media (max-width: 1100px) {
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .product-showcase { max-width: 600px; margin: 0 auto; }
@@ -1708,18 +1742,382 @@ p {
   .calc-console-grid { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 820px) {
-  .hero-wrapper { padding: 130px 0 60px; }
-  .comparison-grid { grid-template-columns: 1fr; }
-  .pillars-bento .col-7, .pillars-bento .col-5, .pillars-bento .col-6 { grid-column: span 12; }
-  .pricing-cards-grid { grid-template-columns: 1fr; }
-  .addons-grid { grid-template-columns: 1fr; }
-  .assessment-roadmap-grid { grid-template-columns: 1fr; }
-  .assessment-tiers-grid { grid-template-columns: 1fr; }
-  .guarantee-banner { flex-direction: column; text-align: center; }
-  .form-layout-grid { grid-template-columns: 1fr; }
-  .form-row-2 { grid-template-columns: 1fr; }
-  .hero-metrics-strip { flex-wrap: wrap; }
+/* TABLET & MOBILE BREAKPOINT (991px and down) */
+@media (max-width: 991px) {
+  /* 1. Header & Navigation Refinement */
+  .navbar {
+    padding: 10px 0 !important;
+  }
+
+  .nav-container {
+    padding: 0 16px !important;
+  }
+
+  #navbar-logo {
+    height: 38px !important;
+  }
+
+  .d-none-mobile {
+    display: none !important;
+  }
+
+  .nav-actions {
+    gap: 8px !important;
+  }
+
+  .nav-cta-btn {
+    padding: 8px 14px !important;
+    font-size: 0.82rem !important;
+  }
+
+  /* Hamburger Button - Perfettamente visibile su navbar chiara */
+  .nav-toggle-btn {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 133, 115, 0.08) !important;
+    border: 1.5px solid rgba(0, 133, 115, 0.25) !important;
+    border-radius: 8px !important;
+    cursor: pointer;
+    padding: 0;
+    color: #0f172a !important;
+    transition: all 0.2s ease;
+    z-index: 10001;
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+
+  .nav-toggle-btn:hover,
+  .nav-toggle-btn:focus {
+    background: rgba(0, 133, 115, 0.15) !important;
+    border-color: var(--iq-teal-primary) !important;
+  }
+
+  .nav-toggle-btn span {
+    display: block;
+    width: 20px;
+    height: 2.5px;
+    background: #0f172a !important;
+    border-radius: 2px;
+    transition: all 0.25s ease;
+  }
+
+  .nav-toggle-btn.active {
+    background: #0f172a !important;
+    border-color: #0f172a !important;
+    color: #ffffff !important;
+  }
+
+  .nav-toggle-btn.active span {
+    background: #ffffff !important;
+  }
+
+  .nav-toggle-btn.active span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+  }
+
+  .nav-toggle-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle-btn.active span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+  }
+
+  /* Navigation Drawer (100% OPACO, niente trasparenze che disturbano) */
+  .nav-links {
+    display: none !important;
+    position: fixed !important;
+    top: 60px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-height: calc(100vh - 60px) !important;
+    overflow-y: auto !important;
+    background: #0a0f1d !important;
+    border-bottom: 3px solid var(--iq-teal-primary) !important;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9) !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 24px 20px 36px !important;
+    gap: 12px !important;
+    z-index: 9999 !important;
+  }
+
+  .nav-links.open {
+    display: flex !important;
+    animation: iqMobileMenuIn 0.22s ease-out forwards !important;
+  }
+
+  .nav-links .nav-link {
+    font-size: 1rem !important;
+    padding: 12px 16px !important;
+    border-radius: 8px !important;
+    color: #e2e8f0 !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    display: block !important;
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .nav-links .nav-link:hover,
+  .nav-links .nav-link.active {
+    background: rgba(0, 210, 180, 0.12) !important;
+    border-color: var(--iq-teal-border) !important;
+    color: var(--iq-teal-primary) !important;
+  }
+
+  .nav-links .nav-link.active::after {
+    display: none !important;
+  }
+
+  .mobile-nav-cta {
+    display: block !important;
+    margin-top: 10px !important;
+    padding-top: 10px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  /* 2. Hero Section */
+  .hero-wrapper {
+    padding: 95px 0 45px !important;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .hero-eyebrow {
+    margin-bottom: 16px !important;
+    padding: 5px 12px !important;
+    font-size: 0.76rem !important;
+  }
+
+  .hero-title,
+  .iq-hero-title {
+    font-size: clamp(1.85rem, 6.5vw, 2.45rem) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .hero-desc {
+    font-size: 1.02rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* 3. Bento & Comparison */
+  .comparison-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .pillars-bento {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .pillars-bento > * {
+    grid-column: span 1 !important;
+  }
+
+  .bento-card-clean {
+    padding: 24px 20px !important;
+  }
+
+  /* 4. Calculator */
+  .calculator-section-clean {
+    padding: 60px 0 !important;
+  }
+
+  .calc-console-grid {
+    grid-template-columns: 1fr !important;
+    padding: 24px 20px !important;
+    gap: 28px !important;
+  }
+
+  /* 5. Pricing & Roadmaps */
+  .pricing-section-clean {
+    padding: 60px 0 !important;
+  }
+
+  .pricing-cards-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 480px !important;
+    margin: 0 auto !important;
+    gap: 20px !important;
+  }
+
+  .addons-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .assessment-section {
+    padding: 60px 0 !important;
+  }
+
+  .assessment-roadmap-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .assessment-tiers-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .guarantee-banner {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 24px 18px !important;
+  }
+
+  /* 6. Lead Form */
+  .form-layout-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .form-trust-card {
+    padding: 24px 18px !important;
+    border-radius: 16px !important;
+  }
+
+  .lead-form-card {
+    padding: 24px 18px !important;
+    border-radius: 16px !important;
+  }
+
+  .form-row-2 {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  /* Evita lo zoom automatico sgradevole di Safari su iOS quando si tocca un input */
+  .form-input-clean {
+    font-size: 16px !important;
+    padding: 12px 14px !important;
+  }
+}
+
+/* SMARTPHONE SPECIFIC (576px and down) */
+@media (max-width: 576px) {
+  .hero-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 12px !important;
+  }
+
+  .hero-actions .btn {
+    width: 100% !important;
+    padding: 14px 20px !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  /* Metrics Strip 2x2 Grid */
+  .hero-metrics-strip {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    padding: 12px 10px !important;
+    margin-top: 20px !important;
+  }
+
+  .hero-metric-divider {
+    display: none !important;
+  }
+
+  .hero-metric-item {
+    white-space: normal !important;
+    text-align: center !important;
+    padding: 10px 6px !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-radius: 8px !important;
+  }
+
+  .hero-metric-item .metric-num {
+    font-size: 1.35rem !important;
+  }
+
+  .hero-metric-item .metric-sub {
+    font-size: 0.72rem !important;
+  }
+
+  /* ERP Compatibility Strip (3 columns on small mobile) */
+  .erp-compatibility-card {
+    padding: 16px 12px !important;
+    margin-top: 20px !important;
+  }
+
+  .erp-strip-logos {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 6px !important;
+  }
+
+  .erp-logo-badge {
+    padding: 8px 4px !important;
+    font-size: 0.75rem !important;
+  }
+
+  /* Console Topbar & items */
+  .console-topbar {
+    padding: 10px 12px !important;
+    font-size: 0.72rem !important;
+  }
+
+  .doc-item {
+    padding: 10px 12px !important;
+    font-size: 0.8rem !important;
+  }
+
+  /* Calculator Savings Card */
+  .calc-hero-saving {
+    padding: 18px 12px !important;
+  }
+
+  .calc-hero-saving .saving-amount {
+    font-size: 2.2rem !important;
+  }
+
+  .calc-breakdown-block {
+    padding: 12px 14px !important;
+  }
+
+  .calc-presets-row {
+    gap: 6px !important;
+  }
+
+  .calc-preset-btn {
+    padding: 6px 10px !important;
+    font-size: 0.76rem !important;
+  }
+
+  /* Toast Notification */
+  .toast-notification {
+    left: 12px !important;
+    right: 12px !important;
+    bottom: 12px !important;
+    transform: none !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+}
+
+/* VERY NARROW SCREENS (380px and down) */
+@media (max-width: 380px) {
+  .erp-strip-logos {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .nav-cta-btn {
+    display: none !important; /* Su schermi microscopici lascia spazio a logo e hamburger */
+  }
 }
 
 /* ==========================================================================

@@ -1,0 +1,8 @@
+name = "averistech-inquadra-lead"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Imposta le variabili di produzione (i segreti come RESEND_API_KEY vanno impostati con 'npx wrangler secret put RESEND_API_KEY')
+[vars]
+DESTINATION_EMAIL = "info@averistech.it"
+SENDER_EMAIL = "inQuadra Leads <onboarding@resend.dev>"

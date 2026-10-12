@@ -22,10 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinksList = document.getElementById("nav-links");
 
   if (navToggleBtn && navLinksList) {
-    navToggleBtn.addEventListener("click", () => {
+    navToggleBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
       const isOpen = navLinksList.classList.toggle("open");
+      navToggleBtn.classList.toggle("active", isOpen);
       navToggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
-      navToggleBtn.textContent = isOpen ? "✕" : "☰";
     });
 
     // Close mobile menu when clicking a link
@@ -33,9 +34,18 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.forEach(link => {
       link.addEventListener("click", () => {
         navLinksList.classList.remove("open");
+        navToggleBtn.classList.remove("active");
         navToggleBtn.setAttribute("aria-expanded", "false");
-        navToggleBtn.textContent = "☰";
       });
+    });
+
+    // Close on click outside
+    document.addEventListener("click", (e) => {
+      if (!navLinksList.contains(e.target) && !navToggleBtn.contains(e.target) && navLinksList.classList.contains("open")) {
+        navLinksList.classList.remove("open");
+        navToggleBtn.classList.remove("active");
+        navToggleBtn.setAttribute("aria-expanded", "false");
+      }
     });
   }
 
@@ -75,7 +85,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 4. INQUADRA LEAD FORM SUBMISSION (DIRECT AJAX TO info@averistech.it)
+  // 4. INQUADRA LEAD FORM SUBMISSION (CLOUDFLARE WORKER BACKEND)
+  const CLOUDFLARE_WORKER_URL = "https://averistech-inquadra-lead.vincenzo-cesarini.workers.dev";
+
   const roiLeadForm = document.getElementById("roi-lead-form");
   const btnSubmitLead = document.getElementById("btn-submit-lead");
   const toastMessage = document.getElementById("toast-message");
@@ -90,6 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const azienda = document.getElementById("form-azienda")?.value.trim() || "";
       const erp = document.getElementById("form-erp")?.value || "Non specificato";
       const docs = document.getElementById("form-docs")?.value || "500";
+      const honeypot = document.getElementById("form-honeypot")?.value || "";
 
       // 1. Loading UI State
       const originalBtnHtml = btnSubmitLead ? btnSubmitLead.innerHTML : "Richiedi Informazioni";
@@ -142,30 +155,27 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       try {
-        // 2. Direct Background POST via AJAX (on http/https)
-        const response = await fetch("https://formsubmit.co/ajax/info@averistech.it", {
+        // 2. Direct Background POST to Cloudflare Worker
+        const response = await fetch(CLOUDFLARE_WORKER_URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
             "Accept": "application/json"
           },
           body: JSON.stringify({
-            _subject: `[inQuadra] Nuova Richiesta Lead - ${azienda || nome}`,
-            _template: "table",
-            _captcha: "false",
-            "Nome e Cognome": nome,
-            "Ragione Sociale": azienda,
-            "Email Aziendale": email,
-            "Telefono Diretto": tel,
-            "Gestionale / ERP": erp,
-            "Volume Documenti Stimato": `${docs} doc/mese`,
-            "Origine": "Landing Page inQuadra (averistech.it)"
+            name: nome,
+            email: email,
+            phone: tel,
+            company: azienda,
+            erp: erp,
+            volume_documenti: `${docs} doc/mese`,
+            _honeypot: honeypot
           })
         });
 
         const result = await response.json();
 
-        if (response.ok && (result.success === "true" || result.success === true)) {
+        if (response.ok && result.success) {
           // Success State
           if (btnSubmitLead) {
             btnSubmitLead.innerHTML = "✓ Richiesta Inviata!";
@@ -196,31 +206,8 @@ document.addEventListener("DOMContentLoaded", () => {
               btnSubmitLead.style.borderColor = "";
             }
           }, 4500);
-        } else if (result.message && result.message.toLowerCase().includes("activation")) {
-          // One-time FormSubmit email activation notice
-          if (btnSubmitLead) {
-            btnSubmitLead.innerHTML = "✓ Verifica inviata a info@averistech.it";
-            btnSubmitLead.style.background = "var(--iq-amber, #d97706)";
-            btnSubmitLead.style.borderColor = "var(--iq-amber, #d97706)";
-          }
-
-          if (toastMessage) {
-            toastMessage.textContent = "Attivazione richiesta: FormSubmit ha inviato un'email a info@averistech.it. Clicca su 'Activate Form' nell'email per abilitare la ricezione definitiva.";
-          }
-          if (toastNotification) {
-            toastNotification.classList.add("show");
-          }
-
-          setTimeout(() => {
-            if (btnSubmitLead) {
-              btnSubmitLead.disabled = false;
-              btnSubmitLead.innerHTML = originalBtnHtml;
-              btnSubmitLead.style.background = "";
-              btnSubmitLead.style.borderColor = "";
-            }
-          }, 6000);
         } else {
-          throw new Error(result.message || "Errore durante la trasmissione");
+          throw new Error(result.error || result.message || "Errore durante la trasmissione dei dati");
         }
       } catch (err) {
         console.error("Errore invio form inQuadra:", err);
