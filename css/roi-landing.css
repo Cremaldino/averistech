@@ -385,6 +385,36 @@ p {
   border: 1px solid rgba(0, 212, 178, 0.3);
 }
 
+.console-mode-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  flex-wrap: wrap;
+}
+
+.console-mode-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--iq-radius-pill);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background: rgba(255, 255, 255, 0.05);
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.console-mode-pill.active {
+  background: rgba(0, 133, 115, 0.18);
+  color: var(--iq-mint-accent);
+  border-color: rgba(0, 212, 178, 0.35);
+}
+
 .console-body {
   padding: 24px;
   display: flex;
