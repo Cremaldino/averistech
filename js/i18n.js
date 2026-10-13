@@ -38,10 +38,15 @@ const translations = {
     // Portfolio Section
     "portfolio-tag": "Il Nostro Portafoglio",
     "portfolio-title": "Le nostre iniziative tecnologiche",
-    "portfolio-desc": "Tre piattaforme verticali in rapida espansione, progettate e sviluppate per eccellere nei rispettivi settori di mercato.",
+    "portfolio-desc": "Le nostre piattaforme tecnologiche proprietarie e soluzioni SaaS B2B, progettate per innovare e creare valore tangibile.",
     "status-active": "Progetto Attivo",
 
-    // Project 1: petsgo.it
+    // Project 1: inQuadra (inquadra.html)
+    "inquadra-title": "inQuadra",
+    "inquadra-desc": "Copilota AI per l'automazione integrata di Ciclo Attivo e Passivo aziendale. Riconciliazione automatica a 3 vie (Ordini, DDT, Fatture elettroniche) e connettori nativi per i principali ERP (Zucchetti, TeamSystem, SAP, Passepartout).",
+    "inquadra-link": "Scopri di più su inQuadra →",
+
+    // Project 2: petsgo.it
     "petsgo-title": "Petsgo",
     "petsgo-desc": "L'ecosistema tecnologico di riferimento per il benessere e la cura dei nostri animali domestici. Una piattaforma modulare che connette pet lover, veterinari e strutture di servizio con strumenti intuitivi e affidabili.",
     "petsgo-link": "Scopri di più su Petsgo →",
@@ -154,12 +159,17 @@ const translations = {
     // Petsgo Detail Page
     "petsgo-page-tag": "Pet Care Ecosystem",
     "petsgo-hero-desc": "La piattaforma definitiva per il benessere degli animali domestici. Un ecosistema centralizzato per pet lovers e professionisti, basato su un'architettura headless ultra-veloce.",
+    "petsgo-btn-appstore": "Scarica su App Store",
     "petsgo-c1-title": "La Sfida di Mercato",
     "petsgo-c1-desc": "Il settore pet care soffre di una cronica frammentazione. I pet lovers navigano tra decine di app diverse, mentre le cliniche utilizzano software B2B obsoleti, perdendo efficienza operativa.",
     "petsgo-c2-title": "L'Ecosistema Elettronico",
     "petsgo-c2-desc": "Un booking engine proprietario che automatizza appuntamenti e cartelle cliniche, integrando intelligenza artificiale per un triage virtuale preliminare e supporto utente 24/7.",
     "petsgo-c3-title": "Modello B2B2C",
     "petsgo-c3-desc": "Serve milioni di proprietari di animali con standard premium (B2C) e contemporaneamente fornisce a cliniche e toelettatori un SaaS (B2B) per azzerare i costi di acquisizione.",
+    "petsgo-callout-tag": "Applicazione Mobile iOS",
+    "petsgo-callout-title": "Porta Petsgo sempre con te",
+    "petsgo-callout-desc": "Scarica l'applicazione ufficiale per iOS da Apple App Store per gestire libretto sanitario, promemoria vaccini e consulti ovunque ti trovi.",
+    "petsgo-callout-btn": "Scarica dall'App Store",
 
     // Wroomy Detail Page
     "wroomy-page-tag": "Automotive SaaS",
@@ -216,10 +226,15 @@ const translations = {
     // Portfolio Section
     "portfolio-tag": "OUR PORTFOLIO",
     "portfolio-title": "Our technological initiatives",
-    "portfolio-desc": "Three fast-growing vertical platforms, designed and built to excel in their respective market sectors.",
+    "portfolio-desc": "Proprietary vertical platforms and enterprise B2B SaaS solutions, engineered to lead their respective markets.",
     "status-active": "Active Project",
 
-    // Project 1: petsgo.it
+    // Project 1: inQuadra (inquadra.html)
+    "inquadra-title": "inQuadra",
+    "inquadra-desc": "AI Copilot for end-to-end automation of accounts payable and receivable. Automated 3-way matching (Purchase Orders, Delivery Notes, Invoices) and native connectors for major ERPs.",
+    "inquadra-link": "Discover more about inQuadra →",
+
+    // Project 2: petsgo.it
     "petsgo-title": "Petsgo",
     "petsgo-desc": "The benchmark technological ecosystem for pet wellness and care. A modular platform connecting pet lovers, veterinarians, and service facilities with intuitive, reliable tools.",
     "petsgo-link": "Discover more about Petsgo →",
@@ -332,12 +347,17 @@ const translations = {
     // Petsgo Detail Page
     "petsgo-page-tag": "Pet Care Ecosystem",
     "petsgo-hero-desc": "The ultimate platform for pet wellness. A centralized ecosystem for pet lovers and professionals, built on an ultra-fast headless architecture.",
+    "petsgo-btn-appstore": "Download on App Store",
     "petsgo-c1-title": "Market Challenge",
     "petsgo-c1-desc": "The pet care industry suffers from chronic fragmentation. Pet owners navigate across dozens of disparate apps, while clinics rely on obsolete B2B software, losing operational efficiency.",
     "petsgo-c2-title": "Digital Ecosystem",
     "petsgo-c2-desc": "A proprietary booking engine automating appointments and clinical records, integrating artificial intelligence for virtual triage and 24/7 user support.",
     "petsgo-c3-title": "B2B2C Business Model",
     "petsgo-c3-desc": "Serves millions of pet owners with premium consumer standards (B2C) while providing veterinary clinics and groomers with a SaaS (B2B) that eliminates customer acquisition costs.",
+    "petsgo-callout-tag": "iOS Mobile Application",
+    "petsgo-callout-title": "Always carry Petsgo with you",
+    "petsgo-callout-desc": "Download the official iOS application from the Apple App Store to manage digital pet health records, vaccine reminders, and appointments wherever you are.",
+    "petsgo-callout-btn": "Download on App Store",
 
     // Wroomy Detail Page
     "wroomy-page-tag": "Automotive SaaS",
@@ -412,6 +432,13 @@ class I18nManager {
         btnIt.classList.remove("active");
       }
     }
+
+    // Update official App Store badges
+    const badgeElements = document.querySelectorAll(".app-store-badge-img");
+    badgeElements.forEach(img => {
+      img.src = lang === "it" ? "media/app-store-badge-it.svg" : "media/app-store-badge-en.svg";
+      img.alt = lang === "it" ? "Scarica su App Store" : "Download on the App Store";
+    });
   }
 
   setupEventListeners() {

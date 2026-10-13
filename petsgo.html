@@ -4,7 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Petsgo - AverisTech</title>
-    <meta name="description" content="Dettagli e architettura del progetto Petsgo." />
+    <meta name="description" content="Dettagli e architettura del progetto Petsgo: ecosistema mobile per pet care e salute animale." />
+    <link rel="icon" type="image/jpeg" href="media/logo-icon.jpeg" />
+
+    <!-- Apple Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=6817229802" />
+
+    <!-- OpenGraph Metadata -->
+    <meta property="og:title" content="Petsgo — Pet Care Ecosystem | AverisTech" />
+    <meta property="og:description" content="La piattaforma definitiva per il benessere degli animali domestici. Disponibile su Apple App Store." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://averistech.it/petsgo.html" />
+    <meta property="og:image" content="media/Petsgo-Home.jpeg" />
+
+    <!-- JSON-LD MobileApplication Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Petsgo",
+      "operatingSystem": "iOS",
+      "applicationCategory": "LifestyleApplication",
+      "installUrl": "https://apps.apple.com/us/app/petsgo/id6817229802",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AverisTech S.r.l.",
+        "url": "https://averistech.it"
+      }
+    }
+    </script>
+
     <link rel="stylesheet" href="css/style.css" />
     <style>
         .project-detail-hero { padding: 8rem 0 4rem; text-align: center; }
@@ -52,8 +86,13 @@
                     <span class="section-tag" data-i18n="petsgo-page-tag">Pet Care Ecosystem</span>
                     <h1><span class="text-gradient">Petsgo</span></h1>
                     <p data-i18n="petsgo-hero-desc">La piattaforma definitiva per il benessere degli animali domestici. Un ecosistema centralizzato per pet lovers e professionisti, basato su un'architettura headless ultra-veloce.</p>
-                    <div style="margin-top: 32px;">
-                        <a href="https://petsgo.it" target="_blank" class="btn btn-primary" data-i18n="project-btn-visit">Visita il sito live</a>
+                    <div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+                        <a href="https://apps.apple.com/us/app/petsgo/id6817229802" target="_blank" rel="noopener noreferrer" class="app-store-badge-link" id="btn-petsgo-appstore" aria-label="Scarica Petsgo su Apple App Store">
+                            <img src="media/app-store-badge-it.svg" alt="Scarica su App Store" class="app-store-badge-img" height="48" style="height: 48px; width: auto;" />
+                        </a>
+                        <a href="https://petsgo.it" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btn-petsgo-live" data-i18n="project-btn-visit" style="height: 48px; padding: 0 24px;">
+                            Visita il sito live
+                        </a>
                     </div>
                 </div>
                 <div class="project-hero-visual">
@@ -112,6 +151,20 @@
                 </div>
                 <div class="bento-item">
                     <img src="media/Petsgo-profilo.jpeg" alt="Profilo Animale" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+                </div>
+            </div>
+
+            <!-- Callout Download App Store -->
+            <div class="glass-card" style="margin-top: 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; padding: 36px 40px; border: 1px solid rgba(0, 242, 254, 0.25); background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(0, 242, 254, 0.05) 100%);">
+                <div style="max-width: 600px;">
+                    <span class="section-tag" data-i18n="petsgo-callout-tag" style="margin-bottom: 10px; display: inline-block;">Applicazione Mobile iOS</span>
+                    <h3 data-i18n="petsgo-callout-title" style="font-size: 1.75rem; margin-bottom: 10px; font-weight: 700;">Porta Petsgo sempre con te</h3>
+                    <p data-i18n="petsgo-callout-desc" style="color: var(--text-muted); line-height: 1.6; margin: 0;">Scarica l'applicazione ufficiale per iOS da Apple App Store per gestire libretto sanitario, promemoria vaccini e consulti ovunque ti trovi.</p>
+                </div>
+                <div>
+                    <a href="https://apps.apple.com/us/app/petsgo/id6817229802" target="_blank" rel="noopener noreferrer" class="app-store-badge-link" id="btn-petsgo-callout-appstore" aria-label="Scarica Petsgo su Apple App Store">
+                        <img src="media/app-store-badge-it.svg" alt="Scarica su App Store" class="app-store-badge-img" height="52" style="height: 52px; width: auto;" />
+                    </a>
                 </div>
             </div>
         </section>

@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Lookup Table Piani di Licenza
     const pricingTable = [
-        { max: 500, cost: 0.40, canone: 200.00, nome: 'SMALL' },
-        { max: 1000, cost: 0.35, canone: 350.00, nome: 'MEDIUM' },
-        { max: 3000, cost: 0.30, canone: 900.00, nome: 'LARGE' },
-        { max: 5000, cost: 0.25, canone: 1250.00, nome: 'EXTRA' },
+        { max: 1000, cost: 0.20, canone: 200.00, nome: 'SMALL' },
+        { max: 2000, cost: 0.175, canone: 350.00, nome: 'MEDIUM' },
+        { max: 3500, cost: 0.157, canone: 550.00, nome: 'LARGE' },
+        { max: 4500, cost: 0.211, canone: 950.00, nome: 'EXTRA' },
         { max: Infinity, cost: 0, canone: 0, nome: 'ENTERPRISE' }
     ];
 
