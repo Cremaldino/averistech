@@ -207,7 +207,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
           }, 4500);
         } else {
-          throw new Error(result.error || result.message || "Errore durante la trasmissione dei dati");
+          const detail = result.details ? (typeof result.details === "string" ? result.details : JSON.stringify(result.details)) : "";
+          const errorMsg = detail ? `${result.error || "Errore"}: ${detail}` : (result.error || result.message || "Errore durante la trasmissione dei dati");
+          throw new Error(errorMsg);
         }
       } catch (err) {
         console.error("Errore invio form inQuadra:", err);

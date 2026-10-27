@@ -45,7 +45,31 @@ Non serve installare software sul PC: puoi fare tutto direttamente dal browser.
 ### Passo 4: Collegare l'URL al sito
 1. Cloudflare ti assegna un URL pubblico del tipo:  
    `https://averistech-inquadra-lead.<tuo-sottodominio>.workers.dev`
-2. Copia questo URL e inseriscilo in `js/main.js` nella costante `INQUADRA_WORKER_URL`.
+2. Copia questo URL e inseriscilo in `js/main.js` nella costante `CLOUDFLARE_WORKER_URL`.
+
+---
+
+## ⚠️ Nota Importante: Modalità Sandbox vs Produzione (Resend)
+
+### Perché ricevi l'errore "You can only send testing emails to your own email address"?
+Resend di default usa l'indirizzo mittente di test `onboarding@resend.dev`. In questa modalità (Sandbox):
+* Resend consente di inviare email **esclusivamente all'indirizzo registrato sul tuo account Resend** (es. `vincenzo.cesarini@averistech.it`).
+* Se provi a inviare a un indirizzo differente (es. `info@averistech.it`), Resend rifiuta la consegna con errore HTTP 502.
+
+### Due opzioni per risolvere:
+
+#### Opzione 1: Produzione Definitiva (Consigliata)
+1. Vai su [resend.com/domains](https://resend.com/domains) e clicca **Add Domain** (`averistech.it`).
+2. Copia i record DNS (DKIM, SPF, DMARC) forniti da Resend e incollali nel pannello DNS di Cloudflare per `averistech.it`.
+3. Una volta verificato (pochi istanti), su Cloudflare Worker -> Settings -> Variables imposta:
+   * `SENDER_EMAIL` = `inQuadra Leads <inquadra@averistech.it>`
+   * `DESTINATION_EMAIL` = `info@averistech.it`
+
+#### Opzione 2: Test Rapido (Sandbox)
+Se vuoi fare un test immediato senza configurare i record DNS:
+1. Su Cloudflare Worker -> Settings -> Variables, imposta:
+   * `DESTINATION_EMAIL` = `vincenzo.cesarini@averistech.it` (la tua email di registrazione su Resend).
+2. Assicurati che nel Worker sia incollata e salvata con **Deploy** l'ultima versione di `worker.js`.
 
 ---
 
