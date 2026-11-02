@@ -1516,6 +1516,15 @@ p {
   color: var(--iq-text-muted);
 }
 
+.pricing-rate .pricing-vat-notice {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--iq-text-muted);
+  margin-top: 5px;
+  letter-spacing: 0.02em;
+}
+
 .pricing-feature-list {
   list-style: none;
   padding: 0;
