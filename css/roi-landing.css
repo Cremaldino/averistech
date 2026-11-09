@@ -1574,6 +1574,154 @@ p {
   letter-spacing: 0.02em;
 }
 
+/* Pricing Comparison Matrix Table */
+.pricing-matrix-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: #ffffff;
+  border: 1px solid var(--iq-border-subtle);
+  border-radius: var(--iq-radius-xl);
+  box-shadow: var(--iq-shadow-sm);
+  margin-bottom: 32px;
+}
+
+.pricing-matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 780px;
+  text-align: center;
+}
+
+.pricing-matrix-table th,
+.pricing-matrix-table td {
+  padding: 15px 18px;
+  border-bottom: 1px solid var(--iq-border-hairline);
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+.pricing-matrix-table thead th {
+  background: var(--iq-canvas);
+  padding: 26px 16px 20px;
+  border-bottom: 2px solid var(--iq-border-subtle);
+  vertical-align: bottom;
+  position: relative;
+}
+
+.pricing-matrix-table th.feature-col-header,
+.pricing-matrix-table td.feature-name {
+  text-align: left;
+  font-weight: 600;
+  color: var(--iq-text-display);
+  width: 28%;
+  padding-left: 26px;
+}
+
+.pricing-matrix-table th.feature-col-header {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--iq-text-display);
+}
+
+.pricing-matrix-table tbody tr:nth-child(even) {
+  background: rgba(248, 250, 252, 0.65);
+}
+
+.pricing-matrix-table tbody tr:hover {
+  background: rgba(13, 148, 136, 0.04);
+}
+
+.pricing-matrix-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-matrix-table .popular-col {
+  background: rgba(13, 148, 136, 0.045);
+  border-left: 1px solid rgba(13, 148, 136, 0.22);
+  border-right: 1px solid rgba(13, 148, 136, 0.22);
+}
+
+.pricing-matrix-table thead th.popular-col {
+  background: rgba(13, 148, 136, 0.09);
+  border-top: 3px solid var(--iq-teal-primary);
+}
+
+.matrix-popular-badge {
+  display: inline-block;
+  background: var(--iq-teal-primary);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: var(--iq-radius-pill);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.matrix-tier-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--iq-text-display);
+  margin-bottom: 4px;
+}
+
+.matrix-tier-vol {
+  font-size: 0.76rem;
+  color: var(--iq-text-muted);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.matrix-tier-price {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--iq-text-display);
+  line-height: 1.1;
+}
+
+.matrix-tier-price span {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--iq-text-muted);
+}
+
+.matrix-tier-vat {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--iq-text-muted);
+  margin-top: 3px;
+}
+
+.matrix-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(13, 148, 136, 0.12);
+  color: var(--iq-teal-primary);
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.matrix-dash {
+  color: #cbd5e1;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.matrix-val-strong {
+  font-weight: 700;
+  color: var(--iq-text-display);
+  font-size: 0.88rem;
+}
+
 .pricing-feature-list {
   list-style: none;
   padding: 0;
@@ -1648,7 +1796,9 @@ p {
 
 .form-layout-grid {
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
+  grid-template-columns: 1fr;
+  max-width: 680px;
+  margin: 0 auto;
   gap: 50px;
   align-items: flex-start;
 }

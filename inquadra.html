@@ -244,7 +244,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/roi-landing.css?v=1.6" />
+    <link rel="stylesheet" href="css/roi-landing.css?v=1.7" />
 </head>
 
 <body>
@@ -261,10 +261,10 @@
                 <ul class="nav-links" id="nav-links">
                     <li><a href="#hero" class="nav-link active">Piattaforma</a></li>
                     <li><a href="#divario" class="nav-link">Come Funziona</a></li>
-                    <li><a href="#pilastri" class="nav-link">Benefici</a></li>
+                    <li style="display: none;"><a href="#pilastri" class="nav-link">Benefici</a></li>
                     <li><a href="#calculator" class="nav-link">Calcolatore ROI</a></li>
                     <li><a href="#prezzi" class="nav-link">Piani</a></li>
-                    <li><a href="#assessment" class="nav-link">Assessment 5 Giorni</a></li>
+                    <li><a href="#assessment" class="nav-link">Setup</a></li>
                     <li><a href="#faq" class="nav-link">FAQ</a></li>
                     <li class="mobile-nav-cta">
                         <a href="#form-section" class="btn btn-primary"
@@ -327,7 +327,7 @@
                                 Calcola il Risparmio della tua Azienda
                             </a>
                             <a href="#assessment" class="btn btn-secondary">
-                                Scopri l'Audit in 5 Giorni
+                                Scopri il Setup Assistito
                             </a>
                         </div>
 
@@ -460,7 +460,7 @@
         </section>
 
         <!-- ENTERPRISE INTEGRATIONS LOGO STRIP -->
-        <section class="erp-strip-section" id="integrazioni-erp" aria-label="Integrazioni ERP Supportate">
+        <section class="erp-strip-section" id="integrazioni-erp" aria-label="Integrazioni ERP Supportate" style="display: none;">
             <div class="container">
                 <div class="erp-strip-card">
                     <span class="erp-strip-label">Nativamente compatibile con il tuo gestionale per Ciclo Attivo e
@@ -493,12 +493,10 @@
         <section class="comparison-section" id="divario">
             <div class="container">
                 <div class="section-header-clean">
-                    <span class="section-tag-clean">Controllo Totale Acquisti & Vendite</span>
-                    <h2 class="section-title-clean">Da Centri di Costo a Leve di Controllo e Redditività</h2>
+                    <span class="section-tag-clean">Controllo Totale Acquisti &amp; Vendite</span>
+                    <h2 class="section-title-clean">Il Tuo Business Sotto Controllo</h2>
                     <p class="section-desc-clean">
-                        Nelle PMI, l'amministrazione disperde centinaia di ore sia a rincorrere i documenti dei
-                        fornitori (ciclo passivo), sia a caricare manualmente gli ordini dei clienti e verificare le
-                        bolle di spedizione (ciclo attivo). Ecco come inQuadra colma questo divario.
+                        Automatizza la gestione di Ciclo Attivo e Passivo eliminando attività ripetitive ed errori manuali.
                     </p>
                 </div>
 
@@ -510,9 +508,7 @@
                         </div>
                         <h3>Il Doppio Collo di Bottiglia</h3>
                         <p class="subtext">
-                            Nelle aziende che gestiscono tra 300 e 5.000 documenti al mese tra acquisti e vendite, il
-                            personale passa fino al
-                            <strong>40% del tempo</strong> a svolgere compiti alienanti ad alto rischio errore.
+                            Fino al <strong>40% del tempo</strong> assorbito da verifiche manuali ripetitive.
                         </p>
 
                         <ul class="pain-list">
@@ -520,24 +516,21 @@
                                 <span class="pain-icon">✕</span>
                                 <div class="pain-text">
                                     <strong>Data Entry manuale bidirezionale</strong>
-                                    <span>Ricopiatura riga per riga di ordini clienti da PDF/email e caricamento manuale
-                                        di DDT e fatture fornitore nel gestionale.</span>
+                                    <span>Inserimento manuale di ordini clienti, DDT e fatture fornitore.</span>
                                 </div>
                             </li>
                             <li class="pain-item">
                                 <span class="pain-icon">✕</span>
                                 <div class="pain-text">
                                     <strong>Spunta cartacea e disallineamenti</strong>
-                                    <span>Controllo a penna tra bolle di magazzino e fatture d'acquisto; rischio
-                                        costante di spedire ai clienti merci non allineate all'ordine.</span>
+                                    <span>Controllo manuale tra bolle e fatture con rischio di errori in spedizione.</span>
                                 </div>
                             </li>
                             <li class="pain-item">
                                 <span class="pain-icon">✕</span>
                                 <div class="pain-text">
                                     <strong>Erosione dei margini e contenziosi</strong>
-                                    <span>Rincari fornitori non intercettati sul passivo; ritardi d'incasso o
-                                        contestazioni dai clienti per discrepanze sui prezzi o sulle quantità.</span>
+                                    <span>Rincari fornitori non rilevati e ritardi d'incasso per discrepanze.</span>
                                 </div>
                             </li>
                         </ul>
@@ -550,8 +543,7 @@
                         </div>
                         <h3>Il Flusso Autonomo a 360°</h3>
                         <p class="subtext">
-                            inQuadra <strong>non sostituisce il tuo gestionale</strong>, ma agisce come un copilota
-                            instancabile che presidia l'intero ciclo documentale in background.
+                            inQuadra <strong>affianca il tuo gestionale</strong> presidiando l'intero flusso documentale.
                         </p>
 
                         <ul class="gain-list">
@@ -559,24 +551,21 @@
                                 <span class="gain-icon">✓</span>
                                 <div class="gain-text">
                                     <strong>Vision Ingestion per Fatture Fornitori e Ordini Clienti</strong>
-                                    <span>Acquisizione da email, portali o scansioni: estrazione istantanea di righe,
-                                        quantità e prezzi senza dover configurare rigidi template.</span>
+                                    <span>Estrazione istantanea di righe, quantità e prezzi da email e PDF.</span>
                                 </div>
                             </li>
                             <li class="gain-item">
                                 <span class="gain-icon">✓</span>
                                 <div class="gain-text">
                                     <strong>Riconciliazione a 3 Vie Bidirezionale Automatica</strong>
-                                    <span>Incrocio al centesimo tra Ordine, DDT e Fattura sugli acquisti; quadratura tra
-                                        Ordine Cliente, DDT di Spedizione e Fattura Emessa sulle vendite.</span>
+                                    <span>Quadratura automatica tra Ordine, DDT e Fattura su acquisti e vendite.</span>
                                 </div>
                             </li>
                             <li class="gain-item">
                                 <span class="gain-icon">✓</span>
                                 <div class="gain-text">
                                     <strong>Sincronizzazione Completa e Diretta con l'ERP</strong>
-                                    <span>Ordini clienti caricati e fatture fornitori quadrate pronte per la
-                                        registrazione contabile con un solo click di approvazione.</span>
+                                    <span>Dati validati e pronti per la registrazione contabile in un click.</span>
                                 </div>
                             </li>
                         </ul>
@@ -586,7 +575,7 @@
         </section>
 
         <!-- SECTION 3: I 4 PILASTRI DEI BENEFICI (BENTO ARCHITECTURE) -->
-        <section class="pillars-section" id="pilastri">
+        <section class="pillars-section" id="pilastri" style="display: none;">
             <div class="container">
                 <div class="section-header-clean">
                     <span class="section-tag-clean">I Benefici Chiave</span>
@@ -850,110 +839,163 @@
                     </div>
                 </div>
 
-                <div class="pricing-cards-grid">
-                    <!-- Tier 1: SMALL -->
-                    <div class="pricing-card-clean">
-                        <div class="pricing-tier-name">SMALL</div>
-                        <div class="pricing-tier-volume">fino a 1.000 documenti/mese</div>
-                        <div class="pricing-rate">200 € <span>/mese</span><span class="pricing-vat-notice">IVA
-                                esclusa</span></div>
-                        <ul class="pricing-feature-list">
-                            <li><span class="check">✓</span> <strong>5 Utenti</strong> inclusi</li>
-                            <li><span class="check">✓</span> Portale Applicativo </li>
-                            <li><span class="check">✓</span> Vision AI Multicanale</li>
-                            <li><span class="check">✓</span> Riconciliazione a 3 Vie Attivo & Passivo</li>
-                        </ul>
-                        <a href="#form-section" class="btn btn-secondary"
-                            style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Seleziona</a>
-                    </div>
-
-                    <!-- Tier 2: MEDIUM (POPULAR) -->
-                    <div class="pricing-card-clean popular-card">
-                        <span class="popular-ribbon">PIÙ SCELTO DALLE PMI</span>
-                        <div class="pricing-tier-name">MEDIUM</div>
-                        <div class="pricing-tier-volume">fino a 2.000 documenti/mese</div>
-                        <div class="pricing-rate">350 € <span>/mese</span><span class="pricing-vat-notice">IVA
-                                esclusa</span></div>
-                        <ul class="pricing-feature-list">
-                            <li><span class="check">✓</span> <strong>10 Utenti</strong> inclusi</li>
-                            <li><span class="check">✓</span> Portale Applicativo </li>
-                            <li><span class="check">✓</span> Vision AI Multicanale</li>
-                            <li><span class="check">✓</span> Riconciliazione a 3 Vie Attivo & Passivo</li>
-                            <li><span class="check">✓</span> Connettore File/Mail</li>
-                        </ul>
-                        <a href="#form-section" class="btn btn-primary"
-                            style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Inizia l'Assessment</a>
-                    </div>
-
-                    <!-- Tier 3: LARGE -->
-                    <div class="pricing-card-clean">
-                        <div class="pricing-tier-name">LARGE</div>
-                        <div class="pricing-tier-volume">fino a 3.500 documenti/mese</div>
-                        <div class="pricing-rate">550 € <span>/mese</span><span class="pricing-vat-notice">IVA
-                                esclusa</span></div>
-                        <ul class="pricing-feature-list">
-                            <li><span class="check">✓</span> <strong>20 Utenti</strong> inclusi</li>
-                            <li><span class="check">✓</span> Portale Applicativo </li>
-                            <li><span class="check">✓</span> Vision AI Multicanale</li>
-                            <li><span class="check">✓</span> Riconciliazione a 3 Vie Attivo & Passivo</li>
-                            <li><span class="check">✓</span> Connettore File/Mail</li>
-                            <li><span class="check">✓</span> Connettori Gestionali</li>
-                            <li><span class="check">✓</span> WhatsApp / Slack Alert</li>
-                            <li><span class="check">✓</span> Supporto Prioritario</li>
-                        </ul>
-                        <a href="#form-section" class="btn btn-secondary"
-                            style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Seleziona</a>
-                    </div>
-
-                    <!-- Tier 4: EXTRA -->
-                    <div class="pricing-card-clean">
-                        <div class="pricing-tier-name">EXTRA</div>
-                        <div class="pricing-tier-volume">fino a 4.500 documenti/mese</div>
-                        <div class="pricing-rate">950 € <span>/mese</span><span class="pricing-vat-notice">IVA
-                                esclusa</span></div>
-                        <ul class="pricing-feature-list">
-                            <li><span class="check">✓</span> <strong>30 Utenti</strong> inclusi</li>
-                            <li><span class="check">✓</span> Portale Applicativo </li>
-                            <li><span class="check">✓</span> Vision AI Multicanale</li>
-                            <li><span class="check">✓</span> Riconciliazione a 3 Vie Attivo & Passivo</li>
-                            <li><span class="check">✓</span> Connettore File/Mail</li>
-                            <li><span class="check">✓</span> Connettori Gestionali</li>
-                            <li><span class="check">✓</span> WhatsApp / Slack Alert</li>
-                            <li><span class="check">✓</span> Account Manager Dedicato</li>
-                            <li><span class="check">✓</span> Connettori SAP / Salesforce / Dynamics</li>
-                        </ul>
-                        <a href="#form-section" class="btn btn-secondary"
-                            style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Seleziona</a>
-                    </div>
-
-                    <!-- Tier 5: ENTERPRISE -->
-                    <div class="pricing-card-clean">
-                        <div class="pricing-tier-name">ENTERPRISE</div>
-                        <div class="pricing-tier-volume">Oltre 4.500 documenti/mese</div>
-                        <div class="pricing-rate">Custom <span class="pricing-vat-notice">IVA esclusa</span></div>
-                        <ul class="pricing-feature-list">
-                            <li><span class="check">✓</span> <strong>Utenti Illimitati</strong></li>
-                            <li><span class="check">✓</span> Portale Applicativo </li>
-                            <li><span class="check">✓</span> Vision AI Multicanale</li>
-                            <li><span class="check">✓</span> Riconciliazione a 3 Vie Attivo & Passivo</li>
-                            <li><span class="check">✓</span> Connettore File/Mail</li>
-                            <li><span class="check">✓</span> Connettori Gestionali</li>
-                            <li><span class="check">✓</span> WhatsApp / Slack Alert</li>
-                            <li><span class="check">✓</span> Account Manager Dedicato</li>
-                            <li><span class="check">✓</span> Connettori SAP / Salesforce / Dynamics</li>
-                            <li><span class="check">✓</span> Connettori Multi-ERP</li>
-                            <li><span class="check">✓</span> Personalizzazione Processi e Integrazioni </li>
-                            <li><span class="check">✓</span> Estensioni Portale</li>
-                            <li><span class="check">✓</span> Consulenza On-site</li>
-
-                        </ul>
-                        <a href="#form-section" class="btn btn-secondary"
-                            style="width: 100%; font-size: 0.85rem; padding: 10px 16px;">Richiedi Offerta</a>
-                    </div>
+                <div class="pricing-matrix-wrapper">
+                    <table class="pricing-matrix-table" aria-label="Tabella comparativa dei piani inQuadra">
+                        <thead>
+                            <tr>
+                                <th class="feature-col-header">Funzionalità &amp; Parametri</th>
+                                <th>
+                                    <div class="matrix-tier-name">SMALL</div>
+                                    <div class="matrix-tier-vol">fino a 1.000 doc/mese</div>
+                                    <div class="matrix-tier-price">200 € <span>/mese</span></div>
+                                    <span class="matrix-tier-vat">IVA esclusa</span>
+                                </th>
+                                <th class="popular-col">
+                                    <span class="matrix-popular-badge">PIÙ SCELTO DALLE PMI</span>
+                                    <div class="matrix-tier-name">MEDIUM</div>
+                                    <div class="matrix-tier-vol">fino a 2.000 doc/mese</div>
+                                    <div class="matrix-tier-price">350 € <span>/mese</span></div>
+                                    <span class="matrix-tier-vat">IVA esclusa</span>
+                                </th>
+                                <th>
+                                    <div class="matrix-tier-name">LARGE</div>
+                                    <div class="matrix-tier-vol">fino a 3.500 doc/mese</div>
+                                    <div class="matrix-tier-price">550 € <span>/mese</span></div>
+                                    <span class="matrix-tier-vat">IVA esclusa</span>
+                                </th>
+                                <th>
+                                    <div class="matrix-tier-name">EXTRA</div>
+                                    <div class="matrix-tier-vol">fino a 4.500 doc/mese</div>
+                                    <div class="matrix-tier-price">950 € <span>/mese</span></div>
+                                    <span class="matrix-tier-vat">IVA esclusa</span>
+                                </th>
+                                <th>
+                                    <div class="matrix-tier-name">CUSTOM</div>
+                                    <div class="matrix-tier-vol">oltre 4.500 doc/mese</div>
+                                    <div class="matrix-tier-price">Custom</div>
+                                    <span class="matrix-tier-vat">IVA esclusa</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="feature-name">Utenti inclusi</td>
+                                <td><span class="matrix-val-strong">5 Utenti</span></td>
+                                <td class="popular-col"><span class="matrix-val-strong">10 Utenti</span></td>
+                                <td><span class="matrix-val-strong">20 Utenti</span></td>
+                                <td><span class="matrix-val-strong">30 Utenti</span></td>
+                                <td><span class="matrix-val-strong">Illimitati</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Portale Applicativo</td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td class="popular-col"><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Vision AI Multicanale</td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td class="popular-col"><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Riconciliazione a 3 Vie Attivo &amp; Passivo</td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td class="popular-col"><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Connettore File / Mail</td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td class="popular-col"><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Connettori Gestionali</td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td class="popular-col"><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">WhatsApp / Slack Alert</td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td class="popular-col"><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Supporto Prioritario</td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td class="popular-col"><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Account Manager Dedicato</td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td class="popular-col"><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Connettori SAP / Salesforce / Dynamics</td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td class="popular-col"><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Connettori Multi-ERP</td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td class="popular-col"><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Personalizzazione Processi e Integrazioni</td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td class="popular-col"><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Estensioni Portale</td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td class="popular-col"><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Consulenza On-site</td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td class="popular-col"><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-dash">—</span></td>
+                                <td><span class="matrix-check">✓</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
                 <p
-                    style="text-align: center; margin-top: -30px; margin-bottom: 40px; font-size: 0.85rem; color: var(--iq-text-muted);">
+                    style="text-align: center; margin-top: 0; margin-bottom: 40px; font-size: 0.85rem; color: var(--iq-text-muted);">
                     * Tutti i canoni di licenza sopra indicati sono mensili, con fatturazione periodica e <strong>IVA di
                         legge esclusa</strong>.
                 </p>
@@ -970,9 +1012,10 @@
                     <div class="addons-grid">
                         <div class="addon-card">
                             <div>
-                                <h4>📊 Andamento Listini Fornitori</h4>
-                                <p>Monitora e traccia gli scostamenti storici tra i listini prezzi concordati e quelli
-                                    effettivamente applicati in fattura nel tempo.</p>
+                                <h4>📊 Scheda Fornitore</h4>
+                                <p>Analizza lo storico prezzi al singolo pezzo, rileva rincari occulti su confezioni e
+                                    formati, e misura l'accuratezza delle fatture passive con quadratura automatica a 3
+                                    vie e indici di conformità fornitore.</p>
                             </div>
                             <div class="addon-pricing-pill">
                                 <span>Da +30 €/mese</span>
@@ -982,7 +1025,7 @@
 
                         <div class="addon-card">
                             <div>
-                                <h4>⏰ Gestione Scadenze & Avvisi</h4>
+                                <h4>⏰ Gestione Scadenze &amp; Avvisi</h4>
                                 <p>Generazione automatica di notifiche di pagamento, avvisi di scadenza e solleciti
                                     proattivi per evitare ritardi e contenziosi.</p>
                             </div>
@@ -1008,204 +1051,36 @@
             </div>
         </section>
 
-        <!-- SECTION 6: PROCESS ASSESSMENT & FAST-TRACK AUDIT (5-DAY ROADMAP) -->
+        <!-- SECTION 6: SETUP & CONFIGURAZIONE ASSISTITA -->
         <section class="assessment-section" id="assessment">
             <div class="container">
-                <div class="section-header-clean">
-                    <span class="section-tag-clean">Setup Chiavi in Mano • Zero Attrito</span>
-                    <h2 class="section-title-clean">Dal tuo ERP attuale alla messa in produzione in soli 5 giorni. Pensiamo a tutto noi.</h2>
-                    <p class="section-desc-clean">
-                        Non dovrai configurare template o bloccare l'operatività dei tuoi uffici: il nostro team di
-                        specialisti mappa i tuoi flussi, calibra l'AI sui documenti reali dei tuoi fornitori e ti
-                        consegna il sistema pronto all'uso con risparmio certificato.
+                <div class="section-header-clean" style="margin-bottom: 0;">
+                    <span class="section-tag-clean">Setup &amp; Configurazione Assistita</span>
+                    <h2 class="section-title-clean">Ti Aiutiamo Noi a Configurare il Tuo Ambiente</h2>
+                    <p class="section-desc-clean" style="max-width: 760px; margin: 0 auto;">
+                        Non dovrai preoccuparti degli aspetti tecnici: il nostro team di specialisti affiancherà la tua
+                        azienda per eseguire il setup completo dell'ambiente inQuadra e predisporre tutte le
+                        configurazioni necessarie, garantendo un avvio rapido, calibrato sui tuoi flussi e senza alcun
+                        blocco dell'operatività dei tuoi uffici.
                     </p>
-                </div>
-
-                <div class="assessment-roadmap-grid">
-                    <!-- Day 1 -->
-                    <div class="roadmap-day-card">
-                        <span class="day-badge">Giorno 1</span>
-                        <h4>Kick-off & Interviste</h4>
-                        <p>Incontro con CFO, Responsabile Acquisti, Vendite e Logistica per mappare il flusso effettivo
-                            dei documenti attivi e passivi (email, portali e cartaceo).</p>
-                    </div>
-
-                    <!-- Day 2 -->
-                    <div class="roadmap-day-card">
-                        <span class="day-badge">Giorno 2</span>
-                        <h4>Audit Documentale</h4>
-                        <p>Analisi campionaria della variabilità di DDT, Fatture fornitore e Ordini cliente storici,
-                            identificando le anomalie più frequenti.</p>
-                    </div>
-
-                    <!-- Day 3 -->
-                    <div class="roadmap-day-card">
-                        <span class="day-badge">Giorno 3</span>
-                        <h4>Mappatura Connettori ERP</h4>
-                        <p>Studio dell'architettura del gestionale e definizione delle regole per l'ingestione ordini
-                            clienti e soglie di tolleranza custom sui fornitori.</p>
-                    </div>
-
-                    <!-- Day 4 -->
-                    <div class="roadmap-day-card">
-                        <span class="day-badge">Giorno 4</span>
-                        <h4>Proof of Concept Live</h4>
-                        <p>Configurazione dell'engine inQuadra ed esecuzione del test di elaborazione e riconciliazione
-                            direttamente su documenti aziendali reali (attivi e passivi).</p>
-                    </div>
-
-                    <!-- Day 5 -->
-                    <div class="roadmap-day-card">
-                        <span class="day-badge">Giorno 5</span>
-                        <h4>Executive Report & Go-Live</h4>
-                        <p>Consegna del Report di Processo, quantificazione certificata del risparmio economico su
-                            acquisti e vendite e sistema pronto per la messa in produzione.</p>
-                    </div>
-                </div>
-
-                <!-- Calibrazione Entità Assessment per Dimensione Aziendale -->
-                <div style="text-align: center; margin-top: 56px; margin-bottom: 24px;">
-                    <span class="section-tag-clean">Calibrazione Setup sui Piani e Volumi</span>
-                    <h3 style="font-size: 1.85rem; margin-top: 8px; margin-bottom: 8px;">Un Assessment Calibrato sui
-                        Volumi del tuo Piano</h3>
-                    <p style="color: var(--iq-text-secondary); max-width: 680px; margin: 0 auto;">
-                        Tutti i costi di setup e audit operativo si intendono <strong>una tantum e IVA esclusa</strong>.
-                        L'incentivo Early Access riduce del 50% la quota iniziale.
-                    </p>
-                </div>
-
-                <div class="assessment-tiers-grid">
-                    <!-- Tier 1 -->
-                    <div class="assessment-tier-card">
-                        <div>
-                            <div class="tier-tag">Piani Small / Medium</div>
-                            <h4>PMI Standard</h4>
-                            <div class="tier-docs">Fino a 2.000 documenti/mese (Attivo + Passivo)</div>
-                            <div class="tier-price">Fino a 2.500 € <span>una tantum (IVA escl.)</span></div>
-                            <div class="tier-discount">➔ Fino a 1.250 € + IVA con Incentivo Early Access 50%</div>
-                        </div>
-                        <p class="tier-desc">Audit flussi singola sede, mappatura fornitori e clienti principali,
-                            connettori standard gestione file/Gestionale.</p>
-                    </div>
-
-                    <!-- Tier 2 -->
-                    <div class="assessment-tier-card">
-                        <div>
-                            <div class="tier-tag">Piano Large</div>
-                            <h4>Aziende Strutturate</h4>
-                            <div class="tier-docs">Da 2.001 a 3.500 doc/mese (Attivo + Passivo)</div>
-                            <div class="tier-price">Fino a 3.500 € <span>una tantum (IVA escl.)</span></div>
-                            <div class="tier-discount">➔ Fino a 1.750 € + IVA con Incentivo Early Access 50%</div>
-                        </div>
-                        <p class="tier-desc">Audit multi-sede, campionamento esteso fornitori e clienti eterogenei,
-                            tolleranze custom e connettori diretti Zucchetti/TS.</p>
-                    </div>
-
-                    <!-- Tier 3 -->
-                    <div class="assessment-tier-card">
-                        <div>
-                            <div class="tier-tag">Piano Extra</div>
-                            <h4>Alta Volumetria</h4>
-                            <div class="tier-docs">Da 3.501 a 4.500 doc/mese (Attivo + Passivo)</div>
-                            <div class="tier-price">Fino a 4.500 € <span>una tantum (IVA escl.)</span></div>
-                            <div class="tier-discount">➔ Fino a 2.250 € + IVA con Incentivo Early Access 50%</div>
-                        </div>
-                        <p class="tier-desc">Audit approfondito ad alto flusso, stress-test PoC documentale, connettori
-                            premium SAP B1 e account dedicato.</p>
-                    </div>
-
-                    <!-- Tier 4 -->
-                    <div class="assessment-tier-card">
-                        <div>
-                            <div class="tier-tag">Licenza Enterprise</div>
-                            <h4>Complessità & Custom</h4>
-                            <div class="tier-docs">Oltre 4.500 doc/mese (Attivo + Passivo)</div>
-                            <div class="tier-price">Su Misura <span>(Incluso - IVA escl.)</span></div>
-                            <div class="tier-discount">➔ Quotato insieme al canone di licenza</div>
-                        </div>
-                        <p class="tier-desc">Perimetro d'audit e onboarding enterprise personalizzato, quotato
-                            congiuntamente al canone annuale.</p>
-                    </div>
-                </div>
-
-                <!-- Risk Reversal Guarantee Banner -->
-                <div class="guarantee-banner">
-                    <div class="guarantee-left">
-                        <h3>Garanzia & Incentivo Early Access</h3>
-                        <p>
-                            Sottoscrivendo il canone entro 15 giorni dalla consegna del Report, il <strong>50% della
-                                quota</strong> dell'assessment (al netto di IVA) viene
-                            integralmente riaccreditato a scalare sui canoni del primo anno.
-                        </p>
-                    </div>
-                    <div class="guarantee-seal">
-                        <div class="price-discounted" style="font-size: 1.35rem; line-height: 1.2; margin-bottom: 6px;">
-                            Incentivo Early Access</div>
-                        <div class="tag">50% dell'Assessment Riaccreditato</div>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 7: EXECUTIVE EARLY ACCESS & ASSESSMENT FORM -->
+        <!-- SECTION 7: RICHIEDI INFORMAZIONI FORM -->
         <section class="form-section-clean" id="form-section">
             <div class="container">
                 <div class="section-header-clean">
                     <span class="section-tag-clean">Inizia Subito</span>
                     <h2 class="section-title-clean">Richiedi Informazioni</h2>
                     <p class="section-desc-clean">
-                        Compila il modulo per ricevere maggiori informazioni sulla piattaforma, parlare con i nostri
-                        specialisti
-                        e scoprire come accedere all'Incentivo Early Access del 50% sul setup iniziale.
+                        Compila il modulo per ricevere maggiori informazioni sulla piattaforma e parlare con i nostri
+                        specialisti per configurare la soluzione più adatta alla tua azienda.
                     </p>
                 </div>
 
                 <div class="form-layout-grid">
-                    <!-- Left: Trust & Value Proposition -->
-                    <div class="form-trust-card">
-                        <h3>Cosa Include il tuo Assessment:</h3>
-                        <p>
-                            Un'analisi rigorosa e personalizzata del tuo ciclo attivo e passivo, condotta da ingegneri
-                            dei processi gestionali senza alcun vincolo di acquisto.
-                        </p>
-
-                        <ul class="trust-check-list">
-                            <li class="trust-check-item">
-                                <div class="trust-check-icon">✓</div>
-                                <div class="trust-check-text">
-                                    <strong>Audit Documentale Campionario</strong>
-                                    <span>Mappatura dell'eterogeneità dei documenti dei tuoi principali fornitori e
-                                        clienti per volume.</span>
-                                </div>
-                            </li>
-                            <li class="trust-check-item">
-                                <div class="trust-check-icon">✓</div>
-                                <div class="trust-check-text">
-                                    <strong>Calcolo Esatto del ROI Aziendale</strong>
-                                    <span>Misurazione delle ore uomo effettivamente recuperabili e quantificazione
-                                        dell'impatto economico.</span>
-                                </div>
-                            </li>
-                            <li class="trust-check-item">
-                                <div class="trust-check-icon">✓</div>
-                                <div class="trust-check-text">
-                                    <strong>Accordo di Riservatezza (NDA) Garantito</strong>
-                                    <span>Tutti i dati e i campioni documentali sono protetti secondo i più stringenti
-                                        standard di riservatezza industriale.</span>
-                                </div>
-                            </li>
-                            <li class="trust-check-item">
-                                <div class="trust-check-icon">✓</div>
-                                <div class="trust-check-text">
-                                    <strong>Bonus Fiscale del 27,9%</strong>
-                                    <span>Attestazione per l'ammissibilità alle agevolazioni fiscali del Piano
-                                        Transizione 5.0.</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Right: Frictionless Booking Form -->
+                    <!-- Frictionless Booking Form -->
                     <div class="lead-form-card">
                         <form id="roi-lead-form">
                             <div class="form-row-2">
