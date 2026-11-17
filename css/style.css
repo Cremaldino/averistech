@@ -294,7 +294,8 @@ img {
   filter: drop-shadow(0 6px 20px rgba(0, 242, 254, 0.35));
 }
 
-.app-store-badge-img {
+.app-store-badge-img,
+.google-play-badge-img {
   display: block;
   height: auto;
   border-radius: 8px;

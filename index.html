@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AverisTech — Enterprise SaaS, Cloud Multi-Tenant &amp; Agentic AI</title>
+    <title>AverisTech — Ingegneria del Software, Architetture Cloud &amp; Agentic AI</title>
     <meta name="description"
-        content="AverisTech è il partner tecnologico verticale per l'Enterprise: piattaforme SaaS multi-tenant, architetture Cloud-Native e soluzioni di Agentic AI (inQuadra) per l'automazione dei processi aziendali critici in Logistica, GDO e Manifattura." />
+        content="Progettiamo architetture cloud multi-tenant e agenti IA autonomi per trasformare i colli di bottiglia operativi in flussi di lavoro fluidi, misurabili e scalabili. Scopri inQuadra e il nostro Venture Lab." />
     <meta name="keywords"
-        content="AverisTech, Agentic AI, Enterprise SaaS, inQuadra, automazione ciclo passivo, riconciliazione a 3 vie, integrazione ERP TeamSystem Danea Zucchetti SAP, ricerca e sviluppo AI" />
+        content="AverisTech, Agentic AI, Ingegneria del Software, Architetture Cloud Multi-Tenant, FastAPI, PostgreSQL, Redis, inQuadra, 3-Way Matching, Riconciliazione a 3 Vie, Venture Lab" />
     <meta name="author" content="AverisTech S.r.l." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://averistech.it/" />
@@ -17,21 +17,21 @@
     <link rel="icon" type="image/jpeg" href="media/logo-icon.jpeg" />
 
     <!-- OpenGraph Metadata -->
-    <meta property="og:title" content="AverisTech — Enterprise SaaS &amp; Agentic AI per Processi Critici" />
+    <meta property="og:title" content="AverisTech — Ingegneria del Software e Agentic AI per l'Impresa" />
     <meta property="og:description"
-        content="Piattaforme SaaS multi-tenant e Agentic AI per CFO, COO e Direzioni Generali. Scopri inQuadra per l'automazione del ciclo attivo e passivo." />
+        content="Progettiamo architetture cloud multi-tenant e agenti IA autonomi per trasformare i colli di bottiglia operativi in flussi di lavoro fluidi, misurabili e scalabili." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://averistech.it/" />
     <meta property="og:image" content="https://averistech.it/media/logo-stacked.jpeg" />
 
     <!-- Twitter Card Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="AverisTech — Enterprise SaaS &amp; Agentic AI" />
+    <meta name="twitter:title" content="AverisTech — Ingegneria del Software &amp; Agentic AI" />
     <meta name="twitter:description"
-        content="Automazione dei processi critici aziendali, riconciliazione a 3 vie e architetture Cloud-Native per il mercato B2B." />
+        content="Architetture cloud multi-tenant, sistemi agentici e piattaforme SaaS B2B per l'automazione dei processi critici." />
     <meta name="twitter:image" content="https://averistech.it/media/logo-stacked.jpeg" />
 
-    <!-- JSON-LD Organization Schema (B2B Enterprise Startup Innovativa) -->
+    <!-- JSON-LD Organization Schema -->
     <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,7 +41,7 @@
     "logo": "https://averistech.it/media/logo-stacked.jpeg",
     "taxID": "18664161009",
     "vatID": "IT18664161009",
-    "description": "Startup Innovativa specializzata in piattaforme SaaS multi-tenant, architetture cloud e Agentic AI per l'ottimizzazione dei processi aziendali critici.",
+    "description": "Startup Innovativa specializzata in ingegneria del software, architetture cloud multi-tenant e Agentic AI per l'automazione dei processi critici aziendali.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Via del prato 27",
@@ -56,13 +56,13 @@
         "name": "inQuadra",
         "applicationCategory": "BusinessApplication",
         "url": "https://averistech.it/inquadra.html",
-        "description": "Piattaforma di Agentic AI per l'automazione del ciclo attivo e passivo, riconciliazione a 3 vie (Ordine-DDT-Fattura) e integrazione ERP nativa."
+        "description": "Piattaforma B2B SaaS per l'automazione del ciclo passivo e attivo, riconciliazione a 3 vie (Ordine-DDT-Fattura), Vision AI e Price Intelligence."
       },
       {
         "@type": "WebPage",
-        "name": "AverisTech Venture Lab — R&D & Spin-Off",
+        "name": "AverisTech Venture Lab — R&D Portfolio",
         "url": "https://averistech.it/venture-lab.html",
-        "description": "Incubatore tecnologico interno dedicato a algoritmi di Machine Learning, architetture multi-tenant e Proof of Concept verticali."
+        "description": "Incubatore tecnologico interno dedicato a piattaforme proprietarie e Proof of Concept operativi: Wroomy, PetsGo e Infrastrutture Managed."
       }
     ]
   }
@@ -76,7 +76,7 @@
     <!-- Ambient Background Glow Blob -->
     <div class="ambient-glow" aria-hidden="true"></div>
 
-    <!-- HEADER & NAVBAR (B2B Enterprise IA) -->
+    <!-- HEADER & NAVBAR -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="#hero" class="logo-link" id="nav-logo-link" aria-label="AverisTech Home">
@@ -86,9 +86,9 @@
             <nav aria-label="Menu Principale">
                 <ul class="nav-links" id="nav-links">
                     <li><a href="#hero" class="nav-link active" id="link-home" data-i18n="nav-home">Home</a></li>
-                    <li><a href="#credibility" class="nav-link" id="link-company" data-i18n="nav-company">Chi Siamo</a></li>
-                    <li><a href="#agentic-ai" class="nav-link" id="link-agentic" data-i18n="nav-agentic">Agentic AI &amp; Tech</a></li>
+                    <li><a href="#credibility" class="nav-link" id="link-company" data-i18n="nav-company">Azienda &amp; R&amp;D</a></li>
                     <li><a href="#inquadra" class="nav-link" id="link-inquadra" data-i18n="nav-inquadra">inQuadra</a></li>
+                    <li><a href="#agentic-ai" class="nav-link" id="link-agentic" data-i18n="nav-agentic">Architetture &amp; AI</a></li>
                     <li><a href="venture-lab.html" class="nav-link" id="link-venture" data-i18n="nav-venture">Venture Lab</a></li>
                     <li><a href="#contact" class="nav-link" id="link-contact" data-i18n="nav-contact">Contatti</a></li>
                 </ul>
@@ -118,131 +118,374 @@
     </header>
 
     <main>
-        <!-- BLOCK 1: CORPORATE HERO (AVERISTECH = TECH VENTURE & PARTNER TECNOLOGICO) -->
+        <!-- =================================================================
+             1. HERO SECTION (ABOVE THE FOLD)
+             ================================================================= -->
         <section class="hero" id="hero" aria-labelledby="hero-heading">
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-badge" id="hero-badge-pill">
                         <span class="badge-dot" aria-hidden="true"></span>
-                        <span class="hero-badge-text" data-i18n="hero-badge">Tech Venture • Agentic AI • Cloud Architectures</span>
+                        <span class="hero-badge-text" data-i18n="hero-badge">Enterprise Software Engineering • Cloud Multi-Tenant • Agentic AI</span>
                     </div>
 
                     <h1 class="hero-title" id="hero-heading" data-i18n="hero-title">
-                        Ingegneria del Software e Agentic AI per l'Impresa che Evolve.
+                        Ingegneria del Software e Agentic AI per l'Automazione dei Processi Critici.
                     </h1>
 
                     <p class="hero-subtitle" id="hero-subtext" data-i18n="hero-subtitle">
-                        AverisTech è una Tech Venture e partner tecnologico d'eccellenza. Progettiamo architetture
-                        Cloud-Native, agenti di Intelligenza Artificiale autonomi e piattaforme SaaS proprietarie per
-                        trasformare i processi critici delle aziende in vantaggio competitivo.
+                        Progettiamo architetture cloud multi-tenant e agenti IA autonomi per trasformare i colli di
+                        bottiglia operativi in flussi di lavoro fluidi, misurabili e scalabili.
                     </p>
 
                     <div class="hero-actions" id="hero-cta-group">
-                        <a href="#credibility" class="btn btn-primary" id="cta-explore" data-i18n="hero-btn-primary">
-                            Scopri AverisTech
+                        <a href="#inquadra" class="btn btn-primary" id="cta-explore" data-i18n="hero-btn-primary">
+                            Scopri inQuadra
                         </a>
-                        <a href="#inquadra" class="btn btn-secondary" id="cta-approach" data-i18n="hero-btn-secondary">
-                            Esplora le Soluzioni
+                        <a href="#agentic-ai" class="btn btn-secondary" id="cta-approach" data-i18n="hero-btn-secondary">
+                            Esplora le nostre Architetture
                         </a>
                     </div>
                 </div>
 
-                <!-- Corporate Credibility Strip (AverisTech Identity, not single product) -->
-                <div class="exec-kpi-strip" aria-label="Indicatori Chiave AverisTech">
+                <!-- Executive Credibility & Performance Strip -->
+                <div class="exec-kpi-strip" aria-label="Metriche e Standard Architetturali AverisTech">
                     <div class="exec-kpi-item">
                         <span class="exec-kpi-val" data-i18n="kpi-1-val">20+ Anni</span>
-                        <span class="exec-kpi-label" data-i18n="kpi-1-label">Esperienza Direzionale IT</span>
+                        <span class="exec-kpi-label" data-i18n="kpi-1-label">Eccellenza Direzionale IT</span>
                     </div>
                     <div class="exec-kpi-item">
-                        <span class="exec-kpi-val" data-i18n="kpi-2-val">Agentic AI</span>
-                        <span class="exec-kpi-label" data-i18n="kpi-2-label">Automazione Cognitiva Processi</span>
+                        <span class="exec-kpi-val" data-i18n="kpi-2-val">&lt; 400ms</span>
+                        <span class="exec-kpi-label" data-i18n="kpi-2-label">Latenza API &amp; Microservizi</span>
                     </div>
                     <div class="exec-kpi-item">
-                        <span class="exec-kpi-val" data-i18n="kpi-3-val">4 Asset</span>
-                        <span class="exec-kpi-label" data-i18n="kpi-3-label">Piattaforme Proprietarie Attive</span>
+                        <span class="exec-kpi-val" data-i18n="kpi-3-val">Zero-Trust</span>
+                        <span class="exec-kpi-label" data-i18n="kpi-3-label">Isolamento Multi-Tenant &amp; GDPR</span>
                     </div>
                     <div class="exec-kpi-item">
-                        <span class="exec-kpi-val" data-i18n="kpi-4-val">Zero-Trust</span>
-                        <span class="exec-kpi-label" data-i18n="kpi-4-label">Architetture Cloud UE &amp; GDPR</span>
+                        <span class="exec-kpi-val" data-i18n="kpi-4-val">Agentic AI</span>
+                        <span class="exec-kpi-label" data-i18n="kpi-4-label">Workflow Human-in-the-Loop</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- BLOCK 2: IDENTITÀ CORPORATE & TRACK RECORD (AVERISTECH PARTNER TECNOLOGICO) -->
+        <!-- =================================================================
+             2. SEZIONE CREDIBILITÀ & TRACK RECORD (L'AZIENDA)
+             ================================================================= -->
         <section class="credibility-section" id="credibility" aria-labelledby="credibility-heading">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag" data-i18n="cred-tag">Chi Siamo • Visione &amp; Solidità</span>
+                <div class="section-header" style="max-width: 820px;">
+                    <span class="section-tag" data-i18n="cred-tag">L'Azienda • Posizionamento &amp; Governance</span>
                     <h2 id="credibility-heading" class="section-title" data-i18n="cred-title">
-                        Un Partner Tecnologico Affidabile, con il DNA di una Tech Venture
+                        DNA Enterprise, Agilità da Venture.
                     </h2>
                     <p class="section-desc" data-i18n="cred-desc">
-                        Uniamo l'esperienza esecutiva di chi governa architetture informatiche complesse da oltre due
-                        decenni con la capacità di sviluppare internamente prodotti proprietari ad alto impatto.
+                        AverisTech non è una software house tradizionale. Nasce dall'unione tra una profonda esperienza
+                        direzionale nella consulenza tecnologica internazionale e un approccio <em>lean</em> allo
+                        sviluppo di prodotto.
                     </p>
                 </div>
 
                 <div class="credibility-grid" style="margin-bottom: 0;">
-                    <!-- Card 1: 20+ Years Track Record -->
+                    <!-- Blocco 1: Esperienza e Delivery -->
                     <article class="credibility-card" id="cred-card-track-record">
-                        <span class="credibility-eyebrow" data-i18n="cred-c1-eyebrow">Leadership &amp; Track Record</span>
-                        <h3 data-i18n="cred-c1-title">Oltre 20 Anni nella Guida di Trasformazioni Digitali Complesse</h3>
+                        <span class="credibility-eyebrow" data-i18n="cred-c1-eyebrow">Esperienza &amp; Delivery</span>
+                        <h3 data-i18n="cred-c1-title">Oltre 20 anni di Eccellenza IT</h3>
                         <p data-i18n="cred-c1-p1">
-                            Il team fondatore e direttivo di AverisTech porta in dote oltre vent'anni di esperienza sul
-                            campo nell'architettura di sistemi enterprise, nell'integrazione di processi industriali
-                            critici e nella governance tecnologica per aziende strutturate.
+                            Guidiamo trasformazioni digitali complesse con la stessa rigorosa metodologia applicata nei
+                            progetti multi-milionari per le principali utility ed enterprise europee. Portiamo standard
+                            architetturali di livello enterprise (scalabilità, sicurezza Zero-Trust, governance)
+                            all'interno di soluzioni agili e verticali.
                         </p>
-                        <p data-i18n="cred-c1-p2" style="margin-bottom: 0;">
-                            Affianchiamo il management aziendale (CFO, COO, CIO) come partner tecnologico verticale:
-                            progettiamo architetture destinate a durare nel tempo, sicure e con ritorni operativi
-                            misurabili.
-                        </p>
+                        <ul style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; font-size: 0.92rem; color: var(--text-muted);">
+                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                <span style="color: var(--accent-cyan); font-weight: 800;">✓</span>
+                                <span data-i18n="cred-c1-b1"><strong style="color: var(--text-main);">Governance &amp; Advisory Direzionale:</strong> affiancamento diretto a CFO, COO e CIO nella re-ingegnerizzazione dei processi core.</span>
+                            </li>
+                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                <span style="color: var(--accent-cyan); font-weight: 800;">✓</span>
+                                <span data-i18n="cred-c1-b2"><strong style="color: var(--text-main);">Esecuzione Lean orientata al ROI:</strong> rilasci incrementali ad alto impatto senza bloccare l'operatività aziendale.</span>
+                            </li>
+                        </ul>
                         <div class="partner-badges-row">
                             <div class="partner-institution-pill"><span>✓</span> 20+ Anni Enterprise IT</div>
                             <div class="partner-institution-pill"><span>✓</span> Architetture Mission-Critical</div>
-                            <div class="partner-institution-pill"><span>✓</span> Advisory Tecnologica &amp; Processi</div>
+                            <div class="partner-institution-pill"><span>✓</span> Zero-Trust Governance</div>
                         </div>
                     </article>
 
-                    <!-- Card 2: Applied R&D & Venture Building -->
+                    <!-- Blocco 2: Trasferimento Tecnologico e R&D -->
                     <article class="credibility-card" id="cred-card-academic">
-                        <span class="credibility-eyebrow" data-i18n="cred-c2-eyebrow">Ricerca Applicata &amp; Venture Building</span>
-                        <h3 data-i18n="cred-c2-title">Dalla Ricerca sull'Agentic AI a Soluzioni Industriali Concrete</h3>
+                        <span class="credibility-eyebrow" data-i18n="cred-c2-eyebrow">Trasferimento Tecnologico &amp; R&amp;D</span>
+                        <h3 data-i18n="cred-c2-title">Innovazione Validata dalla Ricerca</h3>
                         <p data-i18n="cred-c2-p1">
-                            Investiamo costantemente in attività di R&amp;D interna e collaboriamo con il mondo
-                            universitario e della ricerca per portare in azienda soluzioni di Intelligenza Artificiale
-                            concrete, affidabili e verificabili sul campo.
+                            Lo sviluppo delle nostre soluzioni è supportato da solide partnership accademiche.
+                            Collaboriamo attivamente con poli universitari di eccellenza in progetti di ricerca
+                            co-finanziati su Digital Twin, manutenzione predittiva e orchestrazione di Large Language
+                            Models.
                         </p>
-                        <p data-i18n="cred-c2-p2" style="margin-bottom: 0;">
-                            Ogni tecnologia che proponiamo ai nostri clienti nasce nel nostro laboratorio interno, viene
-                            validata su casi d'uso reali e rilasciata secondo i più rigorosi standard europei di
-                            sicurezza e sovranità del dato.
-                        </p>
-                        <div class="partner-badges-row" aria-label="Pilastri di Ricerca e Sviluppo">
-                            <div class="partner-institution-pill"><span>✓</span> R&amp;D Applicata In-House</div>
-                            <div class="partner-institution-pill"><span>✓</span> Proprietà Intellettuale SaaS</div>
-                            <div class="partner-institution-pill"><span>✓</span> Sinergia col Mondo Universitario</div>
+                        <ul style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; font-size: 0.92rem; color: var(--text-muted);">
+                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                <span style="color: var(--accent-cyan); font-weight: 800;">✓</span>
+                                <span data-i18n="cred-c2-b1"><strong style="color: var(--text-main);">Digital Twin &amp; Manutenzione Predittiva:</strong> modellazione digitale e algoritmi predittivi per l'ottimizzazione degli asset operativi.</span>
+                            </li>
+                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                <span style="color: var(--accent-cyan); font-weight: 800;">✓</span>
+                                <span data-i18n="cred-c2-b2"><strong style="color: var(--text-main);">Orchestrazione LLM &amp; Vision AI:</strong> pipeline cognitive verificate per l'estrazione semantica e l'automazione documentale.</span>
+                            </li>
+                        </ul>
+                        <div class="partner-badges-row" aria-label="Ambiti di Ricerca e Sviluppo">
+                            <div class="partner-institution-pill"><span>✓</span> Partnership Accademiche</div>
+                            <div class="partner-institution-pill"><span>✓</span> Digital Twin &amp; Predictive AI</div>
+                            <div class="partner-institution-pill"><span>✓</span> Orchestrazione LLM</div>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- BLOCK 3: COMPETENZE & AGENTIC AI (COSA SAPPIAMO FARE) -->
-        <section class="innovation" id="agentic-ai" aria-labelledby="innov-heading">
+        <!-- =================================================================
+             3. CORE PRODUCT: INQUADRA (POSIZIONAMENTO B2B PURO)
+             ================================================================= -->
+        <section class="core-product-section" id="inquadra" aria-labelledby="core-product-heading">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag" data-i18n="innov-tag">Competenze Core &amp; Tecnologie</span>
-                    <h2 id="innov-heading" class="section-title" data-i18n="innov-title">
-                        Specialisti in Agentic AI e Architetture Cloud Scalabili
+                <div class="section-header" style="max-width: 820px;">
+                    <span class="section-tag" data-i18n="core-tag">Core Product • Piattaforma B2B SaaS</span>
+                    <h2 id="core-product-heading" class="section-title" data-i18n="core-title">
+                        inQuadra: L'Intelligenza Applicata al Ciclo Passivo.
                     </h2>
-                    <p class="section-desc" data-i18n="innov-desc">
-                        Costruiamo piattaforme proprietarie e soluzioni enterprise poggiando su quattro pilastri
-                        ingegneristici pensati per garantire continuità, velocità e precisione operativa.
+                    <p class="section-desc" data-i18n="core-desc">
+                        La riconciliazione manuale dei documenti di trasporto e delle fatture drena risorse, genera
+                        errori contabili e rallenta la chiusura dei bilanci. inQuadra è la piattaforma B2B SaaS che
+                        automatizza l'intero processo di riconciliazione a 3 vie.
                     </p>
                 </div>
 
+                <div class="core-product-monolith">
+                    <!-- Left Column: CFO & COO Value Proposition -->
+                    <div>
+                        <div class="core-product-badge-row">
+                            <span class="core-product-pill" data-i18n="core-pill-badge">Core Product B2B</span>
+                            <span class="core-product-sector-tag" data-i18n="core-sector-badge">Logistica • GDO • Manifattura • Procurement ISO 9001</span>
+                        </div>
+
+                        <h3 class="core-product-heading">
+                            <span class="project-logo-badge"
+                                style="background: #ffffff; border: 1px solid rgba(0, 242, 254, 0.35);">
+                                <img src="media/inquadra-logo-transparent.png" alt="inQuadra Logo"
+                                    class="project-badge-img" />
+                            </span>
+                            <span>inQuadra</span>
+                        </h3>
+
+                        <p class="core-product-lead" data-i18n="core-lead">
+                            Automazione end-to-end del ciclo passivo e attivo, controllo automatico delle discrepanze di
+                            prezzo e integrazione non invasiva con il tuo ecosistema ERP.
+                        </p>
+
+                        <div class="core-pillars-list">
+                            <!-- Feature 1 -->
+                            <div class="core-pillar-item">
+                                <span class="core-pillar-check" aria-hidden="true">01</span>
+                                <div class="core-pillar-text">
+                                    <strong data-i18n="core-p1-title">Riconciliazione a 3 Vie Automatizzata</strong>
+                                    <span data-i18n="core-p1-desc">Confronto semantico e numerico in tempo reale tra
+                                        Ordini di Acquisto, DDT (Documenti di Trasporto) e Fatture Elettroniche (XML
+                                        SDI). Il sistema evidenzia solo le anomalie, azzerando il tempo di verifica
+                                        sulle transazioni corrette.</span>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="core-pillar-item">
+                                <span class="core-pillar-check" aria-hidden="true">02</span>
+                                <div class="core-pillar-text">
+                                    <strong data-i18n="core-p2-title">Vision AI &amp; OCR Avanzato</strong>
+                                    <span data-i18n="core-p2-desc">Estrazione intelligente dei dati da documenti
+                                        cartacei e PDF non strutturati. Il motore AI non si limita a leggere i
+                                        caratteri, ma comprende il contesto logistico e commerciale della riga
+                                        articolo.</span>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3 -->
+                            <div class="core-pillar-item">
+                                <span class="core-pillar-check" aria-hidden="true">03</span>
+                                <div class="core-pillar-text">
+                                    <strong data-i18n="core-p3-title">Price Intelligence &amp; Vendor Rating</strong>
+                                    <span data-i18n="core-p3-desc">Monitoraggio costante degli scostamenti di prezzo e
+                                        valutazione oggettiva delle performance dei fornitori, propedeutica alla
+                                        compliance ISO 9001 per il procurement.</span>
+                                </div>
+                            </div>
+
+                            <!-- Feature 4: Integrazione -->
+                            <div class="core-pillar-item" style="border-color: rgba(0, 242, 254, 0.28); background: rgba(0, 242, 254, 0.04);">
+                                <span class="core-pillar-check" aria-hidden="true">API</span>
+                                <div class="core-pillar-text">
+                                    <strong data-i18n="core-p4-title">Integrazione ERP Non Invasiva (FastAPI / RESTful)</strong>
+                                    <span data-i18n="core-p4-desc">Architettura a microservizi basata su API RESTful
+                                        (FastAPI/Python) progettata per integrarsi in modo non invasivo con
+                                        l'ecosistema ERP aziendale esistente (TeamSystem, Danea, Zucchetti, SAP,
+                                        Passepartout, SDI).</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                            <a href="inquadra.html" class="btn btn-primary" data-i18n="core-cta-primary">
+                                Esplora la Piattaforma inQuadra →
+                            </a>
+                            <a href="inquadra.html#calculator" class="btn btn-secondary" data-i18n="core-cta-roi">
+                                Calcola il ROI per la tua Azienda
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Architectural Pipeline Visual -->
+                    <div class="core-arch-panel" aria-label="Architettura Operativa inQuadra">
+                        <div class="core-arch-header">
+                            <span class="core-arch-title" data-i18n="core-arch-header">INQUADRA ENGINE • MICROSERVIZI RESTFUL</span>
+                            <span class="core-arch-status" data-i18n="core-arch-live">● ATTIVO IN PRODUZIONE</span>
+                        </div>
+
+                        <div class="core-arch-flow">
+                            <div class="core-arch-node">
+                                <div class="core-arch-node-left">
+                                    <div class="core-arch-node-icon">01</div>
+                                    <div class="core-arch-node-info">
+                                        <h4 data-i18n="core-arch-n1-title">Vision AI &amp; Ingestione XML SDI</h4>
+                                        <p data-i18n="core-arch-n1-desc">Comprensione semantica di PDF, scansioni DDT, Ordini e Fatture SDI</p>
+                                    </div>
+                                </div>
+                                <span class="core-arch-node-badge" data-i18n="core-arch-n1-badge">Vision AI 99,4%</span>
+                            </div>
+
+                            <div class="core-arch-node">
+                                <div class="core-arch-node-left">
+                                    <div class="core-arch-node-icon">02</div>
+                                    <div class="core-arch-node-info">
+                                        <h4 data-i18n="core-arch-n2-title">Riconciliazione a 3 Vie (Ordine • DDT • Fattura)</h4>
+                                        <p data-i18n="core-arch-n2-desc">Evidenziazione esclusiva delle anomalie e zero tempo sulle transazioni conformi</p>
+                                    </div>
+                                </div>
+                                <span class="core-arch-node-badge" data-i18n="core-arch-n2-badge">&lt; 1 sec / doc</span>
+                            </div>
+
+                            <div class="core-arch-node">
+                                <div class="core-arch-node-left">
+                                    <div class="core-arch-node-icon">03</div>
+                                    <div class="core-arch-node-info">
+                                        <h4 data-i18n="core-arch-n3-title">Price Intelligence &amp; Vendor Rating ISO 9001</h4>
+                                        <p data-i18n="core-arch-n3-desc">Analisi storica prezzi al singolo pezzo e KPI oggettivi di conformità fornitore</p>
+                                    </div>
+                                </div>
+                                <span class="core-arch-node-badge" data-i18n="core-arch-n3-badge">Audit &amp; KPI</span>
+                            </div>
+
+                            <div class="core-arch-node">
+                                <div class="core-arch-node-left">
+                                    <div class="core-arch-node-icon">04</div>
+                                    <div class="core-arch-node-info">
+                                        <h4 data-i18n="core-arch-n4-title">Gateway API RESTful (FastAPI / Python)</h4>
+                                        <p data-i18n="core-arch-n4-desc">Sincronizzazione bidirezionale non invasiva con il gestionale ERP</p>
+                                    </div>
+                                </div>
+                                <span class="core-arch-node-badge" data-i18n="core-arch-n4-badge">Zero Attrito ERP</span>
+                            </div>
+                        </div>
+
+                        <div class="core-arch-erp-box">
+                            <span class="core-arch-erp-label" data-i18n="core-arch-erp-label">Integrazione nativa con i principali ecosistemi gestionali:</span>
+                            <div class="core-arch-erp-tags">
+                                <span class="tag">TeamSystem</span>
+                                <span class="tag">Danea</span>
+                                <span class="tag">Zucchetti</span>
+                                <span class="tag">SAP</span>
+                                <span class="tag">Passepartout</span>
+                                <span class="tag">XML SDI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             4. SERVIZI & ARCHITETTURA (AGENTIC AI & CLOUD INFRASTRUCTURE)
+             ================================================================= -->
+        <section class="innovation" id="agentic-ai" aria-labelledby="innov-heading">
+            <div class="container">
+                <div class="section-header" style="max-width: 820px;">
+                    <span class="section-tag" data-i18n="innov-tag">Servizi &amp; Architettura Enterprise</span>
+                    <h2 id="innov-heading" class="section-title" data-i18n="innov-title">
+                        Architetture Cloud &amp; Sistemi Agentici.
+                    </h2>
+                    <p class="section-desc" data-i18n="innov-desc">
+                        Oltre ai nostri prodotti proprietari, affianchiamo le aziende nella progettazione di
+                        infrastrutture digitali personalizzate, prediligendo architetture a microservizi leggere,
+                        performanti e self-hosted.
+                    </p>
+                </div>
+
+                <!-- 2 Main Architectural Pillars (Deep-Dive Cards) -->
+                <div class="credibility-grid" style="margin-bottom: 36px;">
+                    <!-- Punto 1: Agentic AI & Automazione -->
+                    <article class="credibility-card" id="arch-card-agentic">
+                        <span class="credibility-eyebrow" data-i18n="arch-p1-eyebrow">01 • Agentic AI &amp; Automazione</span>
+                        <h3 data-i18n="arch-p1-title">Agenti Digitali Autonomi &amp; Workflow Human-in-the-Loop</h3>
+                        <p data-i18n="arch-p1-desc">
+                            Sviluppo di agenti digitali autonomi integrati con LLM (Large Language Models).
+                            Implementiamo logiche <em>Human-in-the-loop</em> dove l'IA analizza i dati (es.
+                            qualificazione automatica dei lead, triage del customer care, verifica documentale) e il
+                            management approva le decisioni tramite gateway sicuri e asincroni.
+                        </p>
+                        <ul style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; font-size: 0.92rem; color: var(--text-muted);">
+                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                <span style="color: var(--accent-cyan); font-weight: 800;">✓</span>
+                                <span data-i18n="arch-p1-b1"><strong style="color: var(--text-main);">Orchestrazione Multi-Agente:</strong> agenti specializzati che interrogano database aziendali, analizzano flussi e preparano azioni operative.</span>
+                            </li>
+                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                <span style="color: var(--accent-cyan); font-weight: 800;">✓</span>
+                                <span data-i18n="arch-p1-b2"><strong style="color: var(--text-main);">Approvazione Esecutiva Asincrona:</strong> supervisione umana garantita tramite gateway crittografati prima di ogni esecuzione critica.</span>
+                            </li>
+                        </ul>
+                        <div class="partner-badges-row">
+                            <div class="partner-institution-pill"><span>⚡</span> LLM Orchestration</div>
+                            <div class="partner-institution-pill"><span>🛡️</span> Human-in-the-Loop</div>
+                            <div class="partner-institution-pill"><span>🔄</span> Async Decision Gateways</div>
+                        </div>
+                    </article>
+
+                    <!-- Punto 2: Cloud Infrastructure & Backend -->
+                    <article class="credibility-card" id="arch-card-cloud">
+                        <span class="credibility-eyebrow" data-i18n="arch-p2-eyebrow">02 • Cloud Infrastructure &amp; Backend</span>
+                        <h3 data-i18n="arch-p2-title">Microservizi ad Alte Prestazioni &amp; Latenza &lt; 400ms</h3>
+                        <p data-i18n="arch-p2-desc">
+                            Sviluppo di backend robusti in Python (FastAPI), database relazionali ottimizzati
+                            (PostgreSQL) e sistemi di caching (Redis) per garantire idempotenza, sicurezza e tempi di
+                            risposta sotto i 400ms anche in scenari ad alta concorrenza.
+                        </p>
+                        <ul style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; font-size: 0.92rem; color: var(--text-muted);">
+                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                <span style="color: var(--accent-cyan); font-weight: 800;">✓</span>
+                                <span data-i18n="arch-p2-b1"><strong style="color: var(--text-main);">Stack Python FastAPI + PostgreSQL + Redis:</strong> transazioni ACID idempotenti, code asincrone e caching in-memory ad altissima velocità.</span>
+                            </li>
+                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                <span style="color: var(--accent-cyan); font-weight: 800;">✓</span>
+                                <span data-i18n="arch-p2-b2"><strong style="color: var(--text-main);">Architetture Leggere &amp; Self-Hosted:</strong> pieno controllo sull'infrastruttura, isolamento multi-tenant e assenza di vendor lock-in.</span>
+                            </li>
+                        </ul>
+                        <div class="partner-badges-row">
+                            <div class="partner-institution-pill"><span>🐍</span> Python / FastAPI</div>
+                            <div class="partner-institution-pill"><span>🗄️</span> PostgreSQL &amp; Redis</div>
+                            <div class="partner-institution-pill"><span>🚀</span> Response Time &lt; 400ms</div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 4 Technical Stack Highlights -->
                 <div class="innovation-grid">
                     <article class="tech-item" id="tech-card-1">
                         <span class="tech-icon" aria-hidden="true">
@@ -260,9 +503,8 @@
                                 <path d="M1 14h3" />
                             </svg>
                         </span>
-                        <h3 data-i18n="tech-2-title">Agentic AI &amp; Automazione Cognitiva</h3>
-                        <p data-i18n="tech-2-desc">Sviluppiamo agenti AI capaci di comprendere documenti complessi,
-                            incrociare dati eterogenei ed eseguire workflow operativi autonomi.</p>
+                        <h3 data-i18n="tech-1-title">Orchestrazione LLM</h3>
+                        <p data-i18n="tech-1-desc">Agenti autonomi per lead qualification, customer care triage e audit documentale.</p>
                     </article>
 
                     <article class="tech-item" id="tech-card-2">
@@ -274,9 +516,8 @@
                                 <path d="m14 17 2-2-2-2" />
                             </svg>
                         </span>
-                        <h3 data-i18n="tech-1-title">Piattaforme SaaS Multi-Tenant</h3>
-                        <p data-i18n="tech-1-desc">Architetture Cloud-Native a microservizi progettate per scalare su
-                            alti volumi garantendo isolamento dei dati ed elasticità automatica.</p>
+                        <h3 data-i18n="tech-2-title">FastAPI &amp; Microservizi</h3>
+                        <p data-i18n="tech-2-desc">API RESTful asincrone, idempotenti e progettate per tempi di risposta inferiori a 400ms.</p>
                     </article>
 
                     <article class="tech-item" id="tech-card-3">
@@ -288,9 +529,8 @@
                                 <polyline points="2 12 12 17 22 12" />
                             </svg>
                         </span>
-                        <h3 data-i18n="tech-3-title">Integrazione ERP &amp; Sistemi Legacy</h3>
-                        <p data-i18n="tech-3-desc">Connettori non invasivi, API gateway e pipeline di sincronizzazione
-                            che potenziano i gestionali esistenti senza bloccare l'operatività.</p>
+                        <h3 data-i18n="tech-3-title">PostgreSQL &amp; Redis</h3>
+                        <p data-i18n="tech-3-desc">Persistenza relazionale ottimizzata e caching distribuito per carichi transazionali elevati.</p>
                     </article>
 
                     <article class="tech-item" id="tech-card-4">
@@ -302,178 +542,190 @@
                                 <circle cx="12" cy="16" r="1" />
                             </svg>
                         </span>
-                        <h3 data-i18n="tech-4-title">Sicurezza Zero-Trust &amp; GDPR</h3>
-                        <p data-i18n="tech-4-desc">Infrastrutture ospitate in Europa, crittografia end-to-end e
-                            rigorosa politica di Zero Data Retention sui dati aziendali dei clienti.</p>
+                        <h3 data-i18n="tech-4-title">Self-Hosted &amp; Zero-Trust</h3>
+                        <p data-i18n="tech-4-desc">Deployment su infrastrutture dedicate, isolamento multi-tenant e conformità GDPR nativa.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- BLOCK 4: LE NOSTRE SOLUZIONI — INQUADRA (FLAGSHIP B2B) + VENTURE LAB -->
-        <section class="core-product-section" id="inquadra" aria-labelledby="core-product-heading">
+        <!-- =================================================================
+             5. VENTURE LAB (LA VETRINA TECNOLOGICA & R&D PORTFOLIO)
+             ================================================================= -->
+        <section class="portfolio" id="venture-lab-section" aria-labelledby="vlab-section-heading">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag" data-i18n="core-tag">Soluzioni Proprietarie • Flagship Product B2B</span>
-                    <h2 id="core-product-heading" class="section-title" data-i18n="core-title">
-                        Dalla Nostra Ricerca: inQuadra
+                <div class="section-header" style="max-width: 820px;">
+                    <span class="section-tag" data-i18n="vlab-sec-tag">Esecuzione End-to-End • Proof of Concept Operativi</span>
+                    <h2 id="vlab-section-heading" class="section-title" data-i18n="vlab-sec-title">
+                        Venture Lab &amp; R&amp;D Portfolio.
                     </h2>
-                    <p class="section-desc" data-i18n="core-desc">
-                        La massima espressione della tecnologia Agentic AI di AverisTech applicata al mondo Enterprise:
-                        la piattaforma SaaS per l'automazione del Ciclo Attivo e Passivo e la riconciliazione a 3 vie.
+                    <p class="section-desc" data-i18n="vlab-sec-intro">
+                        AverisTech è un incubatore continuo di tecnologia. Nel nostro Venture Lab progettiamo, testiamo
+                        e scaliamo piattaforme digitali proprietarie che affrontano sfide verticali complesse. Questi
+                        Proof of Concept operativi dimostrano la nostra capacità di esecuzione end-to-end.
                     </p>
                 </div>
 
-                <div class="core-product-monolith">
-                    <!-- Left Column: Strategic B2B Value Proposition -->
-                    <div>
-                        <div class="core-product-badge-row">
-                            <span class="core-product-pill" data-i18n="core-pill-badge">Flagship B2B SaaS</span>
-                            <span class="core-product-sector-tag" data-i18n="core-sector-badge">Logistica • GDO • Manifattura • Servizi</span>
-                        </div>
-
-                        <h3 class="core-product-heading">
-                            <span class="project-logo-badge"
-                                style="background: #ffffff; border: 1px solid rgba(0, 242, 254, 0.35);">
-                                <img src="media/inquadra-logo-transparent.png" alt="inQuadra Logo"
-                                    class="project-badge-img" />
-                            </span>
-                            <span>inQuadra</span>
-                        </h3>
-
-                        <p class="core-product-lead" data-i18n="core-lead">
-                            Il copilota di Agentic AI sviluppato da AverisTech che trasforma l'amministrazione da
-                            centro di costo a presidio automatico della marginalità operativa.
-                        </p>
-
-                        <div class="core-pillars-list">
-                            <div class="core-pillar-item">
-                                <span class="core-pillar-check" aria-hidden="true">✓</span>
-                                <div class="core-pillar-text">
-                                    <strong data-i18n="core-p1-title">Abbattimento dei Tempi del Ciclo Passivo e Attivo</strong>
-                                    <span data-i18n="core-p1-desc">Acquisizione Vision AI istantanea di ordini clienti,
-                                        bolle di consegna e fatture fornitore da PDF, email e portali, eliminando fino
-                                        al 90% del data entry manuale.</span>
-                                </div>
+                <div class="venture-grid-3">
+                    <!-- Card 1: Wroomy -->
+                    <article class="project-card" id="home-card-wroomy">
+                        <div>
+                            <div class="project-header">
+                                <a href="https://wroomy.it" target="_blank" rel="noopener noreferrer"
+                                    class="project-domain">
+                                    wroomy.it ↗
+                                </a>
+                                <span class="project-status">
+                                    <span class="status-dot" aria-hidden="true"></span>
+                                    <span data-i18n="vlab-status-poc">PoC Operativo</span>
+                                </span>
                             </div>
 
-                            <div class="core-pillar-item">
-                                <span class="core-pillar-check" aria-hidden="true">✓</span>
-                                <div class="core-pillar-text">
-                                    <strong data-i18n="core-p2-title">Zero Errori nella Riconciliazione a 3 Vie (Ordine-DDT-Fattura)</strong>
-                                    <span data-i18n="core-p2-desc">Verifica incrociata riga per riga al centesimo tra
-                                        Ordine d'Acquisto, Documento di Trasporto e Fattura SDI, con blocco cautelativo
-                                        dei pagamenti anomali e generazione automatica delle contestazioni.</span>
-                                </div>
-                            </div>
+                            <h3 class="project-title">
+                                <span class="project-logo-badge">
+                                    <img src="media/wroomy-logo.png" alt="Wroomy Logo" class="project-badge-img" />
+                                </span>
+                                <span data-i18n="wroomy-title">Wroomy</span>
+                            </h3>
 
-                            <div class="core-pillar-item">
-                                <span class="core-pillar-check" aria-hidden="true">✓</span>
-                                <div class="core-pillar-text">
-                                    <strong data-i18n="core-p3-title">Integrazione Nativa e Non Invasiva con ERP</strong>
-                                    <span data-i18n="core-p3-desc">Connessione rapida con TeamSystem, Danea, Zucchetti,
-                                        SAP, Passepartout e flussi SDI XML tramite tracciati standard o API pronte,
-                                        senza toccare il codice del gestionale.</span>
-                                </div>
+                            <p class="project-desc" data-i18n="vlab-wroomy-desc">
+                                Motore SaaS di Market Intelligence per il settore automotive. Sfrutta l'algoritmo
+                                proprietario <em>AutoScore™</em> per il pricing predittivo e la valutazione dei veicoli
+                                in tempo reale analizzando ampi set di dati di mercato.
+                            </p>
+
+                            <div class="project-tags" aria-label="Tecnologie Wroomy">
+                                <span class="tag">AutoScore™ Algorithm</span>
+                                <span class="tag">Predictive Pricing</span>
+                                <span class="tag">Market Intelligence</span>
+                                <span class="tag">Automotive SaaS</span>
                             </div>
                         </div>
 
-                        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                            <a href="inquadra.html" class="btn btn-primary" data-i18n="core-cta-primary">
-                                Vai alla Pagina di inQuadra →
+                        <div class="project-footer" style="display: flex; align-items: center; justify-content: space-between; gap: 12px;">
+                            <a href="wroomy.html" class="project-link-btn" data-i18n="vlab-card-cta">
+                                Scheda Architetturale →
                             </a>
-                            <a href="inquadra.html#calculator" class="btn btn-secondary" data-i18n="core-cta-roi">
-                                Simula il ROI Aziendale
+                            <a href="https://wroomy.it" target="_blank" rel="noopener noreferrer"
+                                style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">
+                                Live ↗
                             </a>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Right Column: Architectural Pipeline Visual -->
-                    <div class="core-arch-panel" aria-label="Architettura Operativa inQuadra">
-                        <div class="core-arch-header">
-                            <span class="core-arch-title" data-i18n="core-arch-header">MOTORE DI RICONCILIAZIONE A 3 VIE</span>
-                            <span class="core-arch-status" data-i18n="core-arch-live">● PRODOTTO ATTIVO</span>
-                        </div>
-
-                        <div class="core-arch-flow">
-                            <div class="core-arch-node">
-                                <div class="core-arch-node-left">
-                                    <div class="core-arch-node-icon">01</div>
-                                    <div class="core-arch-node-info">
-                                        <h4 data-i18n="core-arch-n1-title">1. Ingestione Multicanale &amp; SDI XML</h4>
-                                        <p data-i18n="core-arch-n1-desc">Estrazione semantica da PDF, Email, EDI e Sistema di Interscambio</p>
-                                    </div>
-                                </div>
-                                <span class="core-arch-node-badge" data-i18n="core-arch-n1-badge">Vision AI 99,4%</span>
+                    <!-- Card 2: PetsGo -->
+                    <article class="project-card" id="home-card-petsgo">
+                        <div>
+                            <div class="project-header">
+                                <a href="https://petsgo.it" target="_blank" rel="noopener noreferrer"
+                                    class="project-domain">
+                                    petsgo.it ↗
+                                </a>
+                                <span class="project-status">
+                                    <span class="status-dot" aria-hidden="true"></span>
+                                    <span data-i18n="vlab-status-poc">PoC Operativo</span>
+                                </span>
                             </div>
 
-                            <div class="core-arch-node">
-                                <div class="core-arch-node-left">
-                                    <div class="core-arch-node-icon">02</div>
-                                    <div class="core-arch-node-info">
-                                        <h4 data-i18n="core-arch-n2-title">2. Quadratura a 3 Vie (Ordine • DDT • Fattura)</h4>
-                                        <p data-i18n="core-arch-n2-desc">Verifica automatica prezzi unitari, quantità consegnate e listini</p>
-                                    </div>
-                                </div>
-                                <span class="core-arch-node-badge" data-i18n="core-arch-n2-badge">&lt; 1 sec / doc</span>
-                            </div>
+                            <h3 class="project-title">
+                                <span class="project-logo-badge">
+                                    <img src="media/logo_petsgo.png" alt="PetsGo Logo" class="project-badge-img" />
+                                </span>
+                                <span data-i18n="petsgo-title">PetsGo</span>
+                            </h3>
 
-                            <div class="core-arch-node">
-                                <div class="core-arch-node-left">
-                                    <div class="core-arch-node-icon">03</div>
-                                    <div class="core-arch-node-info">
-                                        <h4 data-i18n="core-arch-n3-title">3. Sincronizzazione Nativa ERP</h4>
-                                        <p data-i18n="core-arch-n3-desc">Scrittura contabile validata e sblocco pagamenti autorizzati</p>
-                                    </div>
-                                </div>
-                                <span class="core-arch-node-badge" data-i18n="core-arch-n3-badge">Zero Data Entry</span>
+                            <p class="project-desc" data-i18n="vlab-petsgo-desc">
+                                Ecosistema digitale integrato per il settore pet care e la telemedicina veterinaria.
+                                Un'infrastruttura ad alta scalabilità che connette app mobili native (iOS/Android) con
+                                dashboard cliniche B2B per la gestione unificata dei libretti sanitari e delle
+                                prenotazioni.
+                            </p>
+
+                            <div class="project-tags" aria-label="Tecnologie PetsGo">
+                                <span class="tag">iOS &amp; Android Native</span>
+                                <span class="tag">Dashboard Cliniche B2B</span>
+                                <span class="tag">Telemedicina &amp; Booking</span>
+                                <span class="tag">High Scalability</span>
                             </div>
                         </div>
 
-                        <div class="core-arch-erp-box">
-                            <span class="core-arch-erp-label" data-i18n="core-arch-erp-label">Integrazione nativa senza attrito con:</span>
-                            <div class="core-arch-erp-tags">
-                                <span class="tag">TeamSystem</span>
-                                <span class="tag">Danea</span>
-                                <span class="tag">SDI XML</span>
-                                <span class="tag">Zucchetti</span>
-                                <span class="tag">SAP</span>
-                                <span class="tag">Passepartout</span>
+                        <div class="project-footer" style="display: flex; align-items: center; justify-content: space-between; gap: 12px;">
+                            <a href="petsgo.html" class="project-link-btn" data-i18n="vlab-card-cta">
+                                Scheda Architetturale →
+                            </a>
+                            <a href="https://petsgo.it" target="_blank" rel="noopener noreferrer"
+                                style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">
+                                Live ↗
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Infrastrutture Managed -->
+                    <article class="project-card" id="home-card-managed">
+                        <div>
+                            <div class="project-header">
+                                <a href="https://freelancerhost.com" target="_blank" rel="noopener noreferrer"
+                                    class="project-domain">
+                                    freelancerhost.com ↗
+                                </a>
+                                <span class="project-status">
+                                    <span class="status-dot" aria-hidden="true"></span>
+                                    <span data-i18n="vlab-status-poc">PoC Operativo</span>
+                                </span>
+                            </div>
+
+                            <h3 class="project-title">
+                                <span class="project-logo-badge">
+                                    <img src="media/logo-freelancerhost.jpg" alt="Infrastrutture Managed Logo"
+                                        class="project-badge-img" />
+                                </span>
+                                <span data-i18n="vlab-managed-title">Infrastrutture Managed</span>
+                            </h3>
+
+                            <p class="project-desc" data-i18n="vlab-flh-desc">
+                                Piattaforme di automazione per il deployment continuo e l'hosting ottimizzato,
+                                garantendo isolamento dei tenant, provisioning rapido e sicurezza Zero-Trust per
+                                professionisti e ambienti applicativi dedicati.
+                            </p>
+
+                            <div class="project-tags" aria-label="Tecnologie Infrastrutture Managed">
+                                <span class="tag">Continuous Deployment</span>
+                                <span class="tag">Tenant Isolation</span>
+                                <span class="tag">Zero-Trust Security</span>
+                                <span class="tag">Managed Cloud</span>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Venture Lab Institutional Callout right below Flagship Product -->
-                <div class="venture-teaser-banner" style="margin-top: 40px;">
-                    <div class="venture-teaser-text">
-                        <h3 data-i18n="cred-venture-title">Oltre inQuadra: Esplora l'Incubatore AverisTech Venture Lab</h3>
-                        <p data-i18n="cred-venture-desc">
-                            inQuadra è il nostro prodotto di punta B2B, ma il nostro ecosistema tecnologico comprende
-                            anche spin-off e piattaforme verticali proprietarie (Wroomy, PetsGo, FreelancerHost) dove
-                            sperimentiamo algoritmi predittivi e architetture ad alta scalabilità.
-                        </p>
-                    </div>
-                    <a href="venture-lab.html" class="btn btn-secondary" data-i18n="cred-venture-btn">
-                        Esplora il Venture Lab →
-                    </a>
+                        <div class="project-footer" style="display: flex; align-items: center; justify-content: space-between; gap: 12px;">
+                            <a href="freelancerhost.html" class="project-link-btn" data-i18n="vlab-card-cta">
+                                Scheda Architetturale →
+                            </a>
+                            <a href="venture-lab.html"
+                                style="font-size: 0.85rem; color: var(--accent-cyan); font-weight: 600;"
+                                data-i18n="vlab-explore-all">
+                                Venture Lab →
+                            </a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- BLOCK 5: CONTACT & EXECUTIVE DEMO SECTION -->
+        <!-- =================================================================
+             6. CONTACT SECTION (PARLA CON NOI)
+             ================================================================= -->
         <section class="contact" id="contact" aria-labelledby="contact-heading">
             <div class="container">
                 <div class="section-header" style="max-width: 760px; margin: 0 auto 60px; text-align: center;">
-                    <span class="section-tag" data-i18n="contact-tag">Consulenza Esecutiva &amp; Demo B2B</span>
+                    <span class="section-tag" data-i18n="contact-tag">Consulenza &amp; Soluzioni</span>
                     <h2 id="contact-heading" class="section-title" data-i18n="contact-title"
                         style="text-align: center;">
-                        Prenota una Demo o Parla con i Nostri Architetti
+                        Parla con Noi
                     </h2>
                     <p class="section-subtitle" data-i18n="contact-desc"
                         style="margin: 0 auto; color: var(--text-muted); font-size: 1.15rem; line-height: 1.7;">
-                        Affianchiamo CFO, COO e Direzioni IT nella trasformazione dei processi critici aziendali.
-                        Contattaci per una sessione tecnica dedicata su inQuadra o sulle nostre architetture Agentic AI.
+                        Affianchiamo i nostri clienti nella trasformazione dei processi aziendali. Contattaci per
+                        approfondire le nostre soluzioni o richiedere una sessione dedicata.
                     </p>
                 </div>
 
@@ -542,6 +794,10 @@
                             style="text-decoration: none; color: var(--accent-cyan); font-weight: 600;">inQuadra (Core B2B)</a>
                         <a href="venture-lab.html" class="tag"
                             style="text-decoration: none; color: var(--text-muted);">Venture Lab (R&amp;D)</a>
+                        <a href="https://wroomy.it" target="_blank" rel="noopener noreferrer" class="tag"
+                            style="text-decoration: none; color: var(--text-muted);">wroomy.it</a>
+                        <a href="https://petsgo.it" target="_blank" rel="noopener noreferrer" class="tag"
+                            style="text-decoration: none; color: var(--text-muted);">petsgo.it</a>
                     </div>
                 </div>
 
@@ -550,10 +806,10 @@
                     <h2 class="footer-heading" data-i18n="footer-heading-links">Architettura &amp; Piattaforme</h2>
                     <ul class="footer-links">
                         <li><a href="#hero" data-i18n="nav-home">Home</a></li>
+                        <li><a href="#credibility" data-i18n="nav-company">Azienda &amp; R&amp;D</a></li>
                         <li><a href="inquadra.html" style="color: var(--accent-cyan); font-weight: 600;">inQuadra (Core Product)</a></li>
-                        <li><a href="#agentic-ai" data-i18n="nav-agentic">Agentic AI</a></li>
+                        <li><a href="#agentic-ai" data-i18n="nav-agentic">Architetture &amp; AI</a></li>
                         <li><a href="venture-lab.html" data-i18n="nav-venture">Venture Lab</a></li>
-                        <li><a href="#credibility" data-i18n="nav-company">Azienda &amp; Partner</a></li>
                         <li><a href="#contact" data-i18n="nav-contact">Contatti</a></li>
                     </ul>
                 </div>

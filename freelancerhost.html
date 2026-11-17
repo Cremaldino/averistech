@@ -17,23 +17,34 @@
     </style>
 </head>
 <body>
+    <!-- HEADER & NAVBAR (B2B Enterprise IA) -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo-link">
-                <img src="media/logo-navbar.jpeg" alt="AverisTech Logo" class="logo-img" />
+            <a href="index.html" class="logo-link" id="nav-logo-link" aria-label="AverisTech Home">
+                <img src="media/logo-navbar.jpeg" alt="AverisTech Logo" class="logo-img" id="navbar-logo" />
             </a>
+
             <nav aria-label="Menu Principale">
                 <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html#about" class="nav-link" data-i18n="nav-about">Chi Siamo</a></li>
-                    <li><a href="index.html#portfolio" class="nav-link" data-i18n="nav-portfolio">Progetti</a></li>
-                    <li><a href="index.html#innovation" class="nav-link" data-i18n="nav-innovation">Innovazione</a></li>
-                    <li><a href="index.html#contact" class="nav-link" data-i18n="nav-contact">Contatti</a></li>
+                    <li><a href="index.html#hero" class="nav-link" id="link-home" data-i18n="nav-home">Home</a></li>
+                    <li><a href="index.html#credibility" class="nav-link" id="link-company" data-i18n="nav-company">Chi Siamo</a></li>
+                    <li><a href="index.html#agentic-ai" class="nav-link" id="link-agentic" data-i18n="nav-agentic">Agentic AI &amp; Tech</a></li>
+                    <li><a href="inquadra.html" class="nav-link" id="link-inquadra" data-i18n="nav-inquadra">inQuadra</a></li>
+                    <li><a href="venture-lab.html" class="nav-link active" id="link-venture" data-i18n="nav-venture">Venture Lab</a></li>
+                    <li><a href="index.html#contact" class="nav-link" id="link-contact" data-i18n="nav-contact">Contatti</a></li>
                 </ul>
             </nav>
 
-            <div style="display: flex; align-items: center; gap: 16px;">
-                <!-- Language Switcher -->
-                <div class="lang-toggle" role="group" aria-label="Selettore Lingua">
+            <div style="display: flex; align-items: center; gap: 14px;">
+                <!-- Primary Navbar CTA -->
+                <a href="index.html#contact" class="btn btn-primary nav-cta-btn" id="nav-cta-demo"
+                    data-i18n="nav-cta-demo">
+                    Parla con Noi
+                </a>
+
+                <!-- Language Switcher (IT / EN) -->
+                <div class="lang-toggle" id="lang-switcher" role="group"
+                    aria-label="Selettore Lingua / Language Switcher">
                     <button type="button" class="lang-btn active" id="btn-lang-it" aria-label="Italiano">IT</button>
                     <button type="button" class="lang-btn" id="btn-lang-en" aria-label="English">EN</button>
                 </div>

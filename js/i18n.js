@@ -80,11 +80,29 @@ const translations = {
     "vlab-tag": "R&D • Incubatore Tecnologico & Spin-Off",
     "vlab-title": "AverisTech Venture Lab",
     "vlab-intro": "Sviluppiamo tecnologie scalabili. Il nostro Venture Lab è l'incubatore interno dove testiamo algoritmi di Machine Learning, architetture multi-tenant e app mobile native prima di portarle sul mercato.",
-    "vlab-status-poc": "PoC & Spin-Off Attivo",
+    "vlab-status-poc": "Iniziativa Attiva",
     "vlab-wroomy-desc": "Motore proprietario di Market Intelligence e pricing predittivo basato su algoritmi di Machine Learning (AutoScore™).",
+    "vlab-wroomy-b1": "Data Ingestion Real-Time: aggregazione e pulizia continua di migliaia di data-point dal mercato automotive secondario.",
+    "vlab-wroomy-b2": "Algoritmo AutoScore™: stima predittiva del valore reale incrociando deprezzamento, chilometraggio, allestimento e domanda locale.",
+    "vlab-wroomy-b3": "Modello B2B & B2C: dashboard analitica e API per dealer/flotte affiancate dal portale di valutazione per privati.",
     "vlab-petsgo-desc": "Ecosistema digitale mobile e cloud ad alta scalabilità (iOS/Android) sviluppato interamente in-house.",
+    "vlab-petsgo-b1": "App Mobile iOS & Android: pubblicata su App Store e Google Play per gestire libretto sanitario digitale, vaccini e profili pet.",
+    "vlab-petsgo-b2": "Booking & CRM Strutture: piattaforma B2B2C che connette proprietari di animali con cliniche veterinarie e professionisti.",
+    "vlab-petsgo-b3": "Architettura Headless Cloud: backend reattivo progettato per alte concorrenze, notifiche smart e triage assistito da AI.",
     "vlab-flh-desc": "Infrastruttura di hosting e gestione cloud automatizzata per professionisti del digitale.",
-    "vlab-card-cta": "Approfondisci Architettura →",
+    "vlab-flh-b1": "Cloud Provisioning Automatizzato: ambienti di hosting ottimizzati e gestione semplificata per sviluppatori e consulenti digitali.",
+    "vlab-flh-b2": "Hub Tecnico & Community: osservatorio editoriale su strumenti cloud, produttività e infrastrutture per il lavoro indipendente.",
+    "vlab-flh-b3": "Evoluzione Vendor Management: laboratorio per moduli B2B dedicati all'onboarding e gestione di collaboratori esterni per le PMI.",
+    "vlab-card-cta": "Scheda Progetto →",
+    "vlab-method-tag": "Metodo & Sinergia Industriale",
+    "vlab-method-title": "Perché un Venture Lab Interno",
+    "vlab-method-desc": "Ogni progetto del Venture Lab nasce con un doppio obiettivo: creare valore nel proprio mercato verticale e collaudare sul campo tecnologie che rendono più solide le nostre soluzioni B2B.",
+    "vlab-m1-title": "1. Validazione su Carichi Reali",
+    "vlab-m1-desc": "Non ci limitiamo a prototipi teorici: portiamo le nostre piattaforme in produzione con utenti attivi, app sugli store ufficiali e flussi di dati continui per testare tenuta, usabilità e performance.",
+    "vlab-m2-title": "2. Componenti & IP Condivisa",
+    "vlab-m2-desc": "Le pipeline di raccolta dati, i motori di Machine Learning e i moduli di autenticazione multi-tenant sviluppati nel Lab costituiscono una base tecnologica proprietaria già collaudata per i progetti Enterprise.",
+    "vlab-m3-title": "3. Ingegneria Full-Stack In-House",
+    "vlab-m3-desc": "Dal design delle interfacce e sviluppo nativo iOS/Android fino al deployment Cloud e all'addestramento dei modelli predittivi, ogni singolo componente è progettato e mantenuto dal team AverisTech.",
     "vlab-banner-title": "Vuoi applicare le nostre tecnologie AI ai processi della tua azienda?",
     "vlab-banner-desc": "Scopri come gli algoritmi e le architetture validate nel nostro Venture Lab alimentano la piattaforma B2B inQuadra.",
 
@@ -156,9 +174,9 @@ const translations = {
     "method-s3-desc": "Il deploy in produzione è solo l'inizio. Integriamo sistemi di monitoraggio APM in tempo reale, metriche di osservabilità granulari e infrastrutture auto-scalanti per assorbire crescite esponenziali di traffico senza colli di bottiglia.",
 
     // Contact Section
-    "contact-tag": "Consulenza Esecutiva & Demo B2B",
-    "contact-title": "Prenota una Demo o Parla con i Nostri Architetti",
-    "contact-desc": "Affianchiamo CFO, COO e Direzioni IT nella trasformazione dei processi critici aziendali. Contattaci per una sessione tecnica dedicata su inQuadra o sulle nostre architetture Agentic AI.",
+    "contact-tag": "Consulenza & Soluzioni",
+    "contact-title": "Parla con Noi",
+    "contact-desc": "Affianchiamo i nostri clienti nella trasformazione dei processi aziendali. Contattaci per approfondire le nostre soluzioni o richiedere una sessione dedicata.",
     "contact-location-label": "Sede Legale & Operativa",
     "contact-location-val": "Via del prato 27 — 00172 Roma (RM)",
     "contact-email-label": "Email Direzione & Demo",
@@ -236,9 +254,9 @@ const translations = {
     "petsgo-c2-desc": "Un booking engine proprietario che automatizza appuntamenti e cartelle cliniche, integrando intelligenza artificiale per un triage virtuale preliminare e supporto utente 24/7.",
     "petsgo-c3-title": "Modello B2B2C",
     "petsgo-c3-desc": "Serve milioni di proprietari di animali con standard premium (B2C) e contemporaneamente fornisce a cliniche e toelettatori un SaaS (B2B) per azzerare i costi di acquisizione.",
-    "petsgo-callout-tag": "Applicazione Mobile iOS",
+    "petsgo-callout-tag": "Applicazione Mobile iOS & Android",
     "petsgo-callout-title": "Porta Petsgo sempre con te",
-    "petsgo-callout-desc": "Scarica l'applicazione ufficiale per iOS da Apple App Store per gestire libretto sanitario, promemoria vaccini e consulti ovunque ti trovi.",
+    "petsgo-callout-desc": "Scarica l'applicazione ufficiale per iOS e Android da Apple App Store o Google Play Store per gestire libretto sanitario, promemoria vaccini e consulti ovunque ti trovi.",
     "petsgo-callout-btn": "Scarica dall'App Store",
 
     // Wroomy Detail Page
@@ -338,11 +356,29 @@ const translations = {
     "vlab-tag": "R&D • Technology Incubator & Spin-Offs",
     "vlab-title": "AverisTech Venture Lab",
     "vlab-intro": "We build scalable technologies. Our Venture Lab is the internal incubator where we test Machine Learning algorithms, multi-tenant architectures, and native mobile apps before bringing them to market.",
-    "vlab-status-poc": "Active PoC & Spin-Off",
+    "vlab-status-poc": "Active Initiative",
     "vlab-wroomy-desc": "Proprietary Market Intelligence and predictive pricing engine powered by Machine Learning algorithms (AutoScore™).",
+    "vlab-wroomy-b1": "Real-Time Data Ingestion: continuous aggregation and normalization of thousands of secondary automotive market data points.",
+    "vlab-wroomy-b2": "AutoScore™ Algorithm: predictive fair-value estimation cross-referencing depreciation curves, mileage, trim, and local demand.",
+    "vlab-wroomy-b3": "B2B & B2C Model: analytics dashboard and APIs for dealerships and fleets paired with a transparent consumer valuation portal.",
     "vlab-petsgo-desc": "Highly scalable mobile and cloud digital ecosystem (iOS/Android) engineered entirely in-house.",
+    "vlab-petsgo-b1": "iOS & Android Mobile App: live on the App Store and Google Play to manage digital health records, vaccines, and pet profiles.",
+    "vlab-petsgo-b2": "Clinic Booking & CRM: B2B2C platform connecting pet owners with veterinary clinics, groomers, and pet care professionals.",
+    "vlab-petsgo-b3": "Headless Cloud Architecture: reactive backend engineered for high concurrency, smart notifications, and AI-assisted triage.",
     "vlab-flh-desc": "Automated cloud hosting and management infrastructure for digital professionals.",
-    "vlab-card-cta": "Explore Architecture →",
+    "vlab-flh-b1": "Automated Cloud Provisioning: optimized hosting environments and simplified management for developers and digital consultants.",
+    "vlab-flh-b2": "Technical Hub & Community: editorial observatory covering cloud tools, productivity stacks, and independent work infrastructure.",
+    "vlab-flh-b3": "Vendor Management Evolution: R&D lab for B2B modules dedicated to external contractor onboarding and governance for SMBs.",
+    "vlab-card-cta": "Project Case Study →",
+    "vlab-method-tag": "Method & Industrial Synergy",
+    "vlab-method-title": "Why an Internal Venture Lab",
+    "vlab-method-desc": "Every Venture Lab initiative serves a dual purpose: delivering value in its vertical market while field-testing technologies that strengthen our enterprise B2B solutions.",
+    "vlab-m1-title": "1. Validation Under Real Workloads",
+    "vlab-m1-desc": "We go beyond theoretical prototypes: we launch live platforms with active users, official mobile store releases, and continuous data streams to stress-test reliability, usability, and performance.",
+    "vlab-m2-title": "2. Shared Components & Proprietary IP",
+    "vlab-m2-desc": "Data ingestion pipelines, Machine Learning engines, and multi-tenant authentication modules built in the Lab form a battle-tested proprietary foundation for our Enterprise projects.",
+    "vlab-m3-title": "3. Full-Stack In-House Engineering",
+    "vlab-m3-desc": "From UI/UX design and native iOS/Android development to Cloud deployment and predictive model training, every single component is architected and maintained by the AverisTech team.",
     "vlab-banner-title": "Want to apply our AI technologies to your enterprise processes?",
     "vlab-banner-desc": "Discover how the algorithms and architectures validated in our Venture Lab power the inQuadra B2B platform.",
 
@@ -414,9 +450,9 @@ const translations = {
     "method-s3-desc": "Production deployment is just the beginning. We integrate real-time APM monitoring, granular observability metrics, and auto-scaling infrastructures to absorb exponential traffic surges.",
 
     // Contact Section
-    "contact-tag": "LET'S TALK FUTURE",
-    "contact-title": "Get in touch with us",
-    "contact-desc": "We are always open to institutional synergies, investors, tech talents, and strategic partners. Write to us to explore how we can collaborate.",
+    "contact-tag": "CONSULTING & SOLUTIONS",
+    "contact-title": "Talk to Us",
+    "contact-desc": "We support our clients in transforming their business processes. Contact us to explore our solutions or request a dedicated session.",
     "contact-location-label": "Headquarters",
     "contact-location-val": "Italy — Business Incubator",
     "contact-email-label": "Institutional Email",
@@ -494,9 +530,9 @@ const translations = {
     "petsgo-c2-desc": "A proprietary booking engine automating appointments and clinical records, integrating artificial intelligence for virtual triage and 24/7 user support.",
     "petsgo-c3-title": "B2B2C Business Model",
     "petsgo-c3-desc": "Serves millions of pet owners with premium consumer standards (B2C) while providing veterinary clinics and groomers with a SaaS (B2B) that eliminates customer acquisition costs.",
-    "petsgo-callout-tag": "iOS Mobile Application",
+    "petsgo-callout-tag": "iOS & Android Mobile Application",
     "petsgo-callout-title": "Always carry Petsgo with you",
-    "petsgo-callout-desc": "Download the official iOS application from the Apple App Store to manage digital pet health records, vaccine reminders, and appointments wherever you are.",
+    "petsgo-callout-desc": "Download the official iOS and Android application from the Apple App Store or Google Play Store to manage digital pet health records, vaccine reminders, and appointments wherever you are.",
     "petsgo-callout-btn": "Download on App Store",
 
     // Wroomy Detail Page
@@ -573,11 +609,17 @@ class I18nManager {
       }
     }
 
-    // Update official App Store badges
+    // Update official App Store and Google Play badges
     const badgeElements = document.querySelectorAll(".app-store-badge-img");
     badgeElements.forEach(img => {
       img.src = lang === "it" ? "media/app-store-badge-it.svg" : "media/app-store-badge-en.svg";
       img.alt = lang === "it" ? "Scarica su App Store" : "Download on the App Store";
+    });
+
+    const playBadgeElements = document.querySelectorAll(".google-play-badge-img");
+    playBadgeElements.forEach(img => {
+      img.src = lang === "it" ? "media/google-play-badge-it.svg" : "media/google-play-badge-en.svg";
+      img.alt = lang === "it" ? "Disponibile su Google Play" : "Get it on Google Play";
     });
   }
 

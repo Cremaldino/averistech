@@ -13,7 +13,7 @@
 
     <!-- OpenGraph Metadata -->
     <meta property="og:title" content="Petsgo — Pet Care Ecosystem | AverisTech" />
-    <meta property="og:description" content="La piattaforma definitiva per il benessere degli animali domestici. Disponibile su Apple App Store." />
+    <meta property="og:description" content="La piattaforma definitiva per il benessere degli animali domestici. Disponibile su Apple App Store e Google Play Store." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://averistech.it/petsgo.html" />
     <meta property="og:image" content="media/Petsgo-Home.jpeg" />
@@ -24,9 +24,12 @@
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Petsgo",
-      "operatingSystem": "iOS",
+      "operatingSystem": "iOS, Android",
       "applicationCategory": "LifestyleApplication",
-      "installUrl": "https://apps.apple.com/us/app/petsgo/id6817229802",
+      "installUrl": [
+        "https://apps.apple.com/it/app/petsgo/id6817229802",
+        "https://play.google.com/store/apps/details?id=it.petsgo.app"
+      ],
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -49,23 +52,34 @@
     </style>
 </head>
 <body>
+    <!-- HEADER & NAVBAR (B2B Enterprise IA) -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo-link">
-                <img src="media/logo-navbar.jpeg" alt="AverisTech Logo" class="logo-img" />
+            <a href="index.html" class="logo-link" id="nav-logo-link" aria-label="AverisTech Home">
+                <img src="media/logo-navbar.jpeg" alt="AverisTech Logo" class="logo-img" id="navbar-logo" />
             </a>
+
             <nav aria-label="Menu Principale">
                 <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html#about" class="nav-link" data-i18n="nav-about">Chi Siamo</a></li>
-                    <li><a href="index.html#portfolio" class="nav-link" data-i18n="nav-portfolio">Progetti</a></li>
-                    <li><a href="index.html#innovation" class="nav-link" data-i18n="nav-innovation">Innovazione</a></li>
-                    <li><a href="index.html#contact" class="nav-link" data-i18n="nav-contact">Contatti</a></li>
+                    <li><a href="index.html#hero" class="nav-link" id="link-home" data-i18n="nav-home">Home</a></li>
+                    <li><a href="index.html#credibility" class="nav-link" id="link-company" data-i18n="nav-company">Chi Siamo</a></li>
+                    <li><a href="index.html#agentic-ai" class="nav-link" id="link-agentic" data-i18n="nav-agentic">Agentic AI &amp; Tech</a></li>
+                    <li><a href="inquadra.html" class="nav-link" id="link-inquadra" data-i18n="nav-inquadra">inQuadra</a></li>
+                    <li><a href="venture-lab.html" class="nav-link active" id="link-venture" data-i18n="nav-venture">Venture Lab</a></li>
+                    <li><a href="index.html#contact" class="nav-link" id="link-contact" data-i18n="nav-contact">Contatti</a></li>
                 </ul>
             </nav>
 
-            <div style="display: flex; align-items: center; gap: 16px;">
-                <!-- Language Switcher -->
-                <div class="lang-toggle" role="group" aria-label="Selettore Lingua">
+            <div style="display: flex; align-items: center; gap: 14px;">
+                <!-- Primary Navbar CTA -->
+                <a href="index.html#contact" class="btn btn-primary nav-cta-btn" id="nav-cta-demo"
+                    data-i18n="nav-cta-demo">
+                    Parla con Noi
+                </a>
+
+                <!-- Language Switcher (IT / EN) -->
+                <div class="lang-toggle" id="lang-switcher" role="group"
+                    aria-label="Selettore Lingua / Language Switcher">
                     <button type="button" class="lang-btn active" id="btn-lang-it" aria-label="Italiano">IT</button>
                     <button type="button" class="lang-btn" id="btn-lang-en" aria-label="English">EN</button>
                 </div>
@@ -88,8 +102,11 @@
                     <h1><span class="text-gradient">Petsgo</span></h1>
                     <p data-i18n="petsgo-hero-desc">La piattaforma definitiva per il benessere degli animali domestici. Un ecosistema centralizzato per pet lovers e professionisti, basato su un'architettura headless ultra-veloce.</p>
                     <div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-                        <a href="https://apps.apple.com/us/app/petsgo/id6817229802" target="_blank" rel="noopener noreferrer" class="app-store-badge-link" id="btn-petsgo-appstore" aria-label="Scarica Petsgo su Apple App Store">
+                        <a href="https://apps.apple.com/it/app/petsgo/id6817229802" target="_blank" rel="noopener noreferrer" class="app-store-badge-link" id="btn-petsgo-appstore" aria-label="Scarica Petsgo su Apple App Store">
                             <img src="media/app-store-badge-it.svg" alt="Scarica su App Store" class="app-store-badge-img" height="48" style="height: 48px; width: auto;" />
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=it.petsgo.app" target="_blank" rel="noopener noreferrer" class="app-store-badge-link" id="btn-petsgo-playstore" aria-label="Scarica Petsgo su Google Play Store">
+                            <img src="media/google-play-badge-it.svg" alt="Disponibile su Google Play" class="google-play-badge-img" height="48" style="height: 48px; width: auto;" />
                         </a>
                         <a href="https://petsgo.it" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btn-petsgo-live" data-i18n="project-btn-visit" style="height: 48px; padding: 0 24px;">
                             Visita il sito live
@@ -155,16 +172,19 @@
                 </div>
             </div>
 
-            <!-- Callout Download App Store -->
+            <!-- Callout Download App Store & Google Play -->
             <div class="glass-card" style="margin-top: 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; padding: 36px 40px; border: 1px solid rgba(0, 242, 254, 0.25); background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(0, 242, 254, 0.05) 100%);">
                 <div style="max-width: 600px;">
-                    <span class="section-tag" data-i18n="petsgo-callout-tag" style="margin-bottom: 10px; display: inline-block;">Applicazione Mobile iOS</span>
+                    <span class="section-tag" data-i18n="petsgo-callout-tag" style="margin-bottom: 10px; display: inline-block;">Applicazione Mobile iOS &amp; Android</span>
                     <h3 data-i18n="petsgo-callout-title" style="font-size: 1.75rem; margin-bottom: 10px; font-weight: 700;">Porta Petsgo sempre con te</h3>
-                    <p data-i18n="petsgo-callout-desc" style="color: var(--text-muted); line-height: 1.6; margin: 0;">Scarica l'applicazione ufficiale per iOS da Apple App Store per gestire libretto sanitario, promemoria vaccini e consulti ovunque ti trovi.</p>
+                    <p data-i18n="petsgo-callout-desc" style="color: var(--text-muted); line-height: 1.6; margin: 0;">Scarica l'applicazione ufficiale per iOS e Android da Apple App Store o Google Play Store per gestire libretto sanitario, promemoria vaccini e consulti ovunque ti trovi.</p>
                 </div>
-                <div>
-                    <a href="https://apps.apple.com/us/app/petsgo/id6817229802" target="_blank" rel="noopener noreferrer" class="app-store-badge-link" id="btn-petsgo-callout-appstore" aria-label="Scarica Petsgo su Apple App Store">
+                <div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center;">
+                    <a href="https://apps.apple.com/it/app/petsgo/id6817229802" target="_blank" rel="noopener noreferrer" class="app-store-badge-link" id="btn-petsgo-callout-appstore" aria-label="Scarica Petsgo su Apple App Store">
                         <img src="media/app-store-badge-it.svg" alt="Scarica su App Store" class="app-store-badge-img" height="52" style="height: 52px; width: auto;" />
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=it.petsgo.app" target="_blank" rel="noopener noreferrer" class="app-store-badge-link" id="btn-petsgo-callout-playstore" aria-label="Scarica Petsgo su Google Play Store">
+                        <img src="media/google-play-badge-it.svg" alt="Disponibile su Google Play" class="google-play-badge-img" height="52" style="height: 52px; width: auto;" />
                     </a>
                 </div>
             </div>
