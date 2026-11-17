@@ -7,15 +7,15 @@ const translations = {
   it: {
     // Navigation (Corporate Tech Venture + Flagship IA)
     "nav-home": "Home",
-    "nav-company": "Azienda & R&D",
-    "nav-agentic": "Architetture & AI",
     "nav-inquadra": "inQuadra",
+    "nav-agentic": "Agentic AI",
     "nav-venture": "Venture Lab",
+    "nav-company": "Azienda & Partner",
     "nav-contact": "Contatti",
     "nav-cta-demo": "Parla con Noi",
-    "nav-about": "Azienda & R&D",
+    "nav-about": "Azienda & Partner",
     "nav-portfolio": "inQuadra",
-    "nav-innovation": "Architetture & AI",
+    "nav-innovation": "Agentic AI",
 
     // 1. Hero Section (Above the Fold)
     "hero-badge": "Enterprise Software Engineering • Cloud Multi-Tenant • Agentic AI",
@@ -315,15 +315,15 @@ const translations = {
   en: {
     // Navigation (Corporate Tech Venture + Flagship IA)
     "nav-home": "Home",
-    "nav-company": "Company & R&D",
-    "nav-agentic": "Architectures & AI",
     "nav-inquadra": "inQuadra",
+    "nav-agentic": "Agentic AI",
     "nav-venture": "Venture Lab",
+    "nav-company": "Company & Partners",
     "nav-contact": "Contact",
     "nav-cta-demo": "Talk to Us",
-    "nav-about": "Company & R&D",
+    "nav-about": "Company & Partners",
     "nav-portfolio": "inQuadra",
-    "nav-innovation": "Architectures & AI",
+    "nav-innovation": "Agentic AI",
 
     // 1. Hero Section (Above the Fold)
     "hero-badge": "Enterprise Software Engineering • Multi-Tenant Cloud • Agentic AI",
