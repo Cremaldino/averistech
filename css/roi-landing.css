@@ -2967,6 +2967,25 @@ h1, h2, h3, h4, h5, h6,
   background: #ffffff !important;
 }
 
+.card-chaos .card-header-badge,
+.card-autonomous .card-header-badge {
+  border-radius: 4px !important;
+  padding: 7px 14px !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  align-self: flex-start;
+}
+
+.card-chaos .pain-item,
+.card-autonomous .gain-item {
+  border-radius: 4px !important;
+}
+
+.console-status-live,
+.console-mode-pill,
+.matrix-popular-badge {
+  border-radius: 4px !important;
+}
+
 .calc-preset-btn,
 .calc-current-badge,
 .calc-number-input,
